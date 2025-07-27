@@ -10102,5 +10102,33 @@
 			)
 		)
 	)
+	(gr_poly
+		(pts
+			(xy 80 121.5) (xy 80 40) (xy 187.3 40) (xy 187.2 121.5)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "aa7f4088-97e8-4ce9-8432-85d60e901375")
+	)
+	(segment
+		(start 59.08 69.08)
+		(end 59.08 64.58)
+		(width 0.3)
+		(layer "F.Cu")
+		(net 16)
+		(uuid "8381b850-bd58-4946-825e-9aea94fb93ee")
+	)
+	(segment
+		(start 59.08 64.58)
+		(end 59 64.5)
+		(width 0.3)
+		(layer "F.Cu")
+		(net 16)
+		(uuid "e458e6df-5fbe-4e00-993f-910e518e5c14")
+	)
 	(embedded_fonts no)
 )
