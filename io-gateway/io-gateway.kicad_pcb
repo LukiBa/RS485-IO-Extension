@@ -1162,7 +1162,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_4x5.4"
 		(layer "F.Cu")
 		(uuid "2bc5bc04-2149-4b1c-9347-c2d378a6e1cf")
-		(at 65.735 70.75)
+		(at 65.735 67.5)
 		(descr "SMD capacitor, aluminum electrolytic, Panasonic A5 / Nichicon, 4.0x5.4mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C15"
@@ -10101,6 +10101,17 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(gr_rect
+		(start 50 50)
+		(end 157.5 81.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "3a2b1e98-cc55-46e3-91dc-3f607e01a2ff")
 	)
 	(embedded_fonts no)
 )

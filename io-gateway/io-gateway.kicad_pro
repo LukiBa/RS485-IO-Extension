@@ -536,7 +536,7 @@
         "pattern": "+1V8"
       },
       {
-        "netclass": "High Power",
+        "netclass": "Power",
         "pattern": "24V"
       }
     ]
