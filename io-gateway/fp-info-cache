@@ -1,4 +1,4 @@
-26431498412732867
+26429746219143621
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -61242,6 +61242,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+FRDM-MCXN947
+FRDM-MCXN947
+
+
+0
+124
+32
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -80066,13 +80073,6 @@ QFN NoLead
 116
 81
 Package_DFN_QFN
-QFN50P500X500X80-29N
-28 TQFN-Ep
-Integrated Circuit
-0
-29
-29
-Package_DFN_QFN
 Qorvo_DFN-8-1EP_2x2mm_P0.5mm
 DFN 8 2x2mm, 0.5mm http://www.qorvo.com/products/d/da000896
 DFN 0.5 Qorvo 2x2mm
@@ -94283,13 +94283,6 @@ AXICOM HF3-Series Relay Pitch 1.27mm 75ohm
 16
 16
 Relay_THT
-RZ031A3D024
-RZ03-1A3-D024-2
-Relay or Contactor
-0
-6
-6
-Relay_THT
 Relay_1-Form-A_Schrack-RYII_RM5mm
 Relay, 1-Form-A, Schrack-RYII, RM5mm, SPST-NO
 Relay 1-Form-A Schrack-RYII RM5mm SPST-NO
@@ -95108,6 +95101,27 @@ SPST SPDT DC TE0598-P2
 0
 7
 7
+Relays
+20715562
+2071556-2-2
+Relay or Contactor
+0
+4
+4
+Relays
+RZ031A3D024
+RZ03-1A3-D024-2
+Relay or Contactor
+0
+6
+6
+Relays
+Untitled
+
+
+0
+0
+0
 Resistor_SMD
 R_0201_0603Metric
 Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -98566,13 +98580,6 @@ Logo WEEE
 0
 0
 0
-TVS_Diodes
-DIOM5436X244N
-SMBJ24A
-TVS Diode (Uni-directional)
-0
-2
-2
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf
@@ -100435,13 +100442,6 @@ THT Terminal Block Philmore  pitch 5mm size 15x10.2mm drill 1.2mm pad 2.4mm
 0
 3
 3
-TerminalBlock_Phoenix
-1752201
-1752201-2
-Connector
-0
-12
-12
 TerminalBlock_Phoenix
 TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal
 Terminal Block Phoenix MKDS-1,5-2-5.08, 2 pins, pitch 5.08mm, size 10.2x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix
@@ -102322,13 +102322,6 @@ TerminalBlock_TE-Connectivity
 TerminalBlock_TE_282834-9_1x09_P2.54mm_Horizontal
 Terminal Block TE 282834-9, 9 pins, pitch 2.54mm, size 23.3x6.5mm, drill diameter 1.1mm, pad diameter 2.1mm, http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F282834%7FC1%7Fpdf%7FEnglish%7FENG_CD_282834_C1.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/scripts/TerminalBlock_TE-Connectivity
 THT Terminal Block TE 282834-9 pitch 2.54mm size 23.3x6.5mm drill 1.1mm pad 2.1mm
-0
-9
-9
-TerminalBlock_TE-Connectivity
-TerminalBlock_TE_282836-9_1x09_P5mm_Horizontal
-Terminal Block TE 282834-9, 9 pins, pitch 2.54mm, size 23.3x6.5mm, drill diameter 1.1mm, pad diameter 2.1mm, http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F282834%7FC1%7Fpdf%7FEnglish%7FENG_CD_282834_C1.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/scripts/TerminalBlock_TE-Connectivity
-THT Terminal Block TE 282834-9 pitch 5mm size 23.3x6.5mm drill 1.1mm pad 2.1mm
 0
 9
 9

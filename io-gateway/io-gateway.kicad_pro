@@ -683,6 +683,14 @@
     [
       "60941778-6fb0-4187-871b-ab30112ac33b",
       "Terminal Blocks"
+    ],
+    [
+      "b7c52a2f-c911-47bd-b8aa-349b31ff8e17",
+      "RelaysJ4"
+    ],
+    [
+      "f7918fcf-9688-4ae8-a1d7-cb892536f0d4",
+      "FRDM-MCXN947"
     ]
   ],
   "text_variables": {}
