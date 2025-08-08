@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "FRDM-MCXN947__Shield_Template-altium-import")(type "KiCad")(uri "${KIPRJMOD}/Libs/FRDM-MCXN947__Shield_Template-altium-import.kicad_sym")(options "")(descr ""))
+)
