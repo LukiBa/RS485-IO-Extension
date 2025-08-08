@@ -438,7 +438,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "FRDM-MCXN947:FRDM-MCXN947"
 			(at 0 0 0)
 			(effects
 				(font
