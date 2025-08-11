@@ -2755,7 +2755,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 151.13 152.07 0)
 			(effects
 				(font
@@ -4343,7 +4343,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 83.82 150.8 0)
 			(effects
 				(font
