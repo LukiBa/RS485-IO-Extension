@@ -681,6 +681,10 @@
       "Root"
     ],
     [
+      "f7918fcf-9688-4ae8-a1d7-cb892536f0d4",
+      "FRDM-MCXN947"
+    ],
+    [
       "60941778-6fb0-4187-871b-ab30112ac33b",
       "Terminal Blocks"
     ],
@@ -689,8 +693,12 @@
       "RelaysJ4"
     ],
     [
-      "f7918fcf-9688-4ae8-a1d7-cb892536f0d4",
-      "FRDM-MCXN947"
+      "99edf8d5-e94a-4b7e-97dc-770099d54462",
+      "RelaysJ5"
+    ],
+    [
+      "1308d9d5-cfd2-45e8-87f7-78f75fc0ae30",
+      "RelaysJ6"
     ]
   ],
   "text_variables": {}

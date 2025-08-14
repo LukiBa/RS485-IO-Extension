@@ -9104,6 +9104,48 @@
 		)
 	)
 	(sheet
+		(at 303.53 71.12)
+		(size 15.24 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1308d9d5-cfd2-45e8-87f7-78f75fc0ae30")
+		(property "Sheetname" "RelaysJ6"
+			(at 303.53 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "relaysJ6.kicad_sch"
+			(at 303.53 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "io-gateway"
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 302.26 1.27)
 		(size 16.51 12.7)
 		(exclude_from_sim no)
@@ -9140,7 +9182,49 @@
 		(instances
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156"
-					(page "2")
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 303.53 57.15)
+		(size 15.24 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "99edf8d5-e94a-4b7e-97dc-770099d54462")
+		(property "Sheetname" "RelaysJ5"
+			(at 303.53 56.4384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "relaysJ5.kicad_sch"
+			(at 303.53 67.8946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "io-gateway"
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156"
+					(page "5")
 				)
 			)
 		)
@@ -9182,7 +9266,7 @@
 		(instances
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156"
-					(page "3")
+					(page "4")
 				)
 			)
 		)
@@ -9224,7 +9308,7 @@
 		(instances
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156"
-					(page "4")
+					(page "2")
 				)
 			)
 		)

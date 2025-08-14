@@ -375,34 +375,6 @@
 			(justify left bottom)
 		)
 	)
-	(fp_text user "Note: The positioning of the connectors in the PCB are at coordinates that seem {dblquote}off{dblquote} by 2-6mil.\nThis was a design bug in the FRDM-MCX947 PCB design. The connectors don't quite match to true arduino positioning,  but are close enough that boards will mate."
-		(at -4.5 54.5 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "77945b04-0146-4ab6-a892-f5a7e9301df1")
-		(effects
-			(font
-				(size 0.9525 0.9525)
-				(thickness 0.238125)
-				(bold yes)
-			)
-			(justify right)
-		)
-	)
-	(fp_text user "Note:   Always double check pin header IO assignments and mechanicals.  This template was created using the latest available documentation for the FRDM MCX-N947.\nEfforts were made to ensure mechanical/electrical accuracy.  \n\nThis template is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;\nwithout even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
-		(at 20 44.5 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "a951a2f3-fee6-4bc8-a2f9-fa36e55cbdf9")
-		(effects
-			(font
-				(size 0.9525 0.9525)
-				(thickness 0.238125)
-				(bold yes)
-			)
-			(justify right)
-		)
-	)
 	(fp_text user "J2"
 		(at -100.848 1.994 0)
 		(unlocked yes)

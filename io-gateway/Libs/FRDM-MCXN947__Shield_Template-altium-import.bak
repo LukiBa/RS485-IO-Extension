@@ -6,7 +6,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(property "Reference" "FRDM-MCXN97"
+		(property "Reference" "FRDM_MCXN947_"
 			(at 10.668 36.83 0)
 			(effects
 				(font
