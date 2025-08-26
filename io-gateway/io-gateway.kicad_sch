@@ -9146,6 +9146,48 @@
 		)
 	)
 	(sheet
+		(at 303.53 92.71)
+		(size 19.05 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "334a84ed-29ea-43c8-926f-91a0c21c840d")
+		(property "Sheetname" "Dimmer1"
+			(at 303.53 91.9984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dimmer1.kicad_sch"
+			(at 303.53 111.0746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "io-gateway"
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 302.26 1.27)
 		(size 16.51 12.7)
 		(exclude_from_sim no)
