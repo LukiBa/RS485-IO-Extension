@@ -1,0 +1,2002 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "kicad_symbol_editor")
+	(generator_version "9.0")
+	(symbol "MCU**"
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "FRDM_MCXA153_"
+			(at 10.668 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCU**"
+			(at 17.018 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FFRDM-MCXA153:FRDM-MCXA153-SMD"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MCU**_1_0"
+			(rectangle
+				(start -20.32 17.78)
+				(end -12.7 2.54)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -19.05 16.637)
+				(end -17.78 16.383)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -19.05 14.097)
+				(end -17.78 13.843)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -19.05 11.557)
+				(end -17.78 11.303)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -19.05 9.017)
+				(end -17.78 8.763)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -19.05 6.477)
+				(end -17.78 6.223)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -19.05 3.937)
+				(end -17.78 3.683)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -15.24 16.637)
+				(end -13.97 16.383)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -15.24 14.097)
+				(end -13.97 13.843)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -15.24 11.557)
+				(end -13.97 11.303)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -15.24 9.017)
+				(end -13.97 8.763)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -15.24 6.477)
+				(end -13.97 6.223)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -15.24 3.937)
+				(end -13.97 3.683)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin no_connect line
+				(at -25.4 16.51 0)
+				(length 5.08)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -25.4 13.97 0)
+				(length 5.08)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -25.4 11.43 0)
+				(length 5.08)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -25.4 8.89 0)
+				(length 5.08)
+				(name "Pin_7"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 6.35 0)
+				(length 5.08)
+				(name "Pin_9"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 3.81 0)
+				(length 5.08)
+				(name "Pin_11"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 16.51 180)
+				(length 5.08)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 13.97 180)
+				(length 5.08)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 11.43 180)
+				(length 5.08)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 8.89 180)
+				(length 5.08)
+				(name "Pin_8"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 6.35 180)
+				(length 5.08)
+				(name "Pin_10"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 3.81 180)
+				(length 5.08)
+				(name "Pin_12"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "4.12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MCU**_1_1"
+			(text "J4"
+				(at -19.558 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+		(symbol "MCU**_2_0"
+			(rectangle
+				(start -30.48 59.69)
+				(end -22.86 39.37)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -29.21 58.547)
+				(end -27.94 58.293)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -29.21 56.007)
+				(end -27.94 55.753)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -29.21 53.467)
+				(end -27.94 53.213)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -29.21 50.927)
+				(end -27.94 50.673)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -29.21 48.387)
+				(end -27.94 48.133)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -29.21 45.847)
+				(end -27.94 45.593)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -29.21 43.307)
+				(end -27.94 43.053)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -29.21 40.767)
+				(end -27.94 40.513)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -25.4 58.547)
+				(end -24.13 58.293)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -25.4 56.007)
+				(end -24.13 55.753)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -25.4 53.467)
+				(end -24.13 53.213)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -25.4 50.927)
+				(end -24.13 50.673)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -25.4 48.387)
+				(end -24.13 48.133)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -25.4 45.847)
+				(end -24.13 45.593)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -25.4 43.307)
+				(end -24.13 43.053)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -25.4 40.767)
+				(end -24.13 40.513)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -35.56 58.42 0)
+				(length 5.08)
+				(name "Pin_J3_1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -35.56 55.88 0)
+				(length 5.08)
+				(name "Pin_J3_3"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -35.56 53.34 0)
+				(length 5.08)
+				(name "Pin_J3_5"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -35.56 50.8 0)
+				(length 5.08)
+				(name "Pin_J3_7"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -35.56 48.26 0)
+				(length 5.08)
+				(name "Pin_J3_9"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -35.56 45.72 0)
+				(length 5.08)
+				(name "Pin_J3_11"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -35.56 43.18 0)
+				(length 5.08)
+				(name "Pin_J3_13"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -35.56 40.64 0)
+				(length 5.08)
+				(name "Pin_J3_15"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -17.78 58.42 180)
+				(length 5.08)
+				(name "Pin_J3_2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at -17.78 55.88 180)
+				(length 5.08)
+				(name "Pin_J3_4_VDDref"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 53.34 180)
+				(length 5.08)
+				(name "Pin_J3_6_Reset"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at -17.78 50.8 180)
+				(length 5.08)
+				(name "Pin_J3_3V3_Out"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at -17.78 48.26 180)
+				(length 5.08)
+				(name "Pin_J3_10_5V_Out"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -17.78 45.72 180)
+				(length 5.08)
+				(name "Pin_J3_12_GND"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -17.78 43.18 180)
+				(length 5.08)
+				(name "Pin_J3_14_GND"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -17.78 40.64 180)
+				(length 5.08)
+				(name "Pin_J3_16_VIN"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3.16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MCU**_2_1"
+			(text "J3"
+				(at -29.718 38.1 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+		(symbol "MCU**_3_0"
+			(rectangle
+				(start 35.56 82.55)
+				(end 43.18 57.15)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start 36.83 81.407)
+				(end 38.1 81.153)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 36.83 78.867)
+				(end 38.1 78.613)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 36.83 76.327)
+				(end 38.1 76.073)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 36.83 73.787)
+				(end 38.1 73.533)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 36.83 71.247)
+				(end 38.1 70.993)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 36.83 68.707)
+				(end 38.1 68.453)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 36.83 66.167)
+				(end 38.1 65.913)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 36.83 63.627)
+				(end 38.1 63.373)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 36.83 61.087)
+				(end 38.1 60.833)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 36.83 58.547)
+				(end 38.1 58.293)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 81.407)
+				(end 41.91 81.153)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 78.867)
+				(end 41.91 78.613)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 76.327)
+				(end 41.91 76.073)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 73.787)
+				(end 41.91 73.533)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 71.247)
+				(end 41.91 70.993)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 68.707)
+				(end 41.91 68.453)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 66.167)
+				(end 41.91 65.913)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 63.627)
+				(end 41.91 63.373)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 61.087)
+				(end 41.91 60.833)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 40.64 58.547)
+				(end 41.91 58.293)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 30.48 81.28 0)
+				(length 5.08)
+				(name "Pin_J2_20"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 78.74 0)
+				(length 5.08)
+				(name "Pin_J2_18"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 76.2 0)
+				(length 5.08)
+				(name "Pin_J2_16"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 30.48 73.66 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 71.12 0)
+				(length 5.08)
+				(name "Pin_J2_12"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 68.58 0)
+				(length 5.08)
+				(name "Pin_J2_10"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 66.04 0)
+				(length 5.08)
+				(name "Pin_J2_8"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 63.5 0)
+				(length 5.08)
+				(name "Pin_J2_6"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 60.96 0)
+				(length 5.08)
+				(name "Pin_J2_4"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 58.42 0)
+				(length 5.08)
+				(name "Pin_J2_2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 48.26 81.28 180)
+				(length 5.08)
+				(name "Pin_J2_19"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 48.26 78.74 180)
+				(length 5.08)
+				(name "Pin_J2_17"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 48.26 76.2 180)
+				(length 5.08)
+				(name "Pin_J2_15"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 48.26 73.66 180)
+				(length 5.08)
+				(name "Pin_J2_13"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 48.26 71.12 180)
+				(length 5.08)
+				(name "Pin_J2_11"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 68.58 180)
+				(length 5.08)
+				(name "Pin_J2_9"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 66.04 180)
+				(length 5.08)
+				(name "Pin_J2_7"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 63.5 180)
+				(length 5.08)
+				(name "Pin_J2_5"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 60.96 180)
+				(length 5.08)
+				(name "Pin_J2_3"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 58.42 180)
+				(length 5.08)
+				(name "Pin_J2_1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2.1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MCU**_3_1"
+			(text "J2"
+				(at 36.322 55.372 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+		(symbol "MCU**_4_0"
+			(rectangle
+				(start 43.18 46.863)
+				(end 41.91 47.117)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 43.18 44.323)
+				(end 41.91 44.577)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 43.18 41.783)
+				(end 41.91 42.037)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 43.18 39.243)
+				(end 41.91 39.497)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 43.18 36.703)
+				(end 41.91 36.957)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 43.18 34.163)
+				(end 41.91 34.417)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 43.18 31.623)
+				(end 41.91 31.877)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 43.18 29.083)
+				(end 41.91 29.337)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 46.99 46.863)
+				(end 45.72 47.117)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 46.99 44.323)
+				(end 45.72 44.577)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 46.99 41.783)
+				(end 45.72 42.037)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 46.99 39.243)
+				(end 45.72 39.497)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 46.99 36.703)
+				(end 45.72 36.957)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 46.99 34.163)
+				(end 45.72 34.417)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 46.99 31.623)
+				(end 45.72 31.877)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 46.99 29.083)
+				(end 45.72 29.337)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 48.26 27.94)
+				(end 40.64 48.26)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin passive line
+				(at 35.56 46.99 0)
+				(length 5.08)
+				(name "Pin_J1_16"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 35.56 44.45 0)
+				(length 5.08)
+				(name "Pin_J1_14"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 35.56 41.91 0)
+				(length 5.08)
+				(name "Pin_J1_12"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 35.56 39.37 0)
+				(length 5.08)
+				(name "Pin_J1_10"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 35.56 36.83 0)
+				(length 5.08)
+				(name "Pin_J1_8"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 35.56 34.29 0)
+				(length 5.08)
+				(name "Pin_J1_6"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 35.56 31.75 0)
+				(length 5.08)
+				(name "Pin_J1_4"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 35.56 29.21 0)
+				(length 5.08)
+				(name "Pin_J1_2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 53.34 46.99 180)
+				(length 5.08)
+				(name "Pin_J1_15"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 53.34 44.45 180)
+				(length 5.08)
+				(name "Pin_J1_13"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 53.34 41.91 180)
+				(length 5.08)
+				(name "Pin_J1_11"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 53.34 39.37 180)
+				(length 5.08)
+				(name "Pin_J1_9"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 53.34 36.83 180)
+				(length 5.08)
+				(name "Pin_J1_7"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 53.34 34.29 180)
+				(length 5.08)
+				(name "Pin_J1_5"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 31.75 180)
+				(length 5.08)
+				(name "Pin_J1_3"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 29.21 180)
+				(length 5.08)
+				(name "Pin_J1_1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1.1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MCU**_4_1"
+			(text "J1"
+				(at 41.656 25.146 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)

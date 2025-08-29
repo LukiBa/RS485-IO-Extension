@@ -48,7 +48,7 @@
 				)
 			)
 			(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
-				(at 0 0 0)
+				(at 4.572 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -106,10 +106,35 @@
 					(hide yes)
 				)
 			)
+			(symbol "2071556-2_0_0"
+				(polyline
+					(pts
+						(xy 5.08 -1.27) (xy 5.08 -3.81) (xy 4.445 -3.175) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
 			(symbol "2071556-2_0_1"
 				(rectangle
-					(start -8.255 3.175)
-					(end -1.905 -0.635)
+					(start -10.16 -1.27)
+					(end 7.62 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 -4.445)
+					(end -1.905 -8.255)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -120,7 +145,7 @@
 				)
 				(polyline
 					(pts
-						(xy -7.62 -0.635) (xy -2.54 3.175)
+						(xy -7.62 -8.255) (xy -2.54 -4.445)
 					)
 					(stroke
 						(width 0.254)
@@ -132,7 +157,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 6.35) (xy -5.08 3.175)
+						(xy -5.08 -1.27) (xy -5.08 -4.445)
 					)
 					(stroke
 						(width 0)
@@ -144,7 +169,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 -3.81) (xy -5.08 -0.635)
+						(xy -5.08 -11.43) (xy -5.08 -8.255)
 					)
 					(stroke
 						(width 0)
@@ -156,7 +181,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 1.27) (xy -1.27 1.27)
+						(xy -1.905 -6.35) (xy -1.27 -6.35)
 					)
 					(stroke
 						(width 0.254)
@@ -168,7 +193,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.635 1.27) (xy 0 1.27)
+						(xy -0.635 -6.35) (xy 0 -6.35)
 					)
 					(stroke
 						(width 0.254)
@@ -180,7 +205,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.27) (xy 1.27 1.27)
+						(xy 0.635 -6.35) (xy 1.27 -6.35)
 					)
 					(stroke
 						(width 0.254)
@@ -192,7 +217,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 1.27) (xy 2.54 1.27)
+						(xy 1.905 -6.35) (xy 2.54 -6.35)
 					)
 					(stroke
 						(width 0.254)
@@ -204,19 +229,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 6.35) (xy 2.54 3.81) (xy 3.175 4.445) (xy 2.54 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 1.27) (xy 3.81 1.27)
+						(xy 3.175 -6.35) (xy 3.81 -6.35)
 					)
 					(stroke
 						(width 0.254)
@@ -228,7 +241,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -1.27) (xy 3.175 5.08)
+						(xy 5.08 -8.89) (xy 3.175 -2.54)
 					)
 					(stroke
 						(width 0.508)
@@ -240,7 +253,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -1.27) (xy 5.08 -3.81)
+						(xy 5.08 -8.89) (xy 5.08 -11.43)
 					)
 					(stroke
 						(width 0)
@@ -252,19 +265,8 @@
 				)
 			)
 			(symbol "2071556-2_1_1"
-				(rectangle
-					(start -10.16 6.35)
-					(end 10.16 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin passive line
-					(at -5.08 11.43 270)
+					(at -5.08 3.81 270)
 					(length 5.08)
 					(name "COIL_1"
 						(effects
@@ -282,7 +284,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -8.89 90)
+					(at -5.08 -16.51 90)
 					(length 5.08)
 					(name "COIL_2"
 						(effects
@@ -300,7 +302,7 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 11.43 270)
+					(at 5.08 3.81 270)
 					(length 5.08)
 					(name "COM"
 						(effects
@@ -318,7 +320,45 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -8.89 90)
+					(at 5.08 1.27 270)
+					(length 2.54)
+					(hide yes)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -13.97 90)
+					(length 2.54)
+					(hide yes)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -16.51 90)
 					(length 5.08)
 					(name "NO"
 						(effects
@@ -1089,52 +1129,10 @@
 		)
 	)
 	(junction
-		(at 53.34 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0b49d66a-a422-44ac-9f0e-a7385cfcb511")
-	)
-	(junction
-		(at 53.34 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16255a3f-3fc8-4175-ad5c-7ba51d57f1b3")
-	)
-	(junction
-		(at 214.63 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "290b4011-9328-4436-afb2-81f5196f40c1")
-	)
-	(junction
-		(at 120.65 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "79982a96-99f9-4f6d-b1c4-0403dc344279")
-	)
-	(junction
-		(at 214.63 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85fd94c7-4557-468c-843b-38fa35b994e2")
-	)
-	(junction
-		(at 120.65 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e9f7eaa-7dd9-4b61-a6c9-3ec1e022dcbd")
-	)
-	(junction
 		(at 53.34 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c05869de-07d7-4c7b-9cfe-dcfd858819ce")
-	)
-	(junction
-		(at 191.77 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0154d12-4531-450e-9a62-9b268351a35c")
 	)
 	(junction
 		(at 120.65 67.31)
@@ -1154,101 +1152,15 @@
 		(color 0 0 0 0)
 		(uuid "ea91d541-e527-4384-a33f-a2b634814d29")
 	)
-	(junction
-		(at 191.77 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f1d28faa-f539-453d-8612-58d25876da7b")
-	)
 	(wire
 		(pts
-			(xy 36.83 135.89) (xy 36.83 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01e83696-1315-407f-95e5-82a461540680")
-	)
-	(wire
-		(pts
-			(xy 66.04 34.29) (xy 60.96 34.29)
+			(xy 68.58 34.29) (xy 63.5 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "072b9098-8b36-4686-b8f7-56afc5eca455")
-	)
-	(wire
-		(pts
-			(xy 60.96 116.84) (xy 60.96 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "079b3311-35cf-4339-beec-a6216465ee21")
-	)
-	(wire
-		(pts
-			(xy 201.93 68.58) (xy 201.93 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ab472fb-00df-437c-8688-eab80767f62e")
-	)
-	(wire
-		(pts
-			(xy 36.83 148.59) (xy 53.34 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d8cd077-0f83-4406-af43-621144f55d51")
-	)
-	(wire
-		(pts
-			(xy 104.14 121.92) (xy 104.14 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fe641fa-c57b-418b-b1e0-d2c0e27dbee3")
-	)
-	(wire
-		(pts
-			(xy 214.63 99.06) (xy 214.63 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "100228c8-f33e-4e26-a000-90fa324c76ab")
-	)
-	(wire
-		(pts
-			(xy 53.34 116.84) (xy 36.83 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13ce86bd-dfee-430b-9d12-07c88dcac708")
-	)
-	(wire
-		(pts
-			(xy 199.39 34.29) (xy 199.39 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15c59de1-756b-42df-9c2d-aedd496efed1")
 	)
 	(wire
 		(pts
@@ -1262,56 +1174,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 153.67) (xy 120.65 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a1fc526-9abc-423d-aefc-8a581837ecbe")
-	)
-	(wire
-		(pts
-			(xy 53.34 109.22) (xy 53.34 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ab29977-cdc7-41b9-8831-4d80250a3c6d")
-	)
-	(wire
-		(pts
-			(xy 227.33 130.81) (xy 224.79 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b160beb-0e1f-43ea-8b39-424c4d5ce98a")
-	)
-	(wire
-		(pts
-			(xy 36.83 160.02) (xy 43.18 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d7d2e4f-9857-48f6-a5d9-94d803bfb771")
-	)
-	(wire
-		(pts
-			(xy 63.5 116.84) (xy 60.96 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ed6373b-6ead-4f7a-9084-1bfb116af073")
-	)
-	(wire
-		(pts
 			(xy 120.65 62.23) (xy 120.65 67.31)
 		)
 		(stroke
@@ -1322,103 +1184,33 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 99.06) (xy 222.25 99.06)
+			(xy 63.5 66.04) (xy 63.5 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2af4061e-52b7-479b-818b-cb81f3f8e119")
+		(uuid "231764eb-b3df-4808-a017-7fef66ce0c48")
 	)
 	(wire
 		(pts
-			(xy 175.26 36.83) (xy 175.26 48.26)
+			(xy 63.5 66.04) (xy 69.85 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2bcb5ca2-60c4-4e91-a9e0-6616e0492345")
+		(uuid "28aa3fd9-c139-463e-9ed8-fe2068d1c023")
 	)
 	(wire
 		(pts
-			(xy 130.81 152.4) (xy 130.81 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2deb7bcc-2f34-4e14-a12d-9deeae21076f")
-	)
-	(wire
-		(pts
-			(xy 53.34 116.84) (xy 53.34 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31e4a70a-37ae-4346-a9df-0ebf5f0778f3")
-	)
-	(wire
-		(pts
-			(xy 104.14 165.1) (xy 110.49 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "326078c4-d2ac-4d47-ab7c-3af9d983a5eb")
-	)
-	(wire
-		(pts
-			(xy 60.96 34.29) (xy 60.96 40.64)
+			(xy 63.5 34.29) (xy 63.5 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "35c81d74-a74c-4012-a5ad-0b4b2be4f1e1")
-	)
-	(wire
-		(pts
-			(xy 214.63 91.44) (xy 214.63 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37b18535-7053-42ab-bf97-c14d3b88be5a")
-	)
-	(wire
-		(pts
-			(xy 128.27 121.92) (xy 130.81 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38d219ac-287d-4bf5-8d53-c4e4d75b4af8")
-	)
-	(wire
-		(pts
-			(xy 198.12 142.24) (xy 204.47 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b35c312-552e-41b7-9039-eae1ef9bcedf")
-	)
-	(wire
-		(pts
-			(xy 53.34 143.51) (xy 53.34 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ec6f51f-f393-49ff-b9a6-3373d3c244f4")
 	)
 	(wire
 		(pts
@@ -1432,36 +1224,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 68.58) (xy 191.77 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b49c45b-0f15-45da-8494-c56bb98b9da2")
-	)
-	(wire
-		(pts
-			(xy 214.63 125.73) (xy 214.63 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fb85e27-81ba-4f0c-aac6-b1a1c887c3f3")
-	)
-	(wire
-		(pts
-			(xy 53.34 167.64) (xy 53.34 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fe4665e-c3c0-4e24-83fc-2ab36828cbdf")
-	)
-	(wire
-		(pts
 			(xy 120.65 86.36) (xy 120.65 90.17)
 		)
 		(stroke
@@ -1469,16 +1231,6 @@
 			(type default)
 		)
 		(uuid "541e8609-4b82-422a-a0f1-d37ab94c2daa")
-	)
-	(wire
-		(pts
-			(xy 53.34 148.59) (xy 53.34 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59419c9e-cd78-43a7-9a8a-eb2bda1bc788")
 	)
 	(wire
 		(pts
@@ -1492,36 +1244,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 116.84) (xy 36.83 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dd798ef-cc69-4da4-9ff5-f0731b2501cc")
-	)
-	(wire
-		(pts
-			(xy 198.12 130.81) (xy 214.63 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e3b9c2f-a902-40b2-ad44-1473052e99db")
-	)
-	(wire
-		(pts
-			(xy 128.27 121.92) (xy 128.27 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ecc51e8-5f29-4efc-bc5d-06287b468854")
-	)
-	(wire
-		(pts
 			(xy 53.34 67.31) (xy 53.34 71.12)
 		)
 		(stroke
@@ -1529,36 +1251,6 @@
 			(type default)
 		)
 		(uuid "6144b7b4-aef8-4839-8327-37dd77f4173b")
-	)
-	(wire
-		(pts
-			(xy 63.5 66.04) (xy 69.85 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "652b7ba2-f435-42ef-b126-850d54ac37cb")
-	)
-	(wire
-		(pts
-			(xy 175.26 68.58) (xy 191.77 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "668424e7-14e3-44ad-8238-55b58d898a7b")
-	)
-	(wire
-		(pts
-			(xy 222.25 99.06) (xy 222.25 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6692e04c-a128-4908-8bae-ed78b532c88a")
 	)
 	(wire
 		(pts
@@ -1572,36 +1264,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 36.83) (xy 175.26 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68b34238-0be4-468b-9a32-a9a997f7bc0f")
-	)
-	(wire
-		(pts
-			(xy 104.14 140.97) (xy 104.14 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b0da841-9069-49bb-9a33-910291341d39")
-	)
-	(wire
-		(pts
-			(xy 120.65 114.3) (xy 120.65 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c578b97-a7bb-419b-8bff-8daf18917508")
-	)
-	(wire
-		(pts
 			(xy 120.65 35.56) (xy 104.14 35.56)
 		)
 		(stroke
@@ -1612,16 +1274,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 62.23) (xy 130.81 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75a7a74f-b224-4373-b281-9c260b356548")
-	)
-	(wire
-		(pts
 			(xy 53.34 60.96) (xy 53.34 67.31)
 		)
 		(stroke
@@ -1629,16 +1281,6 @@
 			(type default)
 		)
 		(uuid "7c5dc4f1-bcf6-483a-9e68-d064d1970bf0")
-	)
-	(wire
-		(pts
-			(xy 63.5 66.04) (xy 63.5 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d226d06-baa2-4461-a702-cd2d0323d00b")
 	)
 	(wire
 		(pts
@@ -1662,7 +1304,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 36.83) (xy 128.27 41.91)
+			(xy 130.81 36.83) (xy 130.81 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1679,36 +1321,6 @@
 			(type default)
 		)
 		(uuid "9187d020-bdff-4245-88fb-53d395ac42d2")
-	)
-	(wire
-		(pts
-			(xy 63.5 147.32) (xy 63.5 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "938308aa-a2ca-4924-bfad-03d8ac692df1")
-	)
-	(wire
-		(pts
-			(xy 214.63 99.06) (xy 198.12 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96e61a46-6072-46cb-b430-b526f409bdd4")
-	)
-	(wire
-		(pts
-			(xy 214.63 149.86) (xy 214.63 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97889e68-a2dc-4b18-b24a-6d84ea1f93fa")
 	)
 	(wire
 		(pts
@@ -1732,16 +1344,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 87.63) (xy 191.77 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a82f8d95-9d0c-455d-a293-297cb5ad9178")
-	)
-	(wire
-		(pts
 			(xy 53.34 27.94) (xy 53.34 35.56)
 		)
 		(stroke
@@ -1762,93 +1364,13 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 152.4) (xy 130.81 152.4)
+			(xy 130.81 67.31) (xy 130.81 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "abf486a9-37da-408e-a2c1-074b35240292")
-	)
-	(wire
-		(pts
-			(xy 224.79 130.81) (xy 224.79 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af8b18cc-e643-4823-9fe0-6a596e24c27c")
-	)
-	(wire
-		(pts
-			(xy 175.26 80.01) (xy 181.61 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b06230b8-11c0-4201-a78e-669830aa4138")
-	)
-	(wire
-		(pts
-			(xy 120.65 121.92) (xy 120.65 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2ccd745-e991-4ab3-a1bf-92864c2b8343")
-	)
-	(wire
-		(pts
-			(xy 204.47 68.58) (xy 201.93 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b835dbe9-74a7-4619-a3c6-03e24074fd97")
-	)
-	(wire
-		(pts
-			(xy 120.65 153.67) (xy 120.65 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9803855-cb8f-4d58-bb5c-cfff031f016f")
-	)
-	(wire
-		(pts
-			(xy 120.65 172.72) (xy 120.65 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9f939e2-9335-41c7-a23e-be58512a9d43")
-	)
-	(wire
-		(pts
-			(xy 198.12 118.11) (xy 198.12 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be37d49f-7bd2-403b-a706-3c125ce5b899")
-	)
-	(wire
-		(pts
-			(xy 198.12 99.06) (xy 198.12 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c19d3e39-cff5-44a9-8e6c-075c0c69e03f")
+		(uuid "bd585406-eed3-40e0-b6ea-07cc4a08f13f")
 	)
 	(wire
 		(pts
@@ -1862,33 +1384,13 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 36.83) (xy 128.27 36.83)
+			(xy 133.35 36.83) (xy 130.81 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c36e4d2e-99e7-4aea-b994-5cb10cfbf0db")
-	)
-	(wire
-		(pts
-			(xy 120.65 148.59) (xy 120.65 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4aad946-3ab9-47c0-8954-0aa991b8569c")
-	)
-	(wire
-		(pts
-			(xy 205.74 34.29) (xy 199.39 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4cbce65-dc77-4b42-8af6-f7f7de8be2a5")
 	)
 	(wire
 		(pts
@@ -1902,56 +1404,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 147.32) (xy 63.5 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e388dea6-31a5-40cd-8e3b-c5ae675b7cc9")
-	)
-	(wire
-		(pts
-			(xy 175.26 55.88) (xy 175.26 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec79305f-8e30-4f96-9575-3b77e46b1a35")
-	)
-	(wire
-		(pts
-			(xy 191.77 29.21) (xy 191.77 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1678547-1a92-4b15-a121-b77883d3e60b")
-	)
-	(wire
-		(pts
-			(xy 120.65 121.92) (xy 104.14 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1dfab09-04b6-4d02-9d76-0554d129a682")
-	)
-	(wire
-		(pts
-			(xy 191.77 62.23) (xy 191.77 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6f3bc7c-8224-4390-9a88-f232a41bed31")
-	)
-	(wire
-		(pts
 			(xy 36.83 67.31) (xy 53.34 67.31)
 		)
 		(stroke
@@ -1959,16 +1411,6 @@
 			(type default)
 		)
 		(uuid "f7794085-68cb-4c20-88d0-6094e85d08b7")
-	)
-	(wire
-		(pts
-			(xy 191.77 36.83) (xy 191.77 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb200942-063e-4e32-8e4c-e5b064f7fee7")
 	)
 	(wire
 		(pts
@@ -1980,19 +1422,9 @@
 		)
 		(uuid "fbf0ceff-32b1-45ff-a06d-7771c36b8b1e")
 	)
-	(wire
-		(pts
-			(xy 214.63 130.81) (xy 214.63 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fddf7ee6-ae06-4be8-a2e8-5aa838671396")
-	)
 	(global_label "VAC_OUT_4.1"
 		(shape input)
-		(at 66.04 34.29 0)
+		(at 68.58 34.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2002,29 +1434,7 @@
 		)
 		(uuid "1ca3898d-2bf2-480d-a370-cb3abf988adc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.06 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_IN_4"
-		(shape input)
-		(at 64.77 147.32 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3d39389a-2f47-4143-8140-e0fe8b840f0f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.2824 147.32 0)
+			(at 83.6 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2058,7 +1468,7 @@
 	)
 	(global_label "VAC_OUT_5.1"
 		(shape input)
-		(at 130.81 36.83 0)
+		(at 133.35 36.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2068,7 +1478,7 @@
 		)
 		(uuid "7a1986c8-103f-463e-aea5-e6fa219aebab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.83 36.83 0)
+			(at 148.37 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2080,29 +1490,7 @@
 	)
 	(global_label "VAC_IN_5"
 		(shape input)
-		(at 133.35 152.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "82658742-7e96-431c-b454-18cda982cbc7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.8624 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_IN_5"
-		(shape input)
-		(at 130.81 69.85 0)
+		(at 130.81 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2112,139 +1500,7 @@
 		)
 		(uuid "8d1a32ea-875f-4d71-80c5-83872fda33ea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.3224 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_OUT_4.2"
-		(shape input)
-		(at 63.5 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9c15bf20-2fcd-41a5-bb82-227edacbfba6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.52 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_OUT_6.1"
-		(shape input)
-		(at 205.74 34.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b5af01d1-88c4-4bdb-8a7c-7bb905442445")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.76 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_OUT_5.2"
-		(shape input)
-		(at 130.81 121.92 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c9cbed86-9629-428e-b031-2854ef790d8d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.83 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_OUT_6.2"
-		(shape input)
-		(at 224.79 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cc47dd50-932b-463d-9b42-136312ddb27d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 239.81 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_IN_6"
-		(shape input)
-		(at 204.47 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d11a436e-f1e6-4ce3-9dfb-21dac2c96755")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.9824 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_IN_6"
-		(shape input)
-		(at 227.33 130.81 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e9718f27-262c-4420-9fe9-367d7c742603")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.8424 130.81 0)
+			(at 142.3224 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2315,527 +1571,6 @@
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
 					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 100.33 165.1 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d191c12-5d83-461e-86dc-a7441bbb9c26")
-		(property "Reference" "R29"
-			(at 100.33 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 100.33 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 100.33 166.878 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 100.33 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d5890b4f-818c-48d0-afa0-dfe2fac48c32")
-		)
-		(pin "1"
-			(uuid "eed4b16b-ff7f-4105-956a-f71f414a8a3e")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+24V")
-		(at 191.77 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ef32439-a483-43fd-9cca-cd1054586628")
-		(property "Reference" "#PWR046"
-			(at 191.77 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 191.77 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 191.77 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "67349465-958c-48f3-9b7a-dcb055a0c80e")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "NTR4003NT1G:NTR4003NT1G")
-		(at 119.38 165.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18cd0d3a-f6ec-4ca0-b17b-4b3e5070eba9")
-		(property "Reference" "Q10"
-			(at 123.19 163.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NTR4003NT1G"
-			(at 123.19 166.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 135.89 260.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NTR4003N-D.PDF"
-			(at 135.89 360.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low Gate Voltage Threshold (VGS(TH)) to Facilitate Drive Circuit Design; Low Gate Charge for Fast Switching; ESD Protected Gate; SOT-23 Package Provides Excellent Thermal Performance; Minimum Breakdown Voltage Rating of 30 V; RoHS Compliant"
-			(at 121.92 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.11"
-			(at 135.89 560.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "863-NTR4003NT1G"
-			(at 135.89 660.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/NTR4003NT1G?qs=CBDP9nzV7kme%2Fyh64xROOQ%3D%3D"
-			(at 135.89 760.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "onsemi"
-			(at 135.89 860.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NTR4003NT1G"
-			(at 135.89 960.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "37ee42f6-15b0-4e98-9268-294dfaa8b223")
-		)
-		(pin "1"
-			(uuid "f65814a0-c951-4a2a-80fd-9c61228598e5")
-		)
-		(pin "3"
-			(uuid "5b5d4811-548d-4579-a479-e3d68d9ef9af")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "Q10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+24V")
-		(at 214.63 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1b9bba59-7cf8-4aba-9129-d895f9edb05a")
-		(property "Reference" "#PWR048"
-			(at 214.63 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 214.63 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 214.63 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "891a7b1b-84da-484c-b4d8-76172d5cb5ff")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "2071556-2:2071556-2")
-		(at 125.73 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "240a8e17-b0fc-4eff-bf89-47a6c30b5b9e")
-		(property "Reference" "K10"
-			(at 137.16 137.1599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2071556-2"
-			(at 137.16 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "20715562"
-			(at 152.4 234.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
-			(at 152.4 334.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
-			(at 125.73 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "15.3"
-			(at 152.4 534.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "655-2071556-2"
-			(at 152.4 634.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
-			(at 152.4 734.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
-			(at 152.4 834.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "2071556-2"
-			(at 152.4 934.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1e7261ed-9ad3-4111-95af-38828a7a2015")
-		)
-		(pin "4"
-			(uuid "d2635b34-a418-4896-9083-c704a3fb3de8")
-		)
-		(pin "1"
-			(uuid "5897e55b-8ec8-40c1-8ef2-63ec6d5fe7a1")
-		)
-		(pin "2"
-			(uuid "c8ac2c3f-b865-4d27-8c07-073c0544f0da")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "K10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 194.31 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "273dea8e-bad5-46b3-9ecd-a1aabeff9728")
-		(property "Reference" "R31"
-			(at 194.31 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 194.31 138.43 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 194.31 144.018 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 194.31 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 194.31 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "938558da-7013-4ced-be7c-70488d2764ed")
-		)
-		(pin "1"
-			(uuid "74f14c1c-f58f-487a-9108-1389664eebb2")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -2967,197 +1702,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+24V")
-		(at 53.34 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f9e5dae-7050-448c-b503-5b7e4bfd6a38")
-		(property "Reference" "#PWR041"
-			(at 53.34 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 53.34 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 53.34 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df7994ad-2693-4556-a415-6f07159bea94")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "NTR4003NT1G:NTR4003NT1G")
-		(at 190.5 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63c971a3-a666-491e-8489-5907ce11abb9")
-		(property "Reference" "Q11"
-			(at 194.31 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NTR4003NT1G"
-			(at 194.31 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 207.01 174.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NTR4003N-D.PDF"
-			(at 207.01 274.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low Gate Voltage Threshold (VGS(TH)) to Facilitate Drive Circuit Design; Low Gate Charge for Fast Switching; ESD Protected Gate; SOT-23 Package Provides Excellent Thermal Performance; Minimum Breakdown Voltage Rating of 30 V; RoHS Compliant"
-			(at 193.04 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.11"
-			(at 207.01 474.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "863-NTR4003NT1G"
-			(at 207.01 574.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/NTR4003NT1G?qs=CBDP9nzV7kme%2Fyh64xROOQ%3D%3D"
-			(at 207.01 674.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "onsemi"
-			(at 207.01 774.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NTR4003NT1G"
-			(at 207.01 874.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "860661b6-68f8-487e-b74a-41372f535cc6")
-		)
-		(pin "1"
-			(uuid "25599ba6-ba09-486a-a6fe-f0237ea2d204")
-		)
-		(pin "3"
-			(uuid "a5fb4289-39ad-44df-8a86-bc7ca0959ba8")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "Q11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 33.02 78.74 90)
 		(unit 1)
@@ -3227,7 +1771,7 @@
 	)
 	(symbol
 		(lib_id "2071556-2:2071556-2")
-		(at 125.73 53.34 0)
+		(at 125.73 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3236,7 +1780,7 @@
 		(fields_autoplaced yes)
 		(uuid "72e2df61-7ae1-4f0c-8d39-4f46216f0954")
 		(property "Reference" "K9"
-			(at 137.16 50.7999 0)
+			(at 137.16 43.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3245,7 +1789,7 @@
 			)
 		)
 		(property "Value" "2071556-2"
-			(at 137.16 53.3399 0)
+			(at 137.16 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3254,7 +1798,7 @@
 			)
 		)
 		(property "Footprint" "20715562"
-			(at 152.4 148.26 0)
+			(at 152.4 140.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3264,7 +1808,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
-			(at 152.4 248.26 0)
+			(at 152.4 240.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3274,7 +1818,7 @@
 			)
 		)
 		(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
-			(at 125.73 53.34 0)
+			(at 125.73 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3283,7 +1827,7 @@
 			)
 		)
 		(property "Height" "15.3"
-			(at 152.4 448.26 0)
+			(at 152.4 440.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,7 +1837,7 @@
 			)
 		)
 		(property "Mouser Part Number" "655-2071556-2"
-			(at 152.4 548.26 0)
+			(at 152.4 540.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3303,7 +1847,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
-			(at 152.4 648.26 0)
+			(at 152.4 640.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3313,7 +1857,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TE Connectivity"
-			(at 152.4 748.26 0)
+			(at 152.4 740.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3323,7 +1867,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "2071556-2"
-			(at 152.4 848.26 0)
+			(at 152.4 840.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3344,164 +1888,16 @@
 		(pin "2"
 			(uuid "0f36da06-04c2-4763-be42-7b6ec58c89e2")
 		)
+		(pin "14"
+			(uuid "625edbbd-7c8e-4806-a003-2b190497c847")
+		)
+		(pin "8"
+			(uuid "87ec28fb-8295-4737-919b-501bbba49547")
+		)
 		(instances
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
 					(reference "K9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 214.63 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7755b409-e3d9-46de-a04e-c2bace85808f")
-		(property "Reference" "#PWR049"
-			(at 214.63 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 214.63 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09835e81-ce67-4045-96e1-b16fed601442")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:MMSD914")
-		(at 104.14 137.16 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "789d9f2f-e05d-4ecd-adef-bba93229b6c0")
-		(property "Reference" "D11"
-			(at 106.68 135.8899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMSD914"
-			(at 106.68 138.4299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 99.695 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD914T1-D.PDF"
-			(at 104.14 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.2A Switching Diode, SOD-123"
-			(at 104.14 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 104.14 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 104.14 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f1c178e-a45a-4a38-8b46-307c2960da14")
-		)
-		(pin "2"
-			(uuid "b6b8ffe1-7fc7-4d7d-8207-08056088387f")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -3663,135 +2059,7 @@
 	)
 	(symbol
 		(lib_id "2071556-2:2071556-2")
-		(at 196.85 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8e69320a-4132-4735-a64d-5d591434c2b7")
-		(property "Reference" "K11"
-			(at 208.28 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2071556-2"
-			(at 208.28 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "20715562"
-			(at 223.52 148.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
-			(at 223.52 248.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
-			(at 196.85 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "15.3"
-			(at 223.52 448.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "655-2071556-2"
-			(at 223.52 548.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
-			(at 223.52 648.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
-			(at 223.52 748.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "2071556-2"
-			(at 223.52 848.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "160db6a7-62de-4780-bd2b-b3b3e29bf457")
-		)
-		(pin "4"
-			(uuid "142103b7-8446-44a2-a793-f82011d49616")
-		)
-		(pin "1"
-			(uuid "ecdf6bd5-ad83-406d-8661-127fc3a023d2")
-		)
-		(pin "2"
-			(uuid "f74249c1-1666-48e2-8d22-f1970f510464")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "K11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "2071556-2:2071556-2")
-		(at 58.42 52.07 0)
+		(at 58.42 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3800,7 +2068,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ea4d5e9-e4bc-4c63-91a7-0ea3106eed74")
 		(property "Reference" "K7"
-			(at 69.85 49.5299 0)
+			(at 69.85 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3809,7 +2077,7 @@
 			)
 		)
 		(property "Value" "2071556-2"
-			(at 69.85 52.0699 0)
+			(at 69.85 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3818,7 +2086,7 @@
 			)
 		)
 		(property "Footprint" "20715562"
-			(at 85.09 146.99 0)
+			(at 85.09 139.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3828,7 +2096,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
-			(at 85.09 246.99 0)
+			(at 85.09 239.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3838,7 +2106,7 @@
 			)
 		)
 		(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
-			(at 58.42 52.07 0)
+			(at 58.42 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3847,7 +2115,7 @@
 			)
 		)
 		(property "Height" "15.3"
-			(at 85.09 446.99 0)
+			(at 85.09 439.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3857,7 +2125,7 @@
 			)
 		)
 		(property "Mouser Part Number" "655-2071556-2"
-			(at 85.09 546.99 0)
+			(at 85.09 539.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3867,7 +2135,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
-			(at 85.09 646.99 0)
+			(at 85.09 639.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +2145,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TE Connectivity"
-			(at 85.09 746.99 0)
+			(at 85.09 739.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3887,7 +2155,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "2071556-2"
-			(at 85.09 846.99 0)
+			(at 85.09 839.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3907,6 +2175,12 @@
 		)
 		(pin "2"
 			(uuid "0f58935a-a3df-4b98-beab-35710c8255f9")
+		)
+		(pin "8"
+			(uuid "d3ccd931-2ec9-4752-a8c4-740034da9b01")
+		)
+		(pin "14"
+			(uuid "27d48127-dba9-4cd0-8c60-dfc9a8a5e778")
 		)
 		(instances
 			(project "io-gateway"
@@ -4111,268 +2385,6 @@
 		)
 	)
 	(symbol
-		(lib_id "2071556-2:2071556-2")
-		(at 58.42 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b1aab57b-30d0-42eb-934a-e97892c01940")
-		(property "Reference" "K8"
-			(at 69.85 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2071556-2"
-			(at 69.85 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "20715562"
-			(at 85.09 229.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
-			(at 85.09 329.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
-			(at 58.42 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "15.3"
-			(at 85.09 529.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "655-2071556-2"
-			(at 85.09 629.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
-			(at 85.09 729.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
-			(at 85.09 829.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "2071556-2"
-			(at 85.09 929.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "93740897-3622-450e-bdfe-ef0134178389")
-		)
-		(pin "4"
-			(uuid "067db33f-e671-4491-8407-9df3f56f7646")
-		)
-		(pin "1"
-			(uuid "ac3c3e23-7e40-4a05-b15c-c753671f2029")
-		)
-		(pin "2"
-			(uuid "1141249e-f3a1-444a-8c21-b41b5f6a6718")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "K8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 53.34 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4cd41f0-00d4-4798-95c5-a41ee9dabd40")
-		(property "Reference" "#PWR042"
-			(at 53.34 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 53.34 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b421b31d-4a25-40eb-a0a9-8103141d47f2")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 33.02 160.02 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb0def93-88e3-4d07-9186-ab38d398c3d1")
-		(property "Reference" "R27"
-			(at 33.02 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 33.02 156.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 33.02 161.798 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 33.02 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 33.02 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cc9d15ca-2763-440d-95f9-25715d5d1810")
-		)
-		(pin "1"
-			(uuid "104f96ec-db0d-4990-8cfd-3d506f261622")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 53.34 90.17 0)
 		(unit 1)
@@ -4439,422 +2451,6 @@
 		)
 	)
 	(symbol
-		(lib_id "2071556-2:2071556-2")
-		(at 219.71 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c41196ba-7eef-4786-bf9c-1942cc6a59c7")
-		(property "Reference" "K12"
-			(at 231.14 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2071556-2"
-			(at 231.14 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "20715562"
-			(at 246.38 211.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
-			(at 246.38 311.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
-			(at 219.71 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "15.3"
-			(at 246.38 511.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "655-2071556-2"
-			(at 246.38 611.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
-			(at 246.38 711.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
-			(at 246.38 811.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "2071556-2"
-			(at 246.38 911.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "89e5c85a-f23a-442e-a7ec-51446e17d625")
-		)
-		(pin "4"
-			(uuid "113e2026-dd39-46b4-8ccd-85e5c6845337")
-		)
-		(pin "1"
-			(uuid "199a763d-1218-4c75-8211-0846942fe2c6")
-		)
-		(pin "2"
-			(uuid "1b9ffb4e-8e1f-4e1b-a3a9-faecf1fd5898")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "K12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+24V")
-		(at 120.65 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c585aaea-e6dd-4e7b-ae67-26119d1bc3a1")
-		(property "Reference" "#PWR045"
-			(at 120.65 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 120.65 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 120.65 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "283bfb3a-19ec-499e-96f1-630c43e816d5")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 191.77 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c7082ff6-81e3-4f6a-b64c-7874c7ae9546")
-		(property "Reference" "#PWR047"
-			(at 191.77 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 191.77 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 191.77 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5bf1c4e3-73f7-462f-ad7f-478174e19a22")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 171.45 80.01 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9a4c2c8-3b2f-4ecb-9dfa-3913d5dd0916")
-		(property "Reference" "R30"
-			(at 171.45 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 171.45 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 171.45 81.788 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 171.45 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1d34b72c-bd38-470b-b3b2-fec6894fd467")
-		)
-		(pin "1"
-			(uuid "01d74311-c336-4642-9e88-fb4c27fbc3a5")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "R30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:MMSD914")
-		(at 36.83 132.08 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d41804c1-ef69-47e9-a0f0-c5ebde72b1db")
-		(property "Reference" "D9"
-			(at 39.37 130.8099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMSD914"
-			(at 39.37 133.3499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 32.385 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD914T1-D.PDF"
-			(at 36.83 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.2A Switching Diode, SOD-123"
-			(at 36.83 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 36.83 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 36.83 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e43cbc75-71d5-45e4-b28c-259d5a63e14f")
-		)
-		(pin "2"
-			(uuid "50275a58-5982-47a5-89f2-9a550ea751dd")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+24V")
 		(at 53.34 27.94 0)
 		(unit 1)
@@ -4915,432 +2511,6 @@
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
 					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:MMSD914")
-		(at 198.12 114.3 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dfd4e253-5230-4494-b41d-10f0c1e2ee65")
-		(property "Reference" "D13"
-			(at 200.66 113.0299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMSD914"
-			(at 200.66 115.5699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 193.675 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD914T1-D.PDF"
-			(at 198.12 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.2A Switching Diode, SOD-123"
-			(at 198.12 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 198.12 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 198.12 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b685fd8e-2329-49f0-8989-83ad6d85ba7d")
-		)
-		(pin "2"
-			(uuid "beb65d71-3ce0-43c6-b0e0-21d8efc9e07b")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "D13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "NTR4003NT1G:NTR4003NT1G")
-		(at 213.36 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e8465f13-d74d-4707-b950-a8731f0c37b3")
-		(property "Reference" "Q12"
-			(at 217.17 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NTR4003NT1G"
-			(at 217.17 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 229.87 237.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NTR4003N-D.PDF"
-			(at 229.87 337.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low Gate Voltage Threshold (VGS(TH)) to Facilitate Drive Circuit Design; Low Gate Charge for Fast Switching; ESD Protected Gate; SOT-23 Package Provides Excellent Thermal Performance; Minimum Breakdown Voltage Rating of 30 V; RoHS Compliant"
-			(at 215.9 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.11"
-			(at 229.87 537.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "863-NTR4003NT1G"
-			(at 229.87 637.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/NTR4003NT1G?qs=CBDP9nzV7kme%2Fyh64xROOQ%3D%3D"
-			(at 229.87 737.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "onsemi"
-			(at 229.87 837.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NTR4003NT1G"
-			(at 229.87 937.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2dbcf9db-6de5-4a30-933b-27e88c0cc1d0")
-		)
-		(pin "1"
-			(uuid "5e5d3a75-9873-4982-9179-5eff7f46ec52")
-		)
-		(pin "3"
-			(uuid "155725dc-ac7a-4e5d-8f17-825c69bbe1ad")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "Q12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:MMSD914")
-		(at 175.26 52.07 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ed0d0fbe-4260-4c74-bb51-ac9925851b5b")
-		(property "Reference" "D12"
-			(at 177.8 50.7999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMSD914"
-			(at 177.8 53.3399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 170.815 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD914T1-D.PDF"
-			(at 175.26 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.2A Switching Diode, SOD-123"
-			(at 175.26 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 175.26 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 175.26 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3cad3c0c-9c01-49be-b100-944a0a6a7a00")
-		)
-		(pin "2"
-			(uuid "a12469e6-37c4-4711-bd48-6458b69efce1")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "D12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "NTR4003NT1G:NTR4003NT1G")
-		(at 52.07 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f12686eb-c05e-4070-8569-b152f292edd7")
-		(property "Reference" "Q8"
-			(at 55.88 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NTR4003NT1G"
-			(at 55.88 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 68.58 254.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NTR4003N-D.PDF"
-			(at 68.58 354.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low Gate Voltage Threshold (VGS(TH)) to Facilitate Drive Circuit Design; Low Gate Charge for Fast Switching; ESD Protected Gate; SOT-23 Package Provides Excellent Thermal Performance; Minimum Breakdown Voltage Rating of 30 V; RoHS Compliant"
-			(at 54.61 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.11"
-			(at 68.58 554.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "863-NTR4003NT1G"
-			(at 68.58 654.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/NTR4003NT1G?qs=CBDP9nzV7kme%2Fyh64xROOQ%3D%3D"
-			(at 68.58 754.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "onsemi"
-			(at 68.58 854.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NTR4003NT1G"
-			(at 68.58 954.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b0bd8e21-d848-4c9a-89b1-c681f0206481")
-		)
-		(pin "1"
-			(uuid "47c9b732-e888-42d1-b3eb-9fa171fad4ff")
-		)
-		(pin "3"
-			(uuid "2fa6060f-434b-485f-9e8c-db226c6af7d5")
-		)
-		(instances
-			(project "io-gateway"
-				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/99edf8d5-e94a-4b7e-97dc-770099d54462"
-					(reference "Q8")
 					(unit 1)
 				)
 			)
