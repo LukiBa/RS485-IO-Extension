@@ -4,3 +4,4 @@ io-gateway/io-gateway-backups
 *.lck
 io-gateway/_autosave*
 *-cache
+io-gateway/\#auto_saved_files\#
