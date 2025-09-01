@@ -2462,7 +2462,27 @@
 		)
 		(uuid "fe67124c-7939-4c86-b859-86e4105edd29")
 	)
-	(global_label "DIM1_VLED-"
+	(label "DIM1_SW"
+		(at 114.3 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "06320318-a5fd-434e-b5b3-277b27db2b4e")
+	)
+	(label "DIM1_FB"
+		(at 114.3 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be4a8581-7121-4fd6-aa20-931b92538c1c")
+	)
+	(global_label "DIM1_VLED_GND"
 		(shape input)
 		(at 201.93 60.96 0)
 		(fields_autoplaced yes)
@@ -2506,7 +2526,7 @@
 			)
 		)
 	)
-	(global_label "DIM1_VLED+"
+	(global_label "DIM1_VLED_VCC"
 		(shape input)
 		(at 201.93 46.99 0)
 		(fields_autoplaced yes)
@@ -2572,7 +2592,7 @@
 			)
 		)
 	)
-	(global_label "DIM2_VLED-"
+	(global_label "DIM2_VLED_GND"
 		(shape input)
 		(at 200.66 135.89 0)
 		(fields_autoplaced yes)
@@ -2594,7 +2614,7 @@
 			)
 		)
 	)
-	(global_label "VIN_DIM1"
+	(global_label "GND_DIM1"
 		(shape input)
 		(at 33.02 78.74 180)
 		(fields_autoplaced yes)
@@ -2606,7 +2626,7 @@
 		)
 		(uuid "aa0679b5-34d2-4d07-b07a-874a1a260578")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.5076 78.74 0)
+			(at 20.661 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2682,7 +2702,7 @@
 			)
 		)
 	)
-	(global_label "DIM2_VLED+"
+	(global_label "DIM2_VLED_VCC"
 		(shape input)
 		(at 200.66 121.92 0)
 		(fields_autoplaced yes)
@@ -4706,7 +4726,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 133.0452 46.99 0)
 			(effects
 				(font

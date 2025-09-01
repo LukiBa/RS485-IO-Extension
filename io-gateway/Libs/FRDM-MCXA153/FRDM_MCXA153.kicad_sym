@@ -4,8 +4,8 @@
 	(generator_version "9.0")
 	(symbol "MCU**"
 		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
+		(in_bom yes)
+		(on_board yes)
 		(property "Reference" "FRDM_MCXA153_"
 			(at 10.668 36.83 0)
 			(effects

@@ -6,6 +6,10 @@
 	(paper "A4")
 	(lib_symbols
 		(symbol "2071556-2:2071556-2"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -27,7 +31,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "20715562"
+			(property "Footprint" "Relay:20715562"
 				(at 26.67 -94.92 0)
 				(effects
 					(font
@@ -320,17 +324,301 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 1.27 270)
-					(length 2.54)
-					(hide yes)
-					(name "~"
+					(at 5.08 -16.51 90)
+					(length 5.08)
+					(name "NO"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "2071556-2_1"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "2071556-2"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Relay:20715562"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
+				(at 4.572 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "15.3"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "655-2071556-2"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "TE Connectivity"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "2071556-2"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "2071556-2_1_0_0"
+				(polyline
+					(pts
+						(xy 5.08 -1.27) (xy 5.08 -3.81) (xy 4.445 -3.175) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_1_0_1"
+				(rectangle
+					(start -10.16 -1.27)
+					(end 7.62 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 -4.445)
+					(end -1.905 -8.255)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -8.255) (xy -2.54 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -5.08 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -11.43) (xy -5.08 -8.255)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -6.35) (xy -1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -6.35) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -6.35) (xy 1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -6.35) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -6.35) (xy 3.81 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 3.175 -2.54)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 5.08 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_1_1_1"
+				(pin passive line
+					(at -5.08 3.81 270)
+					(length 5.08)
+					(name "COIL_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -339,17 +627,34 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -13.97 90)
-					(length 2.54)
-					(hide yes)
-					(name "~"
+					(at -5.08 -16.51 90)
+					(length 5.08)
+					(name "COIL_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 3.81 270)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1422,7 +1727,7 @@
 		)
 		(uuid "fbf0ceff-32b1-45ff-a06d-7771c36b8b1e")
 	)
-	(global_label "VAC_OUT_4.1"
+	(global_label "VAC_OUT_7"
 		(shape input)
 		(at 68.58 34.29 0)
 		(fields_autoplaced yes)
@@ -1434,7 +1739,7 @@
 		)
 		(uuid "1ca3898d-2bf2-480d-a370-cb3abf988adc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.6 34.29 0)
+			(at 81.7857 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1444,7 +1749,7 @@
 			)
 		)
 	)
-	(global_label "VAC_IN_4"
+	(global_label "VAC_IN_7"
 		(shape input)
 		(at 69.85 66.04 0)
 		(fields_autoplaced yes)
@@ -1466,7 +1771,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_5.1"
+	(global_label "VAC_OUT_8"
 		(shape input)
 		(at 133.35 36.83 0)
 		(fields_autoplaced yes)
@@ -1478,7 +1783,7 @@
 		)
 		(uuid "7a1986c8-103f-463e-aea5-e6fa219aebab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.37 36.83 0)
+			(at 146.5557 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1488,7 +1793,7 @@
 			)
 		)
 	)
-	(global_label "VAC_IN_5"
+	(global_label "VAC_IN_8"
 		(shape input)
 		(at 130.81 67.31 0)
 		(fields_autoplaced yes)
@@ -1797,7 +2102,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 152.4 140.64 0)
 			(effects
 				(font
@@ -1887,12 +2192,6 @@
 		)
 		(pin "2"
 			(uuid "0f36da06-04c2-4763-be42-7b6ec58c89e2")
-		)
-		(pin "14"
-			(uuid "625edbbd-7c8e-4806-a003-2b190497c847")
-		)
-		(pin "8"
-			(uuid "87ec28fb-8295-4737-919b-501bbba49547")
 		)
 		(instances
 			(project "io-gateway"
@@ -2058,6 +2357,7 @@
 		)
 	)
 	(symbol
+		(lib_name "2071556-2_1")
 		(lib_id "2071556-2:2071556-2")
 		(at 58.42 44.45 0)
 		(unit 1)
@@ -2085,7 +2385,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 85.09 139.37 0)
 			(effects
 				(font
@@ -2175,12 +2475,6 @@
 		)
 		(pin "2"
 			(uuid "0f58935a-a3df-4b98-beab-35710c8255f9")
-		)
-		(pin "8"
-			(uuid "d3ccd931-2ec9-4752-a8c4-740034da9b01")
-		)
-		(pin "14"
-			(uuid "27d48127-dba9-4cd0-8c60-dfc9a8a5e778")
 		)
 		(instances
 			(project "io-gateway"

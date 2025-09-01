@@ -1,3 +1,6 @@
 ﻿sdk
 io-gateway/io-gateway-backups
 *.bak
+*.lck
+io-gateway/_autosave*
+*-cache

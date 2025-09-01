@@ -1511,16 +1511,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 30.48) (xy 254 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12d45caf-f254-470d-a737-23521d128646")
-	)
-	(wire
-		(pts
 			(xy 40.64 90.17) (xy 67.31 90.17)
 		)
 		(stroke
@@ -1551,7 +1541,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 39.37) (xy 44.45 39.37)
+			(xy 40.64 39.37) (xy 67.31 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1578,16 +1568,6 @@
 			(type default)
 		)
 		(uuid "1b87c957-fdb5-485e-ab91-3d5aa99aaa79")
-	)
-	(wire
-		(pts
-			(xy 234.95 66.04) (xy 254 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e60e51e-7d03-4a8e-8962-bb8e8d4679e5")
 	)
 	(wire
 		(pts
@@ -1651,16 +1631,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 107.95) (xy 254 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a29ffed-f9e4-42f3-b5d3-58a5184de70a")
-	)
-	(wire
-		(pts
 			(xy 41.91 149.86) (xy 67.31 149.86)
 		)
 		(stroke
@@ -1668,16 +1638,6 @@
 			(type default)
 		)
 		(uuid "3f853c5f-d811-436f-9908-839d56cea206")
-	)
-	(wire
-		(pts
-			(xy 234.95 73.66) (xy 254 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42c2eff5-c834-499f-867f-f314392d2c98")
 	)
 	(wire
 		(pts
@@ -1801,7 +1761,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 31.75) (xy 44.45 31.75)
+			(xy 40.64 31.75) (xy 67.31 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1841,16 +1801,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 81.28) (xy 254 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6cb1ac1c-99a4-4803-9731-0a1c1cec28d1")
-	)
-	(wire
-		(pts
 			(xy 234.95 78.74) (xy 254 78.74)
 		)
 		(stroke
@@ -1861,23 +1811,13 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 36.83) (xy 44.45 36.83)
+			(xy 40.64 36.83) (xy 67.31 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "761d0f82-7533-433b-88cc-0f87342e4f28")
-	)
-	(wire
-		(pts
-			(xy 234.95 45.72) (xy 254 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f487aca-666b-4d15-b24b-0ca7f9d504d3")
 	)
 	(wire
 		(pts
@@ -1888,16 +1828,6 @@
 			(type default)
 		)
 		(uuid "83d22091-ae5a-46ac-877e-8fd8966cda32")
-	)
-	(wire
-		(pts
-			(xy 234.95 115.57) (xy 254 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89568665-d63a-412b-a190-18a67a7ce3b6")
 	)
 	(wire
 		(pts
@@ -1971,7 +1901,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 26.67) (xy 44.45 26.67)
+			(xy 40.64 26.67) (xy 67.31 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1998,26 +1928,6 @@
 			(type default)
 		)
 		(uuid "a4e0f133-83f5-4008-b638-689550a93b32")
-	)
-	(wire
-		(pts
-			(xy 234.95 38.1) (xy 254 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8535c15-08a5-4feb-8a19-6583620c7b2f")
-	)
-	(wire
-		(pts
-			(xy 234.95 100.33) (xy 254 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad1fa0aa-3b07-4af0-9f81-381daa90f9fb")
 	)
 	(wire
 		(pts
@@ -2081,7 +1991,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 29.21) (xy 44.45 29.21)
+			(xy 40.64 29.21) (xy 67.31 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2161,7 +2071,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 34.29) (xy 44.45 34.29)
+			(xy 40.64 34.29) (xy 67.31 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2239,16 +2149,6 @@
 		)
 		(uuid "41a914f8-4bb6-4883-b44a-613bde37dbd0")
 	)
-	(label "VAC_OUT_3.2"
-		(at 238.76 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "49ba8e91-a755-483c-89fb-be1c093663a7")
-	)
 	(label "VAC_IN_3"
 		(at 238.76 40.64 0)
 		(effects
@@ -2309,16 +2209,6 @@
 		)
 		(uuid "869d8d9f-76ae-459b-815c-f26c7a3e1bc3")
 	)
-	(label "VAC_OUT_1.2"
-		(at 238.76 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "89383638-9755-4cbd-a8b2-cc07b09d52dc")
-	)
 	(label "VDC_CTRL"
 		(at 44.45 26.67 0)
 		(effects
@@ -2349,39 +2239,7 @@
 		)
 		(uuid "db95a34c-7c90-46b0-9774-7c0d060ad215")
 	)
-	(label "VAC_OUT_2.2"
-		(at 238.76 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e8d4a137-46a5-47e2-b4c8-a1fa6fd8a1e0")
-	)
-	(global_label "VAC_OUT_2.2"
-		(shape input)
-		(at 234.95 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "07153080-ef4f-4bc4-9164-13880d0ae6e4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DIM2_VLED+"
+	(global_label "DIM2_VLED_VCC"
 		(shape input)
 		(at 67.31 52.07 0)
 		(fields_autoplaced yes)
@@ -2403,7 +2261,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_9.1"
+	(global_label "VAC_OUT_9"
 		(shape input)
 		(at 234.95 113.03 180)
 		(fields_autoplaced yes)
@@ -2415,7 +2273,7 @@
 		)
 		(uuid "0f4d579f-39db-48ad-8321-a1a8796e4d3f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 113.03 0)
+			(at 221.7443 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2425,7 +2283,7 @@
 			)
 		)
 	)
-	(global_label "DIM1_VLED-"
+	(global_label "DIM1_VLED_GND"
 		(shape input)
 		(at 67.31 49.53 0)
 		(fields_autoplaced yes)
@@ -2491,7 +2349,7 @@
 			)
 		)
 	)
-	(global_label "DIM5_VLED-"
+	(global_label "DIM5_VLED_GND"
 		(shape input)
 		(at 67.31 102.87 0)
 		(fields_autoplaced yes)
@@ -2513,7 +2371,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_3.1"
+	(global_label "VAC_OUT_3"
 		(shape input)
 		(at 234.95 43.18 180)
 		(fields_autoplaced yes)
@@ -2525,7 +2383,7 @@
 		)
 		(uuid "21824abe-9508-4027-a80d-0cb783040205")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 43.18 0)
+			(at 221.7443 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2535,7 +2393,7 @@
 			)
 		)
 	)
-	(global_label "DIM4_VLED+"
+	(global_label "DIM4_VLED_VCC"
 		(shape input)
 		(at 67.31 90.17 0)
 		(fields_autoplaced yes)
@@ -2579,29 +2437,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_3.2"
-		(shape input)
-		(at 234.95 45.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2e840f58-934e-4d4d-9bb7-f9cd3daf71d0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_OUT_2.1"
+	(global_label "VAC_OUT_2"
 		(shape input)
 		(at 234.95 35.56 180)
 		(fields_autoplaced yes)
@@ -2613,7 +2449,7 @@
 		)
 		(uuid "34ecdb8f-1a78-494e-858b-9ca50383d4d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 35.56 0)
+			(at 221.7443 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2623,7 +2459,7 @@
 			)
 		)
 	)
-	(global_label "DIM8_VLED+"
+	(global_label "DIM8_VLED_VCC"
 		(shape input)
 		(at 67.31 147.32 0)
 		(fields_autoplaced yes)
@@ -2645,7 +2481,7 @@
 			)
 		)
 	)
-	(global_label "DIM10_VLED-"
+	(global_label "DIM10_VLED_GND"
 		(shape input)
 		(at 67.31 165.1 0)
 		(fields_autoplaced yes)
@@ -2711,29 +2547,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_6.2"
-		(shape input)
-		(at 234.95 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "498b25fe-19ac-494b-9922-a9f4702a108c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DIM10_VLED+"
+	(global_label "DIM10_VLED_VCC"
 		(shape input)
 		(at 67.31 162.56 0)
 		(fields_autoplaced yes)
@@ -2799,7 +2613,7 @@
 			)
 		)
 	)
-	(global_label "DIM1_VLED+"
+	(global_label "DIM1_VLED_VCC"
 		(shape input)
 		(at 67.31 46.99 0)
 		(fields_autoplaced yes)
@@ -2811,7 +2625,7 @@
 		)
 		(uuid "5ef198d7-91d9-4607-9057-43465bd6b04f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.9066 46.99 0)
+			(at 84.9304 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2865,7 +2679,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_5.1"
+	(global_label "VAC_OUT_5"
 		(shape input)
 		(at 234.95 71.12 180)
 		(fields_autoplaced yes)
@@ -2877,7 +2691,7 @@
 		)
 		(uuid "67369881-cac1-4e85-98a6-ef0914d7e41e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 71.12 0)
+			(at 221.7443 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2887,29 +2701,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_9.2"
-		(shape input)
-		(at 234.95 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "68775cec-6b52-45cc-a69e-ba19e7ad3746")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DIM6_VLED+"
+	(global_label "DIM6_VLED_VCC"
 		(shape input)
 		(at 67.31 105.41 0)
 		(fields_autoplaced yes)
@@ -2931,7 +2723,7 @@
 			)
 		)
 	)
-	(global_label "DIM9_VLED+"
+	(global_label "DIM9_VLED_VCC"
 		(shape input)
 		(at 67.31 157.48 0)
 		(fields_autoplaced yes)
@@ -2949,50 +2741,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_OUT_8.2"
-		(shape input)
-		(at 234.95 107.95 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "72675ae4-f6e4-4f9b-b487-795c5f4591a4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_OUT_1.2"
-		(shape input)
-		(at 234.95 30.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "73460f7a-90d4-4de7-918b-898a30900d45")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -3019,7 +2767,7 @@
 			)
 		)
 	)
-	(global_label "DIM3_VLED+"
+	(global_label "DIM3_VLED_VCC"
 		(shape input)
 		(at 67.31 85.09 0)
 		(fields_autoplaced yes)
@@ -3032,6 +2780,28 @@
 		(uuid "7845418e-8573-4f32-8dab-4f7b6ab16ebb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 81.9066 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ANALOG_IN_1"
+		(shape input)
+		(at 67.31 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7a5a0ef8-42ae-4c08-bdc2-b5618e557dd2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.5115 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3063,7 +2833,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_1.1"
+	(global_label "VAC_OUT_1"
 		(shape input)
 		(at 234.95 27.94 180)
 		(fields_autoplaced yes)
@@ -3075,7 +2845,7 @@
 		)
 		(uuid "808cab1a-7bd4-4b75-b10c-f948bb5d0d37")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 27.94 0)
+			(at 221.7443 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3085,7 +2855,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_4.1"
+	(global_label "VAC_OUT_4"
 		(shape input)
 		(at 234.95 63.5 180)
 		(fields_autoplaced yes)
@@ -3097,7 +2867,7 @@
 		)
 		(uuid "83e3bd06-25cf-4838-ab1c-f7adc7ca84a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 63.5 0)
+			(at 221.7443 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3107,7 +2877,7 @@
 			)
 		)
 	)
-	(global_label "DIM5_VLED+"
+	(global_label "DIM5_VLED_VCC"
 		(shape input)
 		(at 67.31 100.33 0)
 		(fields_autoplaced yes)
@@ -3129,29 +2899,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_5.2"
-		(shape input)
-		(at 234.95 73.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "86d066e4-3849-4442-a959-172cb10a34a2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DIM4_VLED-"
+	(global_label "DIM4_VLED_GND"
 		(shape input)
 		(at 67.31 92.71 0)
 		(fields_autoplaced yes)
@@ -3217,7 +2965,7 @@
 			)
 		)
 	)
-	(global_label "DIM8_VLED-"
+	(global_label "DIM8_VLED_GND"
 		(shape input)
 		(at 67.31 149.86 0)
 		(fields_autoplaced yes)
@@ -3230,6 +2978,28 @@
 		(uuid "8f06d169-100f-44f0-abe5-8567a7091535")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 81.9066 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ANALOG_IN_2"
+		(shape input)
+		(at 67.31 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "939caea3-0571-4c52-8348-3bd38b37d5e7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.5115 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3283,7 +3053,7 @@
 			)
 		)
 	)
-	(global_label "DIM7_VLED+"
+	(global_label "DIM7_VLED_VCC"
 		(shape input)
 		(at 67.31 142.24 0)
 		(fields_autoplaced yes)
@@ -3305,7 +3075,29 @@
 			)
 		)
 	)
-	(global_label "DIM9_VLED-"
+	(global_label "VDC_CTRL"
+		(shape input)
+		(at 67.31 26.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "abb9e04f-5739-464a-a309-fc199b580437")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.4271 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DIM9_VLED_GND"
 		(shape input)
 		(at 67.31 160.02 0)
 		(fields_autoplaced yes)
@@ -3349,7 +3141,7 @@
 			)
 		)
 	)
-	(global_label "DIM3_VLED-"
+	(global_label "DIM3_VLED_GND"
 		(shape input)
 		(at 67.31 87.63 0)
 		(fields_autoplaced yes)
@@ -3371,7 +3163,7 @@
 			)
 		)
 	)
-	(global_label "DIM7_VLED-"
+	(global_label "DIM7_VLED_GND"
 		(shape input)
 		(at 67.31 144.78 0)
 		(fields_autoplaced yes)
@@ -3389,28 +3181,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_OUT_7.2"
-		(shape input)
-		(at 234.95 100.33 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bc24304d-7d85-4151-87dd-5d0b5a5da970")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -3481,29 +3251,29 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_4.2"
+	(global_label "RS485_A"
 		(shape input)
-		(at 234.95 66.04 180)
+		(at 67.31 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "ceb56e12-6b8d-47a2-9b7c-097f7572dbb0")
+		(uuid "d27b2690-b4dc-4b4d-819b-2edc24a5e208")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 66.04 0)
+			(at 78.4594 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "VAC_OUT_6.1"
+	(global_label "VAC_OUT_6"
 		(shape input)
 		(at 234.95 78.74 180)
 		(fields_autoplaced yes)
@@ -3515,7 +3285,7 @@
 		)
 		(uuid "d4e1f25e-80ee-43d1-9ed1-23a4abf78385")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 78.74 0)
+			(at 221.7443 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3525,7 +3295,7 @@
 			)
 		)
 	)
-	(global_label "DIM6_VLED-"
+	(global_label "DIM6_VLED_GND"
 		(shape input)
 		(at 67.31 107.95 0)
 		(fields_autoplaced yes)
@@ -3547,7 +3317,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_8.1"
+	(global_label "VAC_OUT_8"
 		(shape input)
 		(at 234.95 105.41 180)
 		(fields_autoplaced yes)
@@ -3559,7 +3329,7 @@
 		)
 		(uuid "e16c667f-ce37-4c4b-aa18-c239fc1b5e7c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 105.41 0)
+			(at 221.7443 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3569,7 +3339,29 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_7.1"
+	(global_label "GND_CTRL"
+		(shape input)
+		(at 67.31 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e42bf0a4-6060-4010-84ba-618b737537d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.669 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VAC_OUT_7"
 		(shape input)
 		(at 234.95 97.79 180)
 		(fields_autoplaced yes)
@@ -3581,7 +3373,7 @@
 		)
 		(uuid "eaed2309-554d-405e-b438-4a06f7ea7297")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.93 97.79 0)
+			(at 221.7443 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3591,7 +3383,7 @@
 			)
 		)
 	)
-	(global_label "DIM2_VLED-"
+	(global_label "DIM2_VLED_GND"
 		(shape input)
 		(at 67.31 54.61 0)
 		(fields_autoplaced yes)
@@ -3604,6 +3396,28 @@
 		(uuid "fac77814-49f7-40a3-bf39-552290e9e9c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 81.9066 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RS485_B"
+		(shape input)
+		(at 67.31 34.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fc2aa5d7-110b-4ce9-8d10-3fa213a65b20")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 78.6408 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)

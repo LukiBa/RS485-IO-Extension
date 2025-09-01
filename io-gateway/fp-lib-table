@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "FRDM-MCXN947")(type "KiCad")(uri "${KIPRJMOD}/Libs/FRDM-MCXN947.pretty/FRDM-MCXN947.pretty")(options "")(descr ""))
   (lib (name "FFRDM-MCXA153")(type "KiCad")(uri "${KIPRJMOD}/Libs/FRDM-MCXA153/FFRDM-MCXA153.pretty")(options "")(descr ""))
+  (lib (name "Relay")(type "KiCad")(uri "${KIPRJMOD}/Libs/Relay.pretty")(options "")(descr ""))
 )

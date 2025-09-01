@@ -6,6 +6,10 @@
 	(paper "A4")
 	(lib_symbols
 		(symbol "2071556-2:2071556-2"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -27,7 +31,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "20715562"
+			(property "Footprint" "Relay:20715562"
 				(at 26.67 -94.92 0)
 				(effects
 					(font
@@ -320,17 +324,301 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 1.27 270)
-					(length 2.54)
-					(hide yes)
-					(name "~"
+					(at 5.08 -16.51 90)
+					(length 5.08)
+					(name "NO"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "2071556-2_1"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "2071556-2"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Relay:20715562"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
+				(at 4.572 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "15.3"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "655-2071556-2"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "TE Connectivity"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "2071556-2"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "2071556-2_1_0_0"
+				(polyline
+					(pts
+						(xy 5.08 -1.27) (xy 5.08 -3.81) (xy 4.445 -3.175) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_1_0_1"
+				(rectangle
+					(start -10.16 -1.27)
+					(end 7.62 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 -4.445)
+					(end -1.905 -8.255)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -8.255) (xy -2.54 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -5.08 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -11.43) (xy -5.08 -8.255)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -6.35) (xy -1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -6.35) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -6.35) (xy 1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -6.35) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -6.35) (xy 3.81 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 3.175 -2.54)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 5.08 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_1_1_1"
+				(pin passive line
+					(at -5.08 3.81 270)
+					(length 5.08)
+					(name "COIL_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -339,17 +627,1390 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -13.97 90)
-					(length 2.54)
-					(hide yes)
-					(name "~"
+					(at -5.08 -16.51 90)
+					(length 5.08)
+					(name "COIL_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 3.81 270)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -16.51 90)
+					(length 5.08)
+					(name "NO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "2071556-2_2"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "2071556-2"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Relay:20715562"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
+				(at 4.572 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "15.3"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "655-2071556-2"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "TE Connectivity"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "2071556-2"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "2071556-2_2_0_0"
+				(polyline
+					(pts
+						(xy 5.08 -1.27) (xy 5.08 -3.81) (xy 4.445 -3.175) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_2_0_1"
+				(rectangle
+					(start -10.16 -1.27)
+					(end 7.62 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 -4.445)
+					(end -1.905 -8.255)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -8.255) (xy -2.54 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -5.08 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -11.43) (xy -5.08 -8.255)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -6.35) (xy -1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -6.35) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -6.35) (xy 1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -6.35) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -6.35) (xy 3.81 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 3.175 -2.54)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 5.08 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_2_1_1"
+				(pin passive line
+					(at -5.08 3.81 270)
+					(length 5.08)
+					(name "COIL_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -16.51 90)
+					(length 5.08)
+					(name "COIL_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 3.81 270)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -16.51 90)
+					(length 5.08)
+					(name "NO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "2071556-2_3"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "2071556-2"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Relay:20715562"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
+				(at 4.572 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "15.3"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "655-2071556-2"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "TE Connectivity"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "2071556-2"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "2071556-2_3_0_0"
+				(polyline
+					(pts
+						(xy 5.08 -1.27) (xy 5.08 -3.81) (xy 4.445 -3.175) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_3_0_1"
+				(rectangle
+					(start -10.16 -1.27)
+					(end 7.62 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 -4.445)
+					(end -1.905 -8.255)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -8.255) (xy -2.54 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -5.08 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -11.43) (xy -5.08 -8.255)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -6.35) (xy -1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -6.35) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -6.35) (xy 1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -6.35) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -6.35) (xy 3.81 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 3.175 -2.54)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 5.08 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_3_1_1"
+				(pin passive line
+					(at -5.08 3.81 270)
+					(length 5.08)
+					(name "COIL_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -16.51 90)
+					(length 5.08)
+					(name "COIL_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 3.81 270)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -16.51 90)
+					(length 5.08)
+					(name "NO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "2071556-2_4"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "2071556-2"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Relay:20715562"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
+				(at 4.572 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "15.3"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "655-2071556-2"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "TE Connectivity"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "2071556-2"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "2071556-2_4_0_0"
+				(polyline
+					(pts
+						(xy 5.08 -1.27) (xy 5.08 -3.81) (xy 4.445 -3.175) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_4_0_1"
+				(rectangle
+					(start -10.16 -1.27)
+					(end 7.62 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 -4.445)
+					(end -1.905 -8.255)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -8.255) (xy -2.54 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -5.08 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -11.43) (xy -5.08 -8.255)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -6.35) (xy -1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -6.35) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -6.35) (xy 1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -6.35) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -6.35) (xy 3.81 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 3.175 -2.54)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 5.08 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_4_1_1"
+				(pin passive line
+					(at -5.08 3.81 270)
+					(length 5.08)
+					(name "COIL_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -16.51 90)
+					(length 5.08)
+					(name "COIL_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 3.81 270)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -16.51 90)
+					(length 5.08)
+					(name "NO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "2071556-2_5"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "2071556-2"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Relay:20715562"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=OJS_16A_0821&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=2071556-2"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "General Purpose Power Relay, DC, Monostable, 1 Form A SPST-NO, 16 A Contact Rating, 24 VDC Coil Voltage , 250 VAC Contact Voltage, .45 W Coil Power"
+				(at 4.572 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "15.3"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "655-2071556-2"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/2071556-2?qs=ljCeji4nMDmS9znJMBiIWQ%3D%3D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "TE Connectivity"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "2071556-2"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "2071556-2_5_0_0"
+				(polyline
+					(pts
+						(xy 5.08 -1.27) (xy 5.08 -3.81) (xy 4.445 -3.175) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_5_0_1"
+				(rectangle
+					(start -10.16 -1.27)
+					(end 7.62 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 -4.445)
+					(end -1.905 -8.255)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -8.255) (xy -2.54 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -5.08 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -11.43) (xy -5.08 -8.255)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -6.35) (xy -1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -6.35) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -6.35) (xy 1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -6.35) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -6.35) (xy 3.81 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 3.175 -2.54)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -8.89) (xy 5.08 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2071556-2_5_1_1"
+				(pin passive line
+					(at -5.08 3.81 270)
+					(length 5.08)
+					(name "COIL_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -16.51 90)
+					(length 5.08)
+					(name "COIL_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 3.81 270)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1262,6 +2923,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 38.1) (xy 129.54 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10254c1b-b0b5-43ea-ae7e-71ddac794527")
+	)
+	(wire
+		(pts
 			(xy 190.5 40.64) (xy 190.5 46.99)
 		)
 		(stroke
@@ -1412,6 +3083,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 72.39) (xy 200.66 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44c9e74d-a4cf-47a1-86fa-e6722617855c")
+	)
+	(wire
+		(pts
 			(xy 35.56 58.42) (xy 35.56 71.12)
 		)
 		(stroke
@@ -1429,16 +3110,6 @@
 			(type default)
 		)
 		(uuid "49330e1f-2081-46a3-8f99-b950a83c2786")
-	)
-	(wire
-		(pts
-			(xy 204.47 38.1) (xy 200.66 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ed44faf-ea0c-477c-bae9-dff825898d0d")
 	)
 	(wire
 		(pts
@@ -1499,6 +3170,16 @@
 			(type default)
 		)
 		(uuid "6317008a-aa66-4088-a257-38ed0ebd624b")
+	)
+	(wire
+		(pts
+			(xy 129.54 72.39) (xy 137.16 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64a74df8-5a8e-4e03-8cb7-3b1989eb3116")
 	)
 	(wire
 		(pts
@@ -1692,16 +3373,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 67.31) (xy 200.66 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a31d0cd6-a5de-4f44-b626-67b49b809c43")
-	)
-	(wire
-		(pts
 			(xy 190.5 67.31) (xy 190.5 72.39)
 		)
 		(stroke
@@ -1709,16 +3380,6 @@
 			(type default)
 		)
 		(uuid "a33bb2fc-e2bd-4024-8130-62b4a3cc7ffc")
-	)
-	(wire
-		(pts
-			(xy 129.54 72.39) (xy 138.43 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a448713e-3351-49f7-ac3c-717e5f93eb4f")
 	)
 	(wire
 		(pts
@@ -1792,6 +3453,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 38.1) (xy 204.47 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b42e9abd-ff22-470e-95ed-3432619fdc7d")
+	)
+	(wire
+		(pts
 			(xy 35.56 71.12) (xy 52.07 71.12)
 		)
 		(stroke
@@ -1822,6 +3493,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 72.39) (xy 200.66 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c08b8f37-58f1-43cf-8e8c-39e06b3933b5")
+	)
+	(wire
+		(pts
 			(xy 190.5 40.64) (xy 173.99 40.64)
 		)
 		(stroke
@@ -1829,16 +3510,6 @@
 			(type default)
 		)
 		(uuid "c2c75d0d-475b-4ee0-9caf-02bc4b1670c7")
-	)
-	(wire
-		(pts
-			(xy 129.54 40.64) (xy 129.54 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c307ac47-9719-4122-a917-84b20eb0edc5")
 	)
 	(wire
 		(pts
@@ -1962,6 +3633,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 38.1) (xy 129.54 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7107b31-d239-41e3-bd59-2780797e264f")
+	)
+	(wire
+		(pts
 			(xy 35.56 163.83) (xy 41.91 163.83)
 		)
 		(stroke
@@ -2020,7 +3701,7 @@
 		)
 		(uuid "fb5a4249-8e1c-45fa-b3ed-da2f275581db")
 	)
-	(global_label "VAC_IN_3"
+	(global_label "VAC_IN_5"
 		(shape input)
 		(at 132.08 156.21 0)
 		(fields_autoplaced yes)
@@ -2042,53 +3723,9 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_1.2"
+	(global_label "VAC_IN_3"
 		(shape input)
-		(at 129.54 40.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0438870b-391e-4980-aae1-beac57828171")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.56 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_IN_1"
-		(shape input)
-		(at 138.43 72.39 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "23413d06-0d98-41e9-97e4-9e08cefbc3e9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 149.9424 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VAC_IN_2"
-		(shape input)
-		(at 200.66 80.01 0)
+		(at 204.47 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2098,7 +3735,7 @@
 		)
 		(uuid "289985d1-b9e6-4998-a776-0d384e1422b0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.1724 80.01 0)
+			(at 215.9824 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2108,7 +3745,7 @@
 			)
 		)
 	)
-	(global_label "VAC_IN_2"
+	(global_label "VAC_IN_4"
 		(shape input)
 		(at 63.5 151.13 0)
 		(fields_autoplaced yes)
@@ -2130,7 +3767,29 @@
 			)
 		)
 	)
-	(global_label "VAC_IN_3"
+	(global_label "VAC_IN_2"
+		(shape input)
+		(at 137.16 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "387ba785-a504-49b5-ac1f-f585d660c498")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.6724 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VAC_IN_6"
 		(shape input)
 		(at 226.06 134.62 0)
 		(fields_autoplaced yes)
@@ -2152,7 +3811,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_3.1"
+	(global_label "VAC_OUT_5"
 		(shape input)
 		(at 132.08 125.73 0)
 		(fields_autoplaced yes)
@@ -2164,7 +3823,7 @@
 		)
 		(uuid "5c7d308e-3736-4ee9-aa4e-d3102b0f2dc7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.1 125.73 0)
+			(at 145.2857 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2174,7 +3833,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_3.2"
+	(global_label "VAC_OUT_6"
 		(shape input)
 		(at 226.06 102.87 0)
 		(fields_autoplaced yes)
@@ -2186,7 +3845,7 @@
 		)
 		(uuid "7853b034-5c5d-4147-9471-c5b63f7b607f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 241.08 102.87 0)
+			(at 239.2657 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2196,7 +3855,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_1.1"
+	(global_label "VAC_OUT_1"
 		(shape input)
 		(at 64.77 38.1 0)
 		(fields_autoplaced yes)
@@ -2208,7 +3867,7 @@
 		)
 		(uuid "9eabca5c-d2f7-42bd-a7ef-f627b3f25093")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.79 38.1 0)
+			(at 77.9757 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2218,7 +3877,7 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_2.2"
+	(global_label "VAC_OUT_4"
 		(shape input)
 		(at 64.77 120.65 0)
 		(fields_autoplaced yes)
@@ -2230,7 +3889,7 @@
 		)
 		(uuid "a6ce7213-a3d6-4d1d-a483-384d2f3cb840")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.79 120.65 0)
+			(at 77.9757 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2240,7 +3899,29 @@
 			)
 		)
 	)
-	(global_label "VAC_OUT_2.1"
+	(global_label "VAC_OUT_2"
+		(shape input)
+		(at 134.62 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b5097a95-7d2b-4c09-abf7-aa8e3b130ffa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.8257 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VAC_OUT_3"
 		(shape input)
 		(at 204.47 38.1 0)
 		(fields_autoplaced yes)
@@ -2252,7 +3933,7 @@
 		)
 		(uuid "bb05763d-6343-44a7-a0fa-f647dabf0446")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.49 38.1 0)
+			(at 217.6757 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2285,6 +3966,7 @@
 		)
 	)
 	(symbol
+		(lib_name "2071556-2_3")
 		(lib_id "2071556-2:2071556-2")
 		(at 195.58 50.8 0)
 		(unit 1)
@@ -2312,7 +3994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 222.25 145.72 0)
 			(effects
 				(font
@@ -2403,12 +4085,6 @@
 		(pin "2"
 			(uuid "4c56ab03-e62f-4688-b37d-1249804445b6")
 		)
-		(pin "14"
-			(uuid "14f8ff96-5a4e-4344-82dd-cd00c3b126d6")
-		)
-		(pin "8"
-			(uuid "8e113235-0408-4a4c-bc7f-6be3d47ebe25")
-		)
 		(instances
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/b7c52a2f-c911-47bd-b8aa-349b31ff8e17"
@@ -2419,6 +4095,7 @@
 		)
 	)
 	(symbol
+		(lib_name "2071556-2_1")
 		(lib_id "2071556-2:2071556-2")
 		(at 57.15 48.26 0)
 		(unit 1)
@@ -2446,7 +4123,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 83.82 143.18 0)
 			(effects
 				(font
@@ -2536,12 +4213,6 @@
 		)
 		(pin "2"
 			(uuid "e0e808be-5ddb-4aa1-bfd5-64e96ee8c666")
-		)
-		(pin "8"
-			(uuid "2b7e929e-90e5-40f4-b3c0-444f5042cbc8")
-		)
-		(pin "14"
-			(uuid "1a86648f-ff9f-46b4-bbbb-efa3bf26a6ba")
 		)
 		(instances
 			(project "io-gateway"
@@ -3195,7 +4866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 245.11 207.95 0)
 			(effects
 				(font
@@ -3285,12 +4956,6 @@
 		)
 		(pin "2"
 			(uuid "0ac8778a-5e3e-4c42-a7aa-a8143c6b6c19")
-		)
-		(pin "14"
-			(uuid "2fa85b84-b8e5-40a9-911f-fc98169ca290")
-		)
-		(pin "8"
-			(uuid "6fe527f9-4e98-4f9c-a53f-cde3c17208d0")
 		)
 		(instances
 			(project "io-gateway"
@@ -4023,6 +5688,7 @@
 		)
 	)
 	(symbol
+		(lib_name "2071556-2_4")
 		(lib_id "2071556-2:2071556-2")
 		(at 57.15 130.81 0)
 		(unit 1)
@@ -4050,7 +5716,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 83.82 225.73 0)
 			(effects
 				(font
@@ -4140,12 +5806,6 @@
 		)
 		(pin "2"
 			(uuid "74f38a51-e817-4ff6-98f8-fb1f4d441953")
-		)
-		(pin "8"
-			(uuid "51e59843-daa4-4489-ba46-99b83a004398")
-		)
-		(pin "14"
-			(uuid "69fc60ee-992a-48ea-bc5f-b988ceb5dead")
 		)
 		(instances
 			(project "io-gateway"
@@ -4820,6 +6480,7 @@
 		)
 	)
 	(symbol
+		(lib_name "2071556-2_2")
 		(lib_id "2071556-2:2071556-2")
 		(at 124.46 49.53 0)
 		(unit 1)
@@ -4847,7 +6508,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 151.13 144.45 0)
 			(effects
 				(font
@@ -4937,12 +6598,6 @@
 		)
 		(pin "2"
 			(uuid "6edfbc64-aff0-4c4a-a80e-e5db39d81bfb")
-		)
-		(pin "8"
-			(uuid "f060ef1e-cb3d-4a83-a530-e182b010121d")
-		)
-		(pin "14"
-			(uuid "b368ee55-0569-40e1-891c-a2d759babea1")
 		)
 		(instances
 			(project "io-gateway"
@@ -5367,6 +7022,7 @@
 		)
 	)
 	(symbol
+		(lib_name "2071556-2_5")
 		(lib_id "2071556-2:2071556-2")
 		(at 124.46 135.89 0)
 		(unit 1)
@@ -5393,7 +7049,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20715562"
+		(property "Footprint" "Relay:20715562"
 			(at 151.13 230.81 0)
 			(effects
 				(font
@@ -5483,12 +7139,6 @@
 		)
 		(pin "2"
 			(uuid "ccb1afec-e034-414a-9c4c-4f13b9499fe0")
-		)
-		(pin "8"
-			(uuid "3f552947-3598-441b-bde1-ec461246c708")
-		)
-		(pin "14"
-			(uuid "6bea135c-d281-43d7-8786-1d078f47e8de")
 		)
 		(instances
 			(project "io-gateway"

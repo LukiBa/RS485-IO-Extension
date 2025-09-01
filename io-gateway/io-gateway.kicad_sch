@@ -2763,6 +2763,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 74.93) (xy 157.48 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f0600f0-8e53-46b2-91c0-b0e2930d4a09")
+	)
+	(wire
+		(pts
 			(xy 106.68 102.87) (xy 106.68 110.49)
 		)
 		(stroke
@@ -3043,7 +3053,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 74.93) (xy 170.18 74.93)
+			(xy 166.37 74.93) (xy 170.18 74.93)
 		)
 		(stroke
 			(width 0)
@@ -5009,7 +5019,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 161.29 74.93 90)
+		(at 162.56 74.93 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5018,7 +5028,7 @@
 		(fields_autoplaced yes)
 		(uuid "2ecd29c0-9271-4cd6-b1d1-67068ac8e00b")
 		(property "Reference" "L2"
-			(at 161.29 69.85 90)
+			(at 162.56 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5026,7 +5036,7 @@
 			)
 		)
 		(property "Value" "22µH"
-			(at 161.29 72.39 90)
+			(at 162.56 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5034,7 +5044,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
-			(at 161.29 74.93 0)
+			(at 162.56 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5043,7 +5053,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 161.29 74.93 0)
+			(at 162.56 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5052,7 +5062,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 161.29 74.93 0)
+			(at 162.56 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
