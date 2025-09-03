@@ -2504,6 +2504,26 @@
 		)
 		(uuid "06320318-a5fd-434e-b5b3-277b27db2b4e")
 	)
+	(label "DIM2_SW"
+		(at 109.22 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8beac307-e9cd-4688-8d91-353133182f1e")
+	)
+	(label "DIM2_FB"
+		(at 109.22 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94694540-449a-42e3-afe9-b829accad1cf")
+	)
 	(label "DIM1_FB"
 		(at 114.3 49.53 0)
 		(effects
