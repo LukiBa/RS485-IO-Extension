@@ -725,6 +725,10 @@
     [
       "334a84ed-29ea-43c8-926f-91a0c21c840d",
       "Dimmer1"
+    ],
+    [
+      "9de6c1f0-1e62-4b31-9c57-680b63c27868",
+      "MCU_VoltageRegulator"
     ]
   ],
   "text_variables": {}
