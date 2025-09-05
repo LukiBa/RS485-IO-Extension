@@ -196,7 +196,8 @@
         0.2,
         0.3,
         0.8,
-        3.0,
+        1.4,
+        3.6,
         15.0
       ],
       "tuning_pattern_settings": {
@@ -558,7 +559,7 @@
       },
       {
         "netclass": "High Power",
-        "pattern": "DIM1_VLED+"
+        "pattern": "DIM*_VLED_*"
       },
       {
         "netclass": "High Power",
@@ -566,7 +567,7 @@
       },
       {
         "netclass": "High Power",
-        "pattern": "VIN_DIM*"
+        "pattern": "*VIN_DIM*"
       }
     ]
   },

@@ -1731,6 +1731,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 99.06) (xy 133.35 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31733d15-950a-4348-995d-aa01f3c31c5c")
+	)
+	(wire
+		(pts
 			(xy 236.22 143.51) (xy 252.73 143.51)
 		)
 		(stroke
@@ -1738,6 +1748,16 @@
 			(type default)
 		)
 		(uuid "326b947d-7e6a-4d34-b552-fcfd9426252f")
+	)
+	(wire
+		(pts
+			(xy 128.27 85.09) (xy 133.35 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34aa58bd-5f94-4534-8830-ac1685226ccb")
 	)
 	(wire
 		(pts
@@ -1858,6 +1878,16 @@
 			(type default)
 		)
 		(uuid "4935894c-7bad-414b-8f92-de90cb0b0f18")
+	)
+	(wire
+		(pts
+			(xy 128.27 82.55) (xy 133.35 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a4f1cf2-3b72-4717-a573-62a933887dd8")
 	)
 	(wire
 		(pts
@@ -2291,6 +2321,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 80.01) (xy 63.5 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fa2caa6-0fe4-4707-a921-dac4b4809ca9")
+	)
+	(wire
+		(pts
 			(xy 36.83 40.64) (xy 63.5 40.64)
 		)
 		(stroke
@@ -2591,6 +2631,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 80.01) (xy 63.5 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9a0c419-1a1c-4710-9d25-732efd33d6e8")
+	)
+	(wire
+		(pts
 			(xy 280.67 133.35) (xy 280.67 142.24)
 		)
 		(stroke
@@ -2608,6 +2658,16 @@
 			(type default)
 		)
 		(uuid "dd5020a1-e1bc-48ad-a148-2af1b34da638")
+	)
+	(wire
+		(pts
+			(xy 63.5 82.55) (xy 63.5 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de5972f5-5ef6-4473-9fde-04271763607c")
 	)
 	(wire
 		(pts
@@ -2718,6 +2778,26 @@
 			(type default)
 		)
 		(uuid "eea08944-5cae-46dd-95ef-0bec0b34a44c")
+	)
+	(wire
+		(pts
+			(xy 128.27 96.52) (xy 133.35 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0bc88bc-0597-40bd-910f-a9f894a1e0c0")
+	)
+	(wire
+		(pts
+			(xy 96.52 82.55) (xy 63.5 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4f08e2b-282e-4c2a-800e-320a01b43768")
 	)
 	(wire
 		(pts
@@ -3143,6 +3223,50 @@
 			)
 		)
 	)
+	(global_label "DIM3_VLED_GND"
+		(shape input)
+		(at 133.35 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "54e911fa-bb7a-47bb-ac73-bd5304faf020")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.9466 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DIM4_VLED_VCC"
+		(shape input)
+		(at 133.35 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "56a97575-b523-4044-9344-abb84ad1b64e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.9466 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND_DIM5"
 		(shape input)
 		(at 63.5 99.06 0)
@@ -3341,6 +3465,28 @@
 			)
 		)
 	)
+	(global_label "DIM4_VLED_GND"
+		(shape input)
+		(at 133.35 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91a57547-76df-4c2f-bebb-054358d1be46")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.9466 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DIM2_VLED_VCC"
 		(shape input)
 		(at 132.08 59.69 0)
@@ -3354,28 +3500,6 @@
 		(uuid "969a5f82-7a6b-403f-8854-0e3789d59b5e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 146.6766 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND_DIM3"
-		(shape input)
-		(at 63.5 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9ee35761-fe15-4bd0-be8e-6fdc2c134160")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.859 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3451,28 +3575,6 @@
 			)
 		)
 	)
-	(global_label "VIN_DIM3"
-		(shape input)
-		(at 63.5 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a9392edd-cc18-4143-9d95-a80190b6fc57")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.0124 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VIN_DIM5"
 		(shape input)
 		(at 114.3 367.03 0)
@@ -3486,6 +3588,28 @@
 		(uuid "ae0c2a38-18eb-4ade-8035-5b6cca2956f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 125.8124 367.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DIM3_VLED_VCC"
+		(shape input)
+		(at 133.35 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b117b28f-f81a-40c2-a487-8a342af0fb37")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.9466 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
