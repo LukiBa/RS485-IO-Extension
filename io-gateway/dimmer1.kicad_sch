@@ -1306,7 +1306,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 119.38) (xy 86.36 119.38)
+			(xy 26.67 119.38) (xy 86.36 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1356,7 +1356,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 46.99) (xy 201.93 46.99)
+			(xy 195.58 46.99) (xy 223.52 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1396,7 +1396,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 60.96) (xy 201.93 60.96)
+			(xy 195.58 60.96) (xy 223.52 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1516,7 +1516,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 135.89) (xy 200.66 135.89)
+			(xy 194.31 135.89) (xy 220.98 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1606,16 +1606,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 46.99) (xy 87.63 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e565a14-c88b-4f92-a8ac-8ff6e69cdb25")
-	)
-	(wire
-		(pts
 			(xy 83.82 60.96) (xy 83.82 80.01)
 		)
 		(stroke
@@ -1623,6 +1613,16 @@
 			(type default)
 		)
 		(uuid "45f5b57c-7a5c-42d9-93fc-f6401d8e9e5f")
+	)
+	(wire
+		(pts
+			(xy 21.59 21.59) (xy 43.18 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bafb8b3-df75-471e-9b8b-0835aab43990")
 	)
 	(wire
 		(pts
@@ -1713,6 +1713,16 @@
 			(type default)
 		)
 		(uuid "5b40aa80-a5c2-42ee-8a1b-5cc86f250134")
+	)
+	(wire
+		(pts
+			(xy 24.13 44.45) (xy 87.63 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bb0b863-8040-456c-8ef8-06a67522aff3")
 	)
 	(wire
 		(pts
@@ -1836,16 +1846,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 44.45) (xy 87.63 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77a3a131-345b-4044-b8fe-d5e0b1746c1d")
-	)
-	(wire
-		(pts
 			(xy 177.8 80.01) (xy 191.77 80.01)
 		)
 		(stroke
@@ -1923,16 +1923,6 @@
 			(type default)
 		)
 		(uuid "870f326e-1869-477f-a51b-c67e18aef044")
-	)
-	(wire
-		(pts
-			(xy 43.18 21.59) (xy 31.75 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8806b709-e1f1-41fa-a867-7b804ce49a2d")
 	)
 	(wire
 		(pts
@@ -2176,7 +2166,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 121.92) (xy 200.66 121.92)
+			(xy 194.31 121.92) (xy 220.98 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2223,6 +2213,16 @@
 			(type default)
 		)
 		(uuid "bd8fdba7-c18c-40b6-a21b-e21c5c8425ec")
+	)
+	(wire
+		(pts
+			(xy 24.13 46.99) (xy 87.63 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c21467cf-6284-4509-9a80-a31a5ec5605d")
 	)
 	(wire
 		(pts
@@ -2386,16 +2386,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 78.74) (xy 38.1 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e99fbab8-f575-4e05-8e41-1605e633068e")
-	)
-	(wire
-		(pts
 			(xy 96.52 114.3) (xy 96.52 96.52)
 		)
 		(stroke
@@ -2436,7 +2426,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 121.92) (xy 86.36 121.92)
+			(xy 26.67 121.92) (xy 86.36 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2476,6 +2466,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 78.74) (xy 38.1 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc34d8c7-7952-45c3-b1b5-54e31d253f3d")
+	)
+	(wire
+		(pts
 			(xy 69.85 135.89) (xy 69.85 139.7)
 		)
 		(stroke
@@ -2503,6 +2503,16 @@
 			(justify left bottom)
 		)
 		(uuid "06320318-a5fd-434e-b5b3-277b27db2b4e")
+	)
+	(label "VIN_DIM"
+		(at 30.48 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "13eaaaa2-7dca-428a-98c4-74b89d2dffe0")
 	)
 	(label "DIM2_SW"
 		(at 109.22 121.92 0)
@@ -2534,247 +2544,115 @@
 		)
 		(uuid "be4a8581-7121-4fd6-aa20-931b92538c1c")
 	)
-	(global_label "DIM1_VLED_GND"
+	(hierarchical_label "INH_DIMB"
 		(shape input)
-		(at 201.93 60.96 0)
-		(fields_autoplaced yes)
+		(at 26.67 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "09c1c225-57fa-4215-b9ad-817ba721673c")
+	)
+	(hierarchical_label "DIM_VLED+_A"
+		(shape output)
+		(at 223.52 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "0bcf29ba-a125-4325-9e2f-be56ca348a7f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 216.5266 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "14c76e10-8229-4338-b9c3-8f5055f6c619")
 	)
-	(global_label "VIN_DIM1"
-		(shape input)
-		(at 31.75 21.59 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "49ea2996-0ecb-42c9-aa35-4f0bf124e32f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.2376 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DIM1_VLED_VCC"
-		(shape input)
-		(at 201.93 46.99 0)
-		(fields_autoplaced yes)
+	(hierarchical_label "DIM_VLED-_A"
+		(shape output)
+		(at 223.52 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "4f9607bb-60ff-4b3f-8866-76985e5dd3ec")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 216.5266 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "395fa031-a4be-4ceb-aa3e-c6e583d1b58c")
 	)
-	(global_label "PWM_DIM1"
+	(hierarchical_label "VIN_DIM"
 		(shape input)
-		(at 33.02 44.45 180)
-		(fields_autoplaced yes)
+		(at 21.59 21.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "5e4d834c-4f32-4cfd-9a40-a40eed843faf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.3587 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "48245724-8b30-4a2e-84ac-cb5c5e2fb973")
 	)
-	(global_label "VIN_DIM1"
+	(hierarchical_label "INH_DIMA"
 		(shape input)
-		(at 30.48 96.52 180)
-		(fields_autoplaced yes)
+		(at 24.13 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "741eefff-f42f-49be-9c54-fa6bfcb823e6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18.9676 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "68be0739-1788-4b80-bf71-afc10d4d3636")
 	)
-	(global_label "DIM2_VLED_GND"
+	(hierarchical_label "PWM_DIMB"
 		(shape input)
-		(at 200.66 135.89 0)
-		(fields_autoplaced yes)
+		(at 26.67 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "88a290e0-9fce-4077-89ac-57f28c081bc4")
+	)
+	(hierarchical_label "DIM_VLED+_B"
+		(shape output)
+		(at 220.98 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "74da82f0-8e61-4752-8487-b72c752b4a86")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.2566 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "a1ca91ea-f91e-4e19-a253-cbe3333c8a79")
 	)
-	(global_label "GND_DIM1"
+	(hierarchical_label "PWM_DIMA"
 		(shape input)
-		(at 33.02 78.74 180)
-		(fields_autoplaced yes)
+		(at 24.13 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "aa0679b5-34d2-4d07-b07a-874a1a260578")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.661 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "b2108a74-0bca-4dec-95cf-d95187ff123b")
 	)
-	(global_label "PWM_DIM2"
+	(hierarchical_label "GND_DIM"
 		(shape input)
-		(at 31.75 119.38 180)
-		(fields_autoplaced yes)
+		(at 22.86 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "c432387a-d049-42c4-819f-8b6ff5638c57")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.0887 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "dde03dad-3236-47a9-ac3d-b31ef9955090")
 	)
-	(global_label "INH_DIM2"
-		(shape input)
-		(at 31.75 121.92 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "df422f90-bc00-4ebf-9253-180530eb7cfd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.9957 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "INH_DIM1"
-		(shape input)
-		(at 33.02 46.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e702c12f-4923-442c-8273-6e6296141ea5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.2657 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DIM2_VLED_VCC"
-		(shape input)
-		(at 200.66 121.92 0)
-		(fields_autoplaced yes)
+	(hierarchical_label "DIM_VLED-_B"
+		(shape output)
+		(at 220.98 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "fd049c2e-106f-4620-bbb5-0a20a97e8cef")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.2566 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "f3301e88-8314-4b44-bd17-675f4cf1c257")
 	)
 	(symbol
 		(lib_id "Device:C")

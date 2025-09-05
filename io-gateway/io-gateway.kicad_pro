@@ -712,7 +712,7 @@
     ],
     [
       "b7c52a2f-c911-47bd-b8aa-349b31ff8e17",
-      "RelaysJ4"
+      "Relay1"
     ],
     [
       "99edf8d5-e94a-4b7e-97dc-770099d54462",
@@ -720,15 +720,47 @@
     ],
     [
       "1308d9d5-cfd2-45e8-87f7-78f75fc0ae30",
-      "RelaysJ6"
+      "RS485"
+    ],
+    [
+      "9de6c1f0-1e62-4b31-9c57-680b63c27868",
+      "MCU_VoltageRegulator"
     ],
     [
       "334a84ed-29ea-43c8-926f-91a0c21c840d",
       "Dimmer1"
     ],
     [
-      "9de6c1f0-1e62-4b31-9c57-680b63c27868",
-      "MCU_VoltageRegulator"
+      "652e53fa-6621-48d4-b43a-7b4b51e67e20",
+      "Relay2"
+    ],
+    [
+      "2981515f-3c24-472e-9c6f-f724dc58f7ad",
+      "Relay3"
+    ],
+    [
+      "26d2871c-43f5-4657-9fd3-9b147ba719a0",
+      "Relay4"
+    ],
+    [
+      "8774e9bb-46a0-42b2-8995-8a88d021bed1",
+      "Relay5"
+    ],
+    [
+      "03bd2881-7243-4496-b8de-10c1d173c38f",
+      "Relay6"
+    ],
+    [
+      "9d77d6d3-b511-418e-8a79-d9ff43bc2b57",
+      "Relay7"
+    ],
+    [
+      "c687ae90-d05e-48ba-88f1-c26dda1f0488",
+      "Relay8"
+    ],
+    [
+      "8976081a-0d1c-4632-aadf-dea88614b0a1",
+      "Relay9"
     ]
   ],
   "text_variables": {}
