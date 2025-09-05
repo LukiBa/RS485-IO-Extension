@@ -761,6 +761,10 @@
     [
       "8976081a-0d1c-4632-aadf-dea88614b0a1",
       "Relay9"
+    ],
+    [
+      "03b23248-a520-4f66-9ca1-5505f42d8cec",
+      "Dimmer2"
     ]
   ],
   "text_variables": {}

@@ -4766,6 +4766,148 @@
 		)
 	)
 	(sheet
+		(at 96.52 77.47)
+		(size 31.75 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "03b23248-a520-4f66-9ca1-5505f42d8cec")
+		(property "Sheetname" "Dimmer2"
+			(at 96.52 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dimmer1.kicad_sch"
+			(at 96.52 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIM_VLED+_A" output
+			(at 128.27 82.55 0)
+			(uuid "701999b1-6bb8-4056-bd1a-a670140587a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DIM_VLED+_B" output
+			(at 128.27 96.52 0)
+			(uuid "6885b88b-0a15-40e4-a83b-435e1a20e9a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DIM_VLED-_A" output
+			(at 128.27 85.09 0)
+			(uuid "9ab4b5ad-ff46-45f4-8d87-abf2bc73a4aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DIM_VLED-_B" output
+			(at 128.27 99.06 0)
+			(uuid "50e58fed-8d30-49aa-849f-f06bc05902fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND_DIM" input
+			(at 96.52 82.55 180)
+			(uuid "b4a249c2-344e-4b94-8589-d5d6e3420794")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INH_DIMA" input
+			(at 96.52 88.9 180)
+			(uuid "67c03ab5-53cf-45f9-a108-c3bbe1dc4cb0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INH_DIMB" input
+			(at 96.52 96.52 180)
+			(uuid "3b91f007-aaee-4fbd-9330-40e7801d611c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_DIMA" input
+			(at 96.52 86.36 180)
+			(uuid "3945730d-de45-4c17-abe7-e51ed9710604")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_DIMB" input
+			(at 96.52 93.98 180)
+			(uuid "148f9a3d-1d98-4915-8908-a92cfbfa1b72")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VIN_DIM" input
+			(at 96.52 80.01 180)
+			(uuid "6e9b6890-b741-43bf-9852-8d0e351ce9a2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "io-gateway"
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 257.81 106.68)
 		(size 15.24 11.43)
 		(exclude_from_sim no)
