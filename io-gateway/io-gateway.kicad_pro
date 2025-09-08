@@ -130,7 +130,7 @@
         "max_error": 0.005,
         "min_clearance": 0.1016,
         "min_connection": 0.1524,
-        "min_copper_edge_clearance": 2.0,
+        "min_copper_edge_clearance": 1.8,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -521,7 +521,7 @@
         "via_drill": 0.5
       },
       {
-        "clearance": 0.4,
+        "clearance": 0.35,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.4,
@@ -551,19 +551,11 @@
       },
       {
         "netclass": "High Power",
-        "pattern": "*VLED*"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "*NET*"
-      },
-      {
-        "netclass": "High Power",
         "pattern": "DIM*_VLED_*"
       },
       {
         "netclass": "High Power",
-        "pattern": "/Dimmer1/DIM1_SW"
+        "pattern": "/Dimmer*/DIM*_SW"
       },
       {
         "netclass": "High Power",
@@ -766,6 +758,10 @@
     [
       "03b23248-a520-4f66-9ca1-5505f42d8cec",
       "Dimmer2"
+    ],
+    [
+      "6816aaeb-2895-4813-8cf8-10286e1728b3",
+      "Dimmer3"
     ]
   ],
   "text_variables": {}

@@ -1135,26 +1135,6 @@
 		(uuid "76a8241c-acc3-4c23-a839-c99c3e58f1bd")
 	)
 	(fp_line
-		(start 58.151998 49.09)
-		(end 58.152 49.09)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "bee0425a-eb16-4fe7-9792-da5e53813b52")
-	)
-	(fp_line
-		(start 60.152 47.09)
-		(end 60.152 47.089999)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "4c34ae67-27b4-4956-97bf-d1d69b61bf9c")
-	)
-	(fp_line
 		(start -1.77 -7.165)
 		(end -1.77 4.585)
 		(stroke

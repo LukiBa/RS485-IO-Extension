@@ -1478,16 +1478,26 @@
 		)
 	)
 	(junction
-		(at 171.45 76.2)
+		(at 177.8 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "125ea570-e886-4cfc-97a6-69d31ffde104")
 	)
 	(junction
-		(at 171.45 92.71)
+		(at 177.8 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a554a7e8-77f7-4e78-9be4-34fdbc5b5bfe")
+	)
+	(wire
+		(pts
+			(xy 83.82 116.84) (xy 96.52 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "005a3451-55fe-492e-9eca-125d981872dc")
 	)
 	(wire
 		(pts
@@ -1551,7 +1561,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 76.2) (xy 161.29 76.2)
+			(xy 158.75 26.67) (xy 167.64 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1571,7 +1581,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 76.2) (xy 171.45 76.2)
+			(xy 175.26 26.67) (xy 177.8 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1661,7 +1671,17 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 92.71) (xy 171.45 96.52)
+			(xy 128.27 130.81) (xy 133.35 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2358a990-a342-4dd6-9775-834f754f3594")
+	)
+	(wire
+		(pts
+			(xy 177.8 43.18) (xy 177.8 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1781,7 +1801,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 76.2) (xy 171.45 76.2)
+			(xy 186.69 26.67) (xy 177.8 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1791,7 +1811,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 72.39) (xy 180.34 76.2)
+			(xy 186.69 22.86) (xy 186.69 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1921,6 +1941,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 96.52) (xy 85.09 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "538a5e6e-f612-403c-b4c5-f2f1a17c29c5")
+	)
+	(wire
+		(pts
 			(xy 250.19 22.86) (xy 257.81 22.86)
 		)
 		(stroke
@@ -1938,6 +1968,16 @@
 			(type default)
 		)
 		(uuid "5c944259-5f98-4a0f-928a-1dd6a7f4b880")
+	)
+	(wire
+		(pts
+			(xy 128.27 133.35) (xy 133.35 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ca7b941-e8de-4566-bcf5-bcb611acaa88")
 	)
 	(wire
 		(pts
@@ -1961,7 +2001,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 92.71) (xy 171.45 92.71)
+			(xy 158.75 43.18) (xy 177.8 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2031,7 +2071,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 99.06) (xy 63.5 99.06)
+			(xy 36.83 99.06) (xy 83.82 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2158,6 +2198,16 @@
 			(type default)
 		)
 		(uuid "7c436a87-b2c6-4376-8a19-767f618852e2")
+	)
+	(wire
+		(pts
+			(xy 128.27 119.38) (xy 133.35 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d7df33d-5a05-4e52-98bd-5b2b32af470d")
 	)
 	(wire
 		(pts
@@ -2451,6 +2501,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 99.06) (xy 83.82 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b52a3ce7-b19f-41f8-b5ac-6f4325bcd72a")
+	)
+	(wire
+		(pts
 			(xy 220.98 134.62) (xy 226.06 134.62)
 		)
 		(stroke
@@ -2511,7 +2571,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 76.2) (xy 171.45 77.47)
+			(xy 177.8 26.67) (xy 177.8 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2548,6 +2608,16 @@
 			(type default)
 		)
 		(uuid "c99bfb94-2c32-4c47-93ad-8e39dc68e006")
+	)
+	(wire
+		(pts
+			(xy 85.09 114.3) (xy 96.52 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca4e5ea1-11cc-4689-b0a9-14fe83a852c3")
 	)
 	(wire
 		(pts
@@ -2701,6 +2771,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 116.84) (xy 133.35 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1ff7da3-372b-408f-8838-346f168ff5d3")
+	)
+	(wire
+		(pts
 			(xy 88.9 354.33) (xy 114.3 354.33)
 		)
 		(stroke
@@ -2711,7 +2791,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 96.52) (xy 63.5 96.52)
+			(xy 36.83 96.52) (xy 85.09 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2820,7 +2900,7 @@
 		(uuid "f825d194-891d-42bf-931e-041500cce13a")
 	)
 	(label "GND_CTRL"
-		(at 152.4 92.71 0)
+		(at 158.75 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2860,7 +2940,7 @@
 		(uuid "354eb48b-f14a-43b1-a350-57385628453e")
 	)
 	(label "VDC_CTRL"
-		(at 152.4 76.2 0)
+		(at 158.75 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3038,6 +3118,28 @@
 		(uuid "1ab51121-4b14-44b8-bb1b-0c5bd223a5ce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 74.6494 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DIM5_VLED_GND"
+		(shape input)
+		(at 133.35 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "251b4d40-ace4-4327-a56d-ae1e98f5e792")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.9466 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,28 +3360,6 @@
 		(uuid "56a97575-b523-4044-9344-abb84ad1b64e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 147.9466 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND_DIM5"
-		(shape input)
-		(at 63.5 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5858236e-cf57-4895-9ffb-1395cb5d17b8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.859 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3597,6 +3677,28 @@
 			)
 		)
 	)
+	(global_label "DIM6_VLED_VCC"
+		(shape input)
+		(at 133.35 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "af03569c-b2bb-4e5f-9def-b4543a2a3905")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.9466 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DIM3_VLED_VCC"
 		(shape input)
 		(at 133.35 82.55 0)
@@ -3729,6 +3831,28 @@
 			)
 		)
 	)
+	(global_label "DIM5_VLED_VCC"
+		(shape input)
+		(at 133.35 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dcf53ba2-5f0d-46ce-98d8-2edda64aed27")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.9466 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DIM10_VLED_VCC"
 		(shape input)
 		(at 114.3 377.19 0)
@@ -3795,9 +3919,9 @@
 			)
 		)
 	)
-	(global_label "VIN_DIM5"
+	(global_label "DIM6_VLED_GND"
 		(shape input)
-		(at 63.5 96.52 0)
+		(at 133.35 133.35 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3805,9 +3929,9 @@
 			)
 			(justify left)
 		)
-		(uuid "ed4c4f30-5ab1-4348-8a22-f2b5d1b87653")
+		(uuid "fd4a6c7e-f0ee-4f32-8855-8d177e7aa2f5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.0124 96.52 0)
+			(at 147.9466 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4235,7 +4359,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 165.1 76.2 90)
+		(at 171.45 26.67 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4244,7 +4368,7 @@
 		(fields_autoplaced yes)
 		(uuid "94f0a8b5-c7b3-4f52-9c96-6861857b0fb2")
 		(property "Reference" "F1"
-			(at 165.1 69.85 90)
+			(at 171.45 20.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4252,7 +4376,7 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 165.1 72.39 90)
+			(at 171.45 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4260,7 +4384,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
-			(at 165.1 77.978 90)
+			(at 171.45 28.448 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4269,7 +4393,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 76.2 0)
+			(at 171.45 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4278,7 +4402,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 165.1 76.2 0)
+			(at 171.45 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4395,7 +4519,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 180.34 72.39 0)
+		(at 186.69 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4404,7 +4528,7 @@
 		(fields_autoplaced yes)
 		(uuid "a58bb0b6-664f-46aa-9587-c6789628821c")
 		(property "Reference" "#PWR026"
-			(at 180.34 76.2 0)
+			(at 186.69 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4413,7 +4537,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 180.34 67.31 0)
+			(at 186.69 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4421,7 +4545,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 72.39 0)
+			(at 186.69 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4430,7 +4554,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 72.39 0)
+			(at 186.69 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4439,7 +4563,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 180.34 72.39 0)
+			(at 186.69 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4703,7 +4827,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 96.52 0)
+		(at 177.8 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4712,7 +4836,7 @@
 		(fields_autoplaced yes)
 		(uuid "e0982680-1880-40ed-a4c9-c60b61ffc21c")
 		(property "Reference" "#PWR025"
-			(at 171.45 102.87 0)
+			(at 177.8 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4721,7 +4845,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 171.45 101.6 0)
+			(at 177.8 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4729,7 +4853,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 96.52 0)
+			(at 177.8 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4738,7 +4862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 96.52 0)
+			(at 177.8 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4747,7 +4871,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 96.52 0)
+			(at 177.8 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4769,7 +4893,7 @@
 	)
 	(symbol
 		(lib_id "SMBJ28A:SMBJ28A")
-		(at 171.45 77.47 270)
+		(at 177.8 27.94 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4778,7 +4902,7 @@
 		(fields_autoplaced yes)
 		(uuid "faa4cab4-ced5-4307-96c8-c9959693e998")
 		(property "Reference" "D1"
-			(at 175.26 83.3119 90)
+			(at 181.61 33.7819 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4787,7 +4911,7 @@
 			)
 		)
 		(property "Value" "SMBJ28A"
-			(at 175.26 85.8519 90)
+			(at 181.61 36.3219 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4796,7 +4920,7 @@
 			)
 		)
 		(property "Footprint" "TVS_Diodes:DIOM5436X244N"
-			(at 77.8 87.63 0)
+			(at 84.15 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4806,7 +4930,7 @@
 			)
 		)
 		(property "Datasheet" "https://bourns.com/docs/product-datasheets/smbj-q.pdf?sfvrsn=4d5977f6_16"
-			(at -22.2 87.63 0)
+			(at -15.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4816,7 +4940,7 @@
 			)
 		)
 		(property "Description" "45.4V Clamp 13.3A Ipp Tvs Diode Surface Mount DO-214AA (SMBJ)"
-			(at 171.45 77.47 0)
+			(at 177.8 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4825,7 +4949,7 @@
 			)
 		)
 		(property "Height" "2.44"
-			(at -222.2 87.63 0)
+			(at -215.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4835,7 +4959,7 @@
 			)
 		)
 		(property "Mouser Part Number" "652-SMBJ28A"
-			(at -322.2 87.63 0)
+			(at -315.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4845,7 +4969,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/SMBJ28A?qs=%252Bf8Cd6aE5byCKqo1d8aI3w%3D%3D"
-			(at -422.2 87.63 0)
+			(at -415.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4855,7 +4979,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Bourns"
-			(at -522.2 87.63 0)
+			(at -515.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4865,7 +4989,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "SMBJ28A"
-			(at -622.2 87.63 0)
+			(at -615.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5541,6 +5665,148 @@
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156"
 					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 96.52 111.76)
+		(size 31.75 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6816aaeb-2895-4813-8cf8-10286e1728b3")
+		(property "Sheetname" "Dimmer3"
+			(at 96.52 111.0484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dimmer1.kicad_sch"
+			(at 96.52 139.0146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIM_VLED+_A" output
+			(at 128.27 116.84 0)
+			(uuid "2eae3af7-2776-4ed0-a530-2390172949fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DIM_VLED+_B" output
+			(at 128.27 130.81 0)
+			(uuid "576f3dd0-5289-48c6-b4e0-4a1c825f06eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DIM_VLED-_A" output
+			(at 128.27 119.38 0)
+			(uuid "a39c79e1-ca40-42ba-97e0-549739040277")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DIM_VLED-_B" output
+			(at 128.27 133.35 0)
+			(uuid "7dddc011-dc7b-48e8-8e77-38fc8ade8b6b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND_DIM" input
+			(at 96.52 116.84 180)
+			(uuid "1bdc37e2-4b3d-498b-b19b-0163e453d8d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INH_DIMA" input
+			(at 96.52 123.19 180)
+			(uuid "b0615d66-899e-4831-991b-483b9168c7e3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INH_DIMB" input
+			(at 96.52 130.81 180)
+			(uuid "31658f85-cc38-4aec-bf94-d1816f9a0748")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_DIMA" input
+			(at 96.52 120.65 180)
+			(uuid "29581330-ff47-459a-9489-199d967bc07d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_DIMB" input
+			(at 96.52 128.27 180)
+			(uuid "e7ceb982-9342-4719-92f0-b86a3c532cb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VIN_DIM" input
+			(at 96.52 114.3 180)
+			(uuid "4bc22cb5-4cca-40a3-8216-bf019736d671")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "io-gateway"
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156"
+					(page "18")
 				)
 			)
 		)
