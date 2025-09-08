@@ -776,6 +776,10 @@
     [
       "6816aaeb-2895-4813-8cf8-10286e1728b3",
       "Dimmer3"
+    ],
+    [
+      "c5ad205a-3c42-42cf-b4c7-d7c0b439897b",
+      "Dimmer4"
     ]
   ],
   "text_variables": {}
