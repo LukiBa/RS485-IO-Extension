@@ -3069,6 +3069,16 @@
 		)
 		(uuid "3589e80f-8d6c-4f63-9ab0-91c3f79988ee")
 	)
+	(label "GND_CTRL"
+		(at 220.98 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3703c81f-1c89-4e73-9fc1-2cd09caf5473")
+	)
 	(label "VDC_CTRL"
 		(at 40.64 27.94 0)
 		(effects
@@ -3078,6 +3088,16 @@
 			(justify left bottom)
 		)
 		(uuid "45a2cfac-c0d7-46b2-946d-9c4c56eb575a")
+	)
+	(label "GND_CTRL"
+		(at 220.98 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49fb15af-96a9-4b21-ab01-fd0fc29fb9cd")
 	)
 	(label "VAC_OUT_2.1"
 		(at 236.22 36.83 180)
@@ -3119,6 +3139,26 @@
 		)
 		(uuid "71ba5bdb-1120-480a-913e-a5fe1cde7f32")
 	)
+	(label "GND_CTRL"
+		(at 220.98 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7653410c-12b1-497b-9531-171871c6e27d")
+	)
+	(label "GND_CTRL"
+		(at 220.98 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "91bb0872-1bfc-4aae-9f3c-55c241322529")
+	)
 	(label "ANALOG_IN_1"
 		(at 40.64 38.1 0)
 		(effects
@@ -3139,6 +3179,46 @@
 		)
 		(uuid "a99ed804-7616-4088-86bf-018bf1f7edf6")
 	)
+	(label "GND_CTRL"
+		(at 220.98 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8333c4d-a2bd-417b-a9e3-2c2a71ec534a")
+	)
+	(label "GND_CTRL"
+		(at 220.98 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb13b6b4-1242-40c3-b70d-ec8dcbe8d8a5")
+	)
+	(label "GND_CTRL"
+		(at 220.98 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd21336e-4763-4925-81f1-3a757c6f9255")
+	)
+	(label "GND_CTRL"
+		(at 220.98 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c233856f-216d-4a37-9d6e-0065484b4956")
+	)
 	(label "RS485_B"
 		(at 40.64 35.56 0)
 		(effects
@@ -3148,6 +3228,16 @@
 			(justify left bottom)
 		)
 		(uuid "c9d2fbbf-0938-428f-9841-f6dbfadb1df1")
+	)
+	(label "GND_CTRL"
+		(at 220.98 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb570fa8-cedb-4d10-9269-fed9676249ef")
 	)
 	(label "ANALOG_IN_2"
 		(at 40.64 40.64 0)
