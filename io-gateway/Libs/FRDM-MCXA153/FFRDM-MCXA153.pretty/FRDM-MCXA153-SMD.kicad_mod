@@ -3426,32 +3426,36 @@
 			)
 		)
 	)
-	(pad "" np_thru_hole circle
+	(pad "0.1" thru_hole circle
 		(at -16.774 -3.531 180)
-		(size 3.2 3.2)
+		(size 4.2 4.2)
 		(drill 3.2)
 		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
 		(uuid "cdd73858-22bb-4275-a61e-b153d973c19e")
 	)
-	(pad "" np_thru_hole circle
-		(at -16.774 46.253 180)
-		(size 3.2 3.2)
-		(drill 3.2)
-		(layers "*.Cu" "*.Mask")
-		(uuid "d79a1874-8f21-4dfa-a310-be3a0e4dbdfa")
-	)
-	(pad "" np_thru_hole circle
+	(pad "0.2" thru_hole circle
 		(at 70.221 -3.531 180)
-		(size 3.2 3.2)
+		(size 4.2 4.2)
 		(drill 3.2)
 		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
 		(uuid "455d02fe-f6ec-4b16-84b2-10dde40258a5")
 	)
-	(pad "" np_thru_hole circle
-		(at 70.221 46.253 180)
-		(size 3.2 3.2)
+	(pad "0.3" thru_hole circle
+		(at -16.774 46.253 180)
+		(size 4.2 4.2)
 		(drill 3.2)
 		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d79a1874-8f21-4dfa-a310-be3a0e4dbdfa")
+	)
+	(pad "0.4" thru_hole circle
+		(at 70.221 46.253 180)
+		(size 4.2 4.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
 		(uuid "6768b7c1-de78-49d2-8a9c-da82864c2098")
 	)
 	(pad "1.1" smd rect

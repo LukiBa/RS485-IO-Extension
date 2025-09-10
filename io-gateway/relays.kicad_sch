@@ -5,7 +5,7 @@
 	(uuid "7e80a11e-3f6e-46e9-8764-54496703c983")
 	(paper "A4")
 	(lib_symbols
-		(symbol "2071556-2_1"
+		(symbol "2071556-2:2071556-2"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -110,7 +110,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "2071556-2_1_0_0"
+			(symbol "2071556-2_0_0"
 				(polyline
 					(pts
 						(xy 5.08 -1.27) (xy 5.08 -3.81) (xy 4.445 -3.175) (xy 5.08 -2.54)
@@ -124,7 +124,7 @@
 					)
 				)
 			)
-			(symbol "2071556-2_1_0_1"
+			(symbol "2071556-2_0_1"
 				(rectangle
 					(start -10.16 -1.27)
 					(end 7.62 -11.43)
@@ -268,7 +268,7 @@
 					)
 				)
 			)
-			(symbol "2071556-2_1_1_1"
+			(symbol "2071556-2_1_1"
 				(pin passive line
 					(at -5.08 3.81 270)
 					(length 5.08)
@@ -1290,7 +1290,6 @@
 		(uuid "64d5e8d5-724a-46c1-8884-59ffd1b21e1f")
 	)
 	(symbol
-		(lib_name "2071556-2_1")
 		(lib_id "2071556-2:2071556-2")
 		(at 104.14 60.96 0)
 		(unit 1)

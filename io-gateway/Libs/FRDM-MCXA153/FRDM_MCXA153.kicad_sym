@@ -51,8 +51,8 @@
 		)
 		(symbol "MCU**_1_0"
 			(rectangle
-				(start -20.32 17.78)
-				(end -12.7 2.54)
+				(start -30.48 17.78)
+				(end -22.86 2.54)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -62,8 +62,8 @@
 				)
 			)
 			(rectangle
-				(start -19.05 16.637)
-				(end -17.78 16.383)
+				(start -29.21 16.637)
+				(end -27.94 16.383)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -73,8 +73,8 @@
 				)
 			)
 			(rectangle
-				(start -19.05 14.097)
-				(end -17.78 13.843)
+				(start -29.21 14.097)
+				(end -27.94 13.843)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -84,8 +84,8 @@
 				)
 			)
 			(rectangle
-				(start -19.05 11.557)
-				(end -17.78 11.303)
+				(start -29.21 11.557)
+				(end -27.94 11.303)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -95,8 +95,8 @@
 				)
 			)
 			(rectangle
-				(start -19.05 9.017)
-				(end -17.78 8.763)
+				(start -29.21 9.017)
+				(end -27.94 8.763)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -106,8 +106,8 @@
 				)
 			)
 			(rectangle
-				(start -19.05 6.477)
-				(end -17.78 6.223)
+				(start -29.21 6.477)
+				(end -27.94 6.223)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -117,8 +117,8 @@
 				)
 			)
 			(rectangle
-				(start -19.05 3.937)
-				(end -17.78 3.683)
+				(start -29.21 3.937)
+				(end -27.94 3.683)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -128,8 +128,8 @@
 				)
 			)
 			(rectangle
-				(start -15.24 16.637)
-				(end -13.97 16.383)
+				(start -25.4 16.637)
+				(end -24.13 16.383)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -139,8 +139,8 @@
 				)
 			)
 			(rectangle
-				(start -15.24 14.097)
-				(end -13.97 13.843)
+				(start -25.4 14.097)
+				(end -24.13 13.843)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -150,8 +150,8 @@
 				)
 			)
 			(rectangle
-				(start -15.24 11.557)
-				(end -13.97 11.303)
+				(start -25.4 11.557)
+				(end -24.13 11.303)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -161,8 +161,8 @@
 				)
 			)
 			(rectangle
-				(start -15.24 9.017)
-				(end -13.97 8.763)
+				(start -25.4 9.017)
+				(end -24.13 8.763)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -172,8 +172,8 @@
 				)
 			)
 			(rectangle
-				(start -15.24 6.477)
-				(end -13.97 6.223)
+				(start -25.4 6.477)
+				(end -24.13 6.223)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -183,8 +183,8 @@
 				)
 			)
 			(rectangle
-				(start -15.24 3.937)
-				(end -13.97 3.683)
+				(start -25.4 3.937)
+				(end -24.13 3.683)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -194,7 +194,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -25.4 16.51 0)
+				(at -35.56 16.51 0)
 				(length 5.08)
 				(name "Pin_1"
 					(effects
@@ -212,7 +212,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -25.4 13.97 0)
+				(at -35.56 13.97 0)
 				(length 5.08)
 				(name "Pin_3"
 					(effects
@@ -230,7 +230,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -25.4 11.43 0)
+				(at -35.56 11.43 0)
 				(length 5.08)
 				(name "Pin_5"
 					(effects
@@ -248,7 +248,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -25.4 8.89 0)
+				(at -35.56 8.89 0)
 				(length 5.08)
 				(name "Pin_7"
 					(effects
@@ -266,7 +266,7 @@
 				)
 			)
 			(pin passive line
-				(at -25.4 6.35 0)
+				(at -35.56 6.35 0)
 				(length 5.08)
 				(name "Pin_9"
 					(effects
@@ -284,7 +284,7 @@
 				)
 			)
 			(pin passive line
-				(at -25.4 3.81 0)
+				(at -35.56 3.81 0)
 				(length 5.08)
 				(name "Pin_11"
 					(effects
@@ -302,7 +302,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 16.51 180)
+				(at -17.78 16.51 180)
 				(length 5.08)
 				(name "Pin_2"
 					(effects
@@ -320,7 +320,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 13.97 180)
+				(at -17.78 13.97 180)
 				(length 5.08)
 				(name "Pin_4"
 					(effects
@@ -338,7 +338,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 11.43 180)
+				(at -17.78 11.43 180)
 				(length 5.08)
 				(name "Pin_6"
 					(effects
@@ -356,7 +356,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 8.89 180)
+				(at -17.78 8.89 180)
 				(length 5.08)
 				(name "Pin_8"
 					(effects
@@ -374,7 +374,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 6.35 180)
+				(at -17.78 6.35 180)
 				(length 5.08)
 				(name "Pin_10"
 					(effects
@@ -392,7 +392,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 3.81 180)
+				(at -17.78 3.81 180)
 				(length 5.08)
 				(name "Pin_12"
 					(effects
@@ -412,7 +412,7 @@
 		)
 		(symbol "MCU**_1_1"
 			(text "J4"
-				(at -19.558 1.27 0)
+				(at -29.718 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1993,6 +1993,91 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+		(symbol "MCU**_5_1"
+			(rectangle
+				(start -15.24 16.51)
+				(end 12.7 6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at -17.78 13.97 0)
+				(length 2.54)
+				(name "GND_Mount_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "0.1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -17.78 7.62 0)
+				(length 2.54)
+				(name "GND_Mount_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "0.3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 15.24 13.97 180)
+				(length 2.54)
+				(name "GND_Mount_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "0.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 15.24 7.62 180)
+				(length 2.54)
+				(name "GND_Mount_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "0.4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
 			)
