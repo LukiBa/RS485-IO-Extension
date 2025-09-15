@@ -714,28 +714,16 @@
       "FRDM-MCXA153"
     ],
     [
-      "60941778-6fb0-4187-871b-ab30112ac33b",
-      "Terminal Blocks"
-    ],
-    [
-      "b7c52a2f-c911-47bd-b8aa-349b31ff8e17",
-      "Relay1"
-    ],
-    [
-      "99edf8d5-e94a-4b7e-97dc-770099d54462",
-      "RelaysJ5"
+      "9de6c1f0-1e62-4b31-9c57-680b63c27868",
+      "MCU_VoltageRegulator"
     ],
     [
       "1308d9d5-cfd2-45e8-87f7-78f75fc0ae30",
       "RS485"
     ],
     [
-      "9de6c1f0-1e62-4b31-9c57-680b63c27868",
-      "MCU_VoltageRegulator"
-    ],
-    [
-      "334a84ed-29ea-43c8-926f-91a0c21c840d",
-      "Dimmer1"
+      "b7c52a2f-c911-47bd-b8aa-349b31ff8e17",
+      "Relay1"
     ],
     [
       "652e53fa-6621-48d4-b43a-7b4b51e67e20",
@@ -768,6 +756,10 @@
     [
       "8976081a-0d1c-4632-aadf-dea88614b0a1",
       "Relay9"
+    ],
+    [
+      "334a84ed-29ea-43c8-926f-91a0c21c840d",
+      "Dimmer1"
     ],
     [
       "03b23248-a520-4f66-9ca1-5505f42d8cec",

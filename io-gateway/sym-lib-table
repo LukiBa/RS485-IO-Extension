@@ -5,4 +5,6 @@
   (lib (name "FRDM_MCXA153")(type "KiCad")(uri "${KIPRJMOD}/Libs/FRDM-MCXA153/FRDM_MCXA153.kicad_sym")(options "")(descr ""))
   (lib (name "2071556-2")(type "KiCad")(uri "${KIPRJMOD}/Libs/Relay.pretty/2071556-2.kicad_sym")(options "")(descr ""))
   (lib (name "L_ferrite")(type "KiCad")(uri "${KIPRJMOD}/Libs/L_Ferrite/L_ferrite.kicad_sym")(options "")(descr ""))
+  (lib (name "DigitalIsolator")(type "KiCad")(uri "${KIPRJMOD}/Libs/DigitalIsolator.kicad_sym")(options "")(descr ""))
+  (lib (name "PowerManagement")(type "KiCad")(uri "${KIPRJMOD}/Libs/PowerManagement.kicad_sym")(options "")(descr ""))
 )
