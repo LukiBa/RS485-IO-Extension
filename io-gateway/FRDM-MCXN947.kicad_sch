@@ -2344,6 +2344,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 85.09) (xy 120.65 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05e4eb6d-31d6-415c-a0de-e47d639c4f68")
+	)
+	(wire
+		(pts
 			(xy 92.71 170.18) (xy 99.06 170.18)
 		)
 		(stroke
@@ -2401,6 +2411,16 @@
 			(type default)
 		)
 		(uuid "236f14a4-524b-4371-92cb-ec5182ccb5a6")
+	)
+	(wire
+		(pts
+			(xy 166.37 128.27) (xy 176.53 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "243fc7c8-d61d-4a83-b4dc-b038a76420e0")
 	)
 	(wire
 		(pts
@@ -2481,6 +2501,26 @@
 			(type default)
 		)
 		(uuid "582ba093-ef0b-42f4-b74a-52425d733886")
+	)
+	(wire
+		(pts
+			(xy 76.2 95.25) (xy 93.98 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62ff0c0e-2d4c-4a8e-abca-163468ece520")
+	)
+	(wire
+		(pts
+			(xy 111.76 87.63) (xy 120.65 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "674e84f3-b070-457f-a282-c1cee3ec142c")
 	)
 	(wire
 		(pts
@@ -2644,6 +2684,26 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 130.81) (xy 176.53 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3a0953a-d68f-4f74-84b9-6255597dd0b4")
+	)
+	(wire
+		(pts
+			(xy 194.31 125.73) (xy 208.28 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d426e0c1-ddc8-48cd-aff1-1a159143e272")
+	)
+	(wire
+		(pts
 			(xy 76.2 120.65) (xy 93.98 120.65)
 		)
 		(stroke
@@ -2704,6 +2764,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 74.93) (xy 93.98 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd946b46-3b8f-4c67-831a-b2c2131d713f")
+	)
+	(wire
+		(pts
 			(xy 132.08 170.18) (xy 138.43 170.18)
 		)
 		(stroke
@@ -2747,12 +2817,12 @@
 	)
 	(hierarchical_label "RelayCtrl_K1"
 		(shape output)
-		(at 119.38 85.09 0)
+		(at 76.2 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "11df79a1-5bab-4fe9-89c0-07b470ba1fb3")
 	)
@@ -2766,6 +2836,17 @@
 			(justify left)
 		)
 		(uuid "14d92a89-4919-4886-8418-0586d6de419f")
+	)
+	(hierarchical_label "ADC_IN2"
+		(shape input)
+		(at 120.65 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "15c6e649-2f49-4829-8197-d98dff55bab5")
 	)
 	(hierarchical_label "RelayCtrl_K2"
 		(shape output)
@@ -2788,6 +2869,17 @@
 			(justify right)
 		)
 		(uuid "478ca020-1781-4696-8b59-d7b26ad3e71d")
+	)
+	(hierarchical_label "INH_DIM_7u8"
+		(shape output)
+		(at 166.37 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "59a5874d-6d6b-402f-98d7-5f1708237636")
 	)
 	(hierarchical_label "RelayCtrl_K5"
 		(shape output)
@@ -2855,6 +2947,17 @@
 		)
 		(uuid "7dd97fc6-c58e-4558-8b5d-a0f7d49616ff")
 	)
+	(hierarchical_label "INH_DIM_1u2"
+		(shape output)
+		(at 120.65 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a1d82f12-336d-4c18-9dce-17d93d5e9923")
+	)
 	(hierarchical_label "RS485_TX"
 		(shape output)
 		(at 76.2 130.81 180)
@@ -2888,6 +2991,17 @@
 		)
 		(uuid "c38ec1a9-2b48-43dd-a713-7bae53bdd9a2")
 	)
+	(hierarchical_label "ADC_IN1"
+		(shape input)
+		(at 127 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cddd1441-80a4-4c3a-85f6-53f81bd255df")
+	)
 	(hierarchical_label "RelayCtrl_K4"
 		(shape output)
 		(at 163.83 77.47 180)
@@ -2899,8 +3013,19 @@
 		)
 		(uuid "cfecdc8d-9e6d-4c43-9b01-46d304772f63")
 	)
-	(hierarchical_label "RS485_RX"
+	(hierarchical_label "INH_DIM_3u4"
 		(shape output)
+		(at 166.37 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d20906fa-e30a-4649-aa6b-610043679027")
+	)
+	(hierarchical_label "RS485_RX"
+		(shape input)
 		(at 76.2 133.35 180)
 		(effects
 			(font
@@ -2943,6 +3068,17 @@
 		)
 		(uuid "e87e1465-eae1-4080-a383-0a9bb5f133b7")
 	)
+	(hierarchical_label "INH_DIM_5u6"
+		(shape output)
+		(at 76.2 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ec4c66d1-e5eb-47ee-ba47-d253e4a3f2d7")
+	)
 	(hierarchical_label "PWM_DIM1"
 		(shape output)
 		(at 76.2 92.71 180)
@@ -2953,6 +3089,17 @@
 			(justify right)
 		)
 		(uuid "ef7646c0-0266-41b2-ad4a-8dc024bbd97c")
+	)
+	(hierarchical_label "INH_DIM_9u10"
+		(shape output)
+		(at 208.28 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f62a2db8-b4bf-4b4d-9182-87cb8b36f3e7")
 	)
 	(symbol
 		(lib_id "power:GND")
