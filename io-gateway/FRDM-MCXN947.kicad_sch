@@ -2374,6 +2374,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 120.65) (xy 208.28 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f379445-1372-4726-b3d6-5aa47e1b5d36")
+	)
+	(wire
+		(pts
 			(xy 203.2 95.25) (xy 193.04 95.25)
 		)
 		(stroke
@@ -2434,6 +2444,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 72.39) (xy 93.98 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46085adf-1f46-4570-9290-415f4c5c002b")
+	)
+	(wire
+		(pts
 			(xy 198.12 90.17) (xy 195.58 90.17)
 		)
 		(stroke
@@ -2451,16 +2471,6 @@
 			(type default)
 		)
 		(uuid "49461720-02a2-4637-97b2-1268078805a3")
-	)
-	(wire
-		(pts
-			(xy 76.2 72.39) (xy 93.98 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56f3d8dc-438b-462f-bbd4-aa39d8377f3e")
 	)
 	(wire
 		(pts
@@ -2524,6 +2534,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 123.19) (xy 208.28 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866cc221-d4fc-468a-9aaa-0f306b84cc0b")
+	)
+	(wire
+		(pts
 			(xy 111.76 133.35) (xy 120.65 133.35)
 		)
 		(stroke
@@ -2554,16 +2574,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 85.09) (xy 121.92 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98b17f28-6f72-4e38-9114-8b5c9b641891")
-	)
-	(wire
-		(pts
 			(xy 163.83 95.25) (xy 175.26 95.25)
 		)
 		(stroke
@@ -2571,6 +2581,16 @@
 			(type default)
 		)
 		(uuid "9f24624c-aa1e-4327-aec7-c1e3a5014906")
+	)
+	(wire
+		(pts
+			(xy 194.31 118.11) (xy 208.28 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a31f88da-e792-42df-808f-7659637e939c")
 	)
 	(wire
 		(pts
@@ -2594,16 +2614,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 82.55) (xy 93.98 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad948ba8-629f-4a71-b328-3ae8cfd57188")
-	)
-	(wire
-		(pts
 			(xy 195.58 92.71) (xy 195.58 90.17)
 		)
 		(stroke
@@ -2624,16 +2634,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 118.11) (xy 208.28 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8d8a552-d21e-4ab3-af0a-d02c0b263487")
-	)
-	(wire
-		(pts
 			(xy 88.9 78.74) (xy 88.9 80.01)
 		)
 		(stroke
@@ -2641,16 +2641,6 @@
 			(type default)
 		)
 		(uuid "cc30354f-6256-42eb-b84b-071ec05d474f")
-	)
-	(wire
-		(pts
-			(xy 76.2 74.93) (xy 93.98 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3899320-d821-48e6-8cde-8a7e71041f85")
 	)
 	(wire
 		(pts
@@ -2757,12 +2747,12 @@
 	)
 	(hierarchical_label "RelayCtrl_K1"
 		(shape output)
-		(at 76.2 82.55 180)
+		(at 119.38 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "11df79a1-5bab-4fe9-89c0-07b470ba1fb3")
 	)
@@ -2779,12 +2769,12 @@
 	)
 	(hierarchical_label "RelayCtrl_K2"
 		(shape output)
-		(at 76.2 74.93 180)
+		(at 208.28 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "3b63a467-78ec-4fad-b01a-10c3706e8b50")
 	)
@@ -2812,12 +2802,12 @@
 	)
 	(hierarchical_label "RelayCtrl_K6"
 		(shape output)
-		(at 121.92 85.09 0)
+		(at 76.2 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "67c113a0-3740-47f6-afca-ff2d2ba38fa3")
 	)
@@ -2845,7 +2835,7 @@
 	)
 	(hierarchical_label "RelayCtrl_K9"
 		(shape output)
-		(at 208.28 118.11 0)
+		(at 208.28 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2889,12 +2879,12 @@
 	)
 	(hierarchical_label "RelayCtrl_K3"
 		(shape output)
-		(at 76.2 72.39 180)
+		(at 208.28 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "c38ec1a9-2b48-43dd-a713-7bae53bdd9a2")
 	)
