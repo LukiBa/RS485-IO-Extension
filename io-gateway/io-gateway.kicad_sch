@@ -1130,7 +1130,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 140.97) (xy 62.23 140.97)
+			(xy 36.83 140.97) (xy 43.18 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1150,7 +1150,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 143.51) (xy 62.23 143.51)
+			(xy 36.83 143.51) (xy 43.18 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1160,7 +1160,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 88.9) (xy 63.5 88.9)
+			(xy 36.83 88.9) (xy 43.18 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1200,7 +1200,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 158.75) (xy 62.23 158.75)
+			(xy 36.83 158.75) (xy 43.18 158.75)
 		)
 		(stroke
 			(width 0)
@@ -1230,7 +1230,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 140.97) (xy 158.75 140.97)
+			(xy 162.56 138.43) (xy 158.75 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1270,7 +1270,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 55.88) (xy 63.5 55.88)
+			(xy 36.83 55.88) (xy 43.18 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1540,7 +1540,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 168.91) (xy 97.79 168.91)
+			(xy 66.04 168.91) (xy 97.79 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1600,7 +1600,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 19.05) (xy 97.79 19.05)
+			(xy 62.23 19.05) (xy 97.79 19.05)
 		)
 		(stroke
 			(width 0)
@@ -1640,7 +1640,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 146.05) (xy 92.71 146.05)
+			(xy 36.83 146.05) (xy 68.58 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1680,7 +1680,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 53.34) (xy 63.5 53.34)
+			(xy 36.83 53.34) (xy 43.18 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1690,7 +1690,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 109.22) (xy 63.5 109.22)
+			(xy 36.83 109.22) (xy 43.18 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1720,7 +1720,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 135.89) (xy 62.23 135.89)
+			(xy 36.83 135.89) (xy 43.18 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1780,7 +1780,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 33.02) (xy 40.64 33.02)
+			(xy 36.83 33.02) (xy 39.37 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1800,7 +1800,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 153.67) (xy 62.23 153.67)
+			(xy 36.83 153.67) (xy 43.18 153.67)
 		)
 		(stroke
 			(width 0)
@@ -1850,7 +1850,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 81.28) (xy 78.74 81.28)
+			(xy 36.83 81.28) (xy 77.47 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1930,7 +1930,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 143.51) (xy 157.48 83.82)
+			(xy 157.48 140.97) (xy 157.48 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1940,7 +1940,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 93.98) (xy 63.5 93.98)
+			(xy 36.83 93.98) (xy 43.18 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1960,7 +1960,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 30.48) (xy 63.5 30.48)
+			(xy 36.83 30.48) (xy 49.53 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2050,7 +2050,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 91.44) (xy 63.5 91.44)
+			(xy 36.83 91.44) (xy 43.18 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2060,7 +2060,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 43.18) (xy 80.01 43.18)
+			(xy 36.83 43.18) (xy 62.23 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2080,7 +2080,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 50.8) (xy 63.5 50.8)
+			(xy 36.83 50.8) (xy 43.18 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2090,7 +2090,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 146.05) (xy 92.71 166.37)
+			(xy 68.58 146.05) (xy 68.58 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2130,7 +2130,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 148.59) (xy 90.17 148.59)
+			(xy 36.83 148.59) (xy 66.04 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2160,7 +2160,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 104.14) (xy 63.5 104.14)
+			(xy 36.83 104.14) (xy 43.18 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2210,7 +2210,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 81.28) (xy 78.74 57.15)
+			(xy 77.47 81.28) (xy 77.47 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2220,7 +2220,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 43.18) (xy 80.01 19.05)
+			(xy 62.23 43.18) (xy 62.23 19.05)
 		)
 		(stroke
 			(width 0)
@@ -2230,7 +2230,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 35.56) (xy 40.64 35.56)
+			(xy 36.83 35.56) (xy 39.37 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2240,7 +2240,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 86.36) (xy 63.5 86.36)
+			(xy 36.83 86.36) (xy 43.18 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2250,7 +2250,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 148.59) (xy 90.17 168.91)
+			(xy 66.04 148.59) (xy 66.04 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2300,7 +2300,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 21.59) (xy 97.79 21.59)
+			(xy 64.77 21.59) (xy 97.79 21.59)
 		)
 		(stroke
 			(width 0)
@@ -2380,7 +2380,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 40.64) (xy 63.5 40.64)
+			(xy 36.83 40.64) (xy 45.72 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2400,7 +2400,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 140.97) (xy 158.75 87.63)
+			(xy 158.75 138.43) (xy 158.75 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2450,7 +2450,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 38.1) (xy 63.5 38.1)
+			(xy 36.83 38.1) (xy 45.72 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2630,7 +2630,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 57.15) (xy 97.79 57.15)
+			(xy 77.47 57.15) (xy 97.79 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2680,7 +2680,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 21.59) (xy 82.55 45.72)
+			(xy 64.77 21.59) (xy 64.77 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2690,7 +2690,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 27.94) (xy 63.5 27.94)
+			(xy 36.83 27.94) (xy 49.53 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2720,7 +2720,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 138.43) (xy 62.23 138.43)
+			(xy 36.83 138.43) (xy 43.18 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2840,7 +2840,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 48.26) (xy 63.5 48.26)
+			(xy 36.83 48.26) (xy 43.18 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2860,7 +2860,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 156.21) (xy 62.23 156.21)
+			(xy 36.83 156.21) (xy 43.18 156.21)
 		)
 		(stroke
 			(width 0)
@@ -2950,7 +2950,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 101.6) (xy 63.5 101.6)
+			(xy 36.83 101.6) (xy 43.18 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2960,7 +2960,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 106.68) (xy 63.5 106.68)
+			(xy 36.83 106.68) (xy 43.18 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2970,7 +2970,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 45.72) (xy 36.83 45.72)
+			(xy 64.77 45.72) (xy 36.83 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2980,7 +2980,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 166.37) (xy 97.79 166.37)
+			(xy 68.58 166.37) (xy 97.79 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3040,7 +3040,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 151.13) (xy 62.23 151.13)
+			(xy 36.83 151.13) (xy 43.18 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3060,7 +3060,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 143.51) (xy 157.48 143.51)
+			(xy 162.56 140.97) (xy 157.48 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3188,16 +3188,6 @@
 		)
 		(uuid "3589e80f-8d6c-4f63-9ab0-91c3f79988ee")
 	)
-	(label "VDC_CTRL"
-		(at 40.64 27.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "45a2cfac-c0d7-46b2-946d-9c4c56eb575a")
-	)
 	(label "RS485_B"
 		(at 207.01 140.97 0)
 		(effects
@@ -3279,7 +3269,7 @@
 		(uuid "6aae69d4-7846-4510-abd3-46f9d395a1e1")
 	)
 	(label "RS485_A"
-		(at 40.64 35.56 0)
+		(at 39.37 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3377,26 +3367,6 @@
 			(justify left bottom)
 		)
 		(uuid "a068fcdb-7c27-4656-b274-70900334cbce")
-	)
-	(label "ANALOG_IN_1"
-		(at 40.64 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a6684a47-2ec6-40d1-bd07-fd8f79d67159")
-	)
-	(label "GND_CTRL"
-		(at 40.64 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a99ed804-7616-4088-86bf-018bf1f7edf6")
 	)
 	(label "PWM_DIM10"
 		(at 85.09 180.34 0)
@@ -3519,7 +3489,7 @@
 		(uuid "c843285c-e481-4653-880d-3eb9d47d1998")
 	)
 	(label "RS485_B"
-		(at 40.64 33.02 0)
+		(at 39.37 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3658,16 +3628,6 @@
 		)
 		(uuid "eeab6a19-1e36-40ed-a6a4-0e8fbd06b5d5")
 	)
-	(label "ANALOG_IN_2"
-		(at 40.64 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f2bd096e-c91d-412f-a3ce-5831e2325ccc")
-	)
 	(label "RelayCtrl_K5"
 		(at 245.11 97.79 0)
 		(effects
@@ -3700,7 +3660,7 @@
 	)
 	(global_label "DIM7_VLED_GND"
 		(shape input)
-		(at 62.23 138.43 0)
+		(at 43.18 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3710,7 +3670,7 @@
 		)
 		(uuid "0f0f310b-03ca-42bd-b327-b53fe80c2e44")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.8266 138.43 0)
+			(at 57.7766 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3722,7 +3682,7 @@
 	)
 	(global_label "DIM10_VLED_GND"
 		(shape input)
-		(at 62.23 158.75 0)
+		(at 43.18 158.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3732,7 +3692,7 @@
 		)
 		(uuid "10513f53-9c1d-4a67-b508-19efc2702547")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0361 158.75 0)
+			(at 58.9861 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3766,7 +3726,7 @@
 	)
 	(global_label "DIM3_VLED_VCC"
 		(shape input)
-		(at 63.5 86.36 0)
+		(at 43.18 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3776,7 +3736,7 @@
 		)
 		(uuid "1a5b10b4-9f49-4ec7-9a90-bafc06469bcb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 86.36 0)
+			(at 57.7766 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3810,7 +3770,7 @@
 	)
 	(global_label "GND_CTRL"
 		(shape input)
-		(at 63.5 30.48 0)
+		(at 49.53 30.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3820,7 +3780,7 @@
 		)
 		(uuid "27990838-f639-4a25-8ea7-ac460f8b71c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.859 30.48 0)
+			(at 61.889 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3832,7 +3792,7 @@
 	)
 	(global_label "ANALOG_IN_1"
 		(shape input)
-		(at 63.5 38.1 0)
+		(at 45.72 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3842,7 +3802,7 @@
 		)
 		(uuid "28febfae-0441-40d3-bdc4-974b14bd62ae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.7015 38.1 0)
+			(at 60.9215 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3854,7 +3814,7 @@
 	)
 	(global_label "DIM9_VLED_VCC"
 		(shape input)
-		(at 62.23 151.13 0)
+		(at 43.18 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3864,7 +3824,7 @@
 		)
 		(uuid "3cf4463e-e931-4d96-989d-d3a5e73bb65a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.8266 151.13 0)
+			(at 57.7766 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3876,7 +3836,7 @@
 	)
 	(global_label "DIM5_VLED_VCC"
 		(shape input)
-		(at 63.5 101.6 0)
+		(at 43.18 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3886,7 +3846,7 @@
 		)
 		(uuid "40b98c79-4349-41b3-b65f-731bf55a9c0e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 101.6 0)
+			(at 57.7766 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3920,7 +3880,7 @@
 	)
 	(global_label "DIM6_VLED_VCC"
 		(shape input)
-		(at 63.5 106.68 0)
+		(at 43.18 106.68 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3930,7 +3890,7 @@
 		)
 		(uuid "476b9584-2c18-4411-9da4-abf64c56b31b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 106.68 0)
+			(at 57.7766 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3964,7 +3924,7 @@
 	)
 	(global_label "DIM6_VLED_GND"
 		(shape input)
-		(at 63.5 109.22 0)
+		(at 43.18 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3974,7 +3934,7 @@
 		)
 		(uuid "5039dc3f-edb9-4f11-a6ba-3c2d2660dac5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 109.22 0)
+			(at 57.7766 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4030,7 +3990,7 @@
 	)
 	(global_label "DIM7_VLED_VCC"
 		(shape input)
-		(at 62.23 135.89 0)
+		(at 43.18 135.89 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4040,7 +4000,7 @@
 		)
 		(uuid "5b76770e-eec6-4e1b-b45a-c4209147a9b5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.8266 135.89 0)
+			(at 57.7766 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4096,7 +4056,7 @@
 	)
 	(global_label "ANALOG_IN_2"
 		(shape input)
-		(at 63.5 40.64 0)
+		(at 45.72 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4106,7 +4066,7 @@
 		)
 		(uuid "6ca5e2dc-9d48-4583-a7f7-0fffacc5e3d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.7015 40.64 0)
+			(at 60.9215 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4140,7 +4100,7 @@
 	)
 	(global_label "DIM1_VLED_GND"
 		(shape input)
-		(at 63.5 50.8 0)
+		(at 43.18 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4150,7 +4110,7 @@
 		)
 		(uuid "716aa826-4368-4f7e-bf75-7cafcedca837")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 50.8 0)
+			(at 57.7766 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4162,7 +4122,7 @@
 	)
 	(global_label "DIM2_VLED_GND"
 		(shape input)
-		(at 63.5 55.88 0)
+		(at 43.18 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4172,7 +4132,7 @@
 		)
 		(uuid "74d70388-ca45-494b-a08a-c06a7fdc3c40")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 55.88 0)
+			(at 57.7766 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4272,7 +4232,7 @@
 	)
 	(global_label "DIM8_VLED_VCC"
 		(shape input)
-		(at 62.23 140.97 0)
+		(at 43.18 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4282,7 +4242,7 @@
 		)
 		(uuid "a59244a9-a6f2-4d0d-ab34-0848aa5fed72")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.8266 140.97 0)
+			(at 57.7766 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4294,7 +4254,7 @@
 	)
 	(global_label "DIM5_VLED_GND"
 		(shape input)
-		(at 63.5 104.14 0)
+		(at 43.18 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4304,7 +4264,7 @@
 		)
 		(uuid "a7cb53e6-6dd5-436f-999b-b53110fd6a73")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 104.14 0)
+			(at 57.7766 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4316,7 +4276,7 @@
 	)
 	(global_label "DIM2_VLED_VCC"
 		(shape input)
-		(at 63.5 53.34 0)
+		(at 43.18 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4326,7 +4286,7 @@
 		)
 		(uuid "a8399dec-d55f-4582-9033-4d52d06e8399")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 53.34 0)
+			(at 57.7766 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4382,7 +4342,7 @@
 	)
 	(global_label "VDC_CTRL"
 		(shape input)
-		(at 63.5 27.94 0)
+		(at 49.53 27.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4392,7 +4352,7 @@
 		)
 		(uuid "b53cd800-f401-44fd-887a-fd1773373986")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.6171 27.94 0)
+			(at 61.6471 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,7 +4364,7 @@
 	)
 	(global_label "DIM8_VLED_GND"
 		(shape input)
-		(at 62.23 143.51 0)
+		(at 43.18 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4414,7 +4374,7 @@
 		)
 		(uuid "b9d4dacb-aacd-492b-864a-3c19912ec31c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.8266 143.51 0)
+			(at 57.7766 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4426,7 +4386,7 @@
 	)
 	(global_label "DIM9_VLED_GND"
 		(shape input)
-		(at 62.23 153.67 0)
+		(at 43.18 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4436,7 +4396,7 @@
 		)
 		(uuid "ca892879-11b2-492d-bacc-66afd9cdd3e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.8266 153.67 0)
+			(at 57.7766 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,7 +4408,7 @@
 	)
 	(global_label "DIM4_VLED_GND"
 		(shape input)
-		(at 63.5 93.98 0)
+		(at 43.18 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4458,7 +4418,7 @@
 		)
 		(uuid "cc67b0e6-d6e5-4e30-a05a-4eabd2ba1dee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 93.98 0)
+			(at 57.7766 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4536,7 +4496,7 @@
 	)
 	(global_label "DIM10_VLED_VCC"
 		(shape input)
-		(at 62.23 156.21 0)
+		(at 43.18 156.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4546,7 +4506,7 @@
 		)
 		(uuid "e0e26adb-d026-4f11-a8c9-06dcf4267660")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0361 156.21 0)
+			(at 58.9861 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4580,7 +4540,7 @@
 	)
 	(global_label "DIM1_VLED_VCC"
 		(shape input)
-		(at 63.5 48.26 0)
+		(at 43.18 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4590,7 +4550,7 @@
 		)
 		(uuid "e78e273f-0519-4e7a-bbde-675c8f48571d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.1204 48.26 0)
+			(at 60.8004 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4602,7 +4562,7 @@
 	)
 	(global_label "DIM3_VLED_GND"
 		(shape input)
-		(at 63.5 88.9 0)
+		(at 43.18 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4612,7 +4572,7 @@
 		)
 		(uuid "ea0ea2e7-ae9e-4ac6-90a4-b5dcb874a3ea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 88.9 0)
+			(at 57.7766 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4646,7 +4606,7 @@
 	)
 	(global_label "DIM4_VLED_VCC"
 		(shape input)
-		(at 63.5 91.44 0)
+		(at 43.18 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4656,7 +4616,7 @@
 		)
 		(uuid "ff0dd6a8-9b9f-438a-ba7c-1209c1a48104")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0966 91.44 0)
+			(at 57.7766 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6315,8 +6275,8 @@
 				(justify right)
 			)
 		)
-		(pin "RS485_RxD" input
-			(at 162.56 140.97 180)
+		(pin "RS485_RxD" output
+			(at 162.56 138.43 180)
 			(uuid "704fbe43-8396-4e1b-895e-02ec74f83931")
 			(effects
 				(font
@@ -6325,8 +6285,8 @@
 				(justify left)
 			)
 		)
-		(pin "RS485__TXD" input
-			(at 162.56 143.51 180)
+		(pin "RS485_TXD" input
+			(at 162.56 140.97 180)
 			(uuid "a0c1c5dc-bf31-4eeb-bebd-c1b3ddab6a1a")
 			(effects
 				(font

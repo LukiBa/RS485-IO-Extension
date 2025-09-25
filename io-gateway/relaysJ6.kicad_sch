@@ -3535,7 +3535,7 @@
 		)
 		(uuid "d200d5c5-2621-4d9a-84d5-fff07a2ea933")
 	)
-	(hierarchical_label "RS485__TXD"
+	(hierarchical_label "RS485_TXD"
 		(shape input)
 		(at 158.75 118.11 180)
 		(effects
