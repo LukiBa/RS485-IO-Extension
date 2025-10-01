@@ -2464,6 +2464,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 90.17) (xy 175.26 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e661423-a9c2-46d5-8a60-cdb9e649f42d")
+	)
+	(wire
+		(pts
 			(xy 198.12 90.17) (xy 195.58 90.17)
 		)
 		(stroke
@@ -2674,16 +2684,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 130.81) (xy 176.53 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3a0953a-d68f-4f74-84b9-6255597dd0b4")
-	)
-	(wire
-		(pts
 			(xy 194.31 125.73) (xy 208.28 125.73)
 		)
 		(stroke
@@ -2852,7 +2852,7 @@
 	)
 	(hierarchical_label "INH_DIM_7u8"
 		(shape output)
-		(at 166.37 130.81 180)
+		(at 163.83 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
