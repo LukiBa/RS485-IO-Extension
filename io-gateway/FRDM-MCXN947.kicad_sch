@@ -4335,16 +4335,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 90.17) (xy 93.98 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebbe9c03-ad77-4257-914e-b36e028079d1")
-	)
-	(wire
-		(pts
 			(xy 227.33 91.44) (xy 227.33 90.17)
 		)
 		(stroke
@@ -4560,17 +4550,6 @@
 			(justify right)
 		)
 		(uuid "3b63a467-78ec-4fad-b01a-10c3706e8b50")
-	)
-	(hierarchical_label "GPIO1"
-		(shape input)
-		(at 76.2 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "42a4e81c-64ee-442b-aca5-4f8b291e28bd")
 	)
 	(hierarchical_label "PWM_DIM5"
 		(shape output)
