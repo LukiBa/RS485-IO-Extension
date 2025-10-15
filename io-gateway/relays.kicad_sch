@@ -1168,7 +1168,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 71.12) (xy 82.55 83.82)
+			(xy 77.47 71.12) (xy 77.47 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1178,7 +1178,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 52.07) (xy 82.55 63.5)
+			(xy 77.47 52.07) (xy 77.47 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1188,7 +1188,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 52.07) (xy 82.55 52.07)
+			(xy 99.06 52.07) (xy 77.47 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1228,7 +1228,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 83.82) (xy 99.06 83.82)
+			(xy 77.47 83.82) (xy 99.06 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1649,7 +1649,7 @@
 	)
 	(symbol
 		(lib_id "Diode:MMSD914")
-		(at 82.55 67.31 270)
+		(at 77.47 67.31 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1658,7 +1658,7 @@
 		(fields_autoplaced yes)
 		(uuid "266f092b-fcfa-4a70-bfb8-554bc7122620")
 		(property "Reference" "D_K1"
-			(at 85.09 66.0399 90)
+			(at 80.01 66.0399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1667,7 +1667,7 @@
 			)
 		)
 		(property "Value" "MMSD914"
-			(at 85.09 68.5799 90)
+			(at 80.01 68.5799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1676,7 +1676,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 78.105 67.31 0)
+			(at 73.025 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1685,7 +1685,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD914T1-D.PDF"
-			(at 82.55 67.31 0)
+			(at 77.47 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1694,7 +1694,7 @@
 			)
 		)
 		(property "Description" "100V 0.2A Switching Diode, SOD-123"
-			(at 82.55 67.31 0)
+			(at 77.47 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1703,7 +1703,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 82.55 67.31 0)
+			(at 77.47 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1712,7 +1712,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 82.55 67.31 0)
+			(at 77.47 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)

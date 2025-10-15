@@ -50,7 +50,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffffd_ffff7767",
+    "visible_layers": "ffffffff_ffffffff_fffffffd_fff577ff",
     "zone_display_mode": 0
   },
   "git": {
@@ -109,7 +109,7 @@
     "expanded_rows": [],
     "filter_by_net_name": true,
     "filter_by_netclass": true,
-    "filter_text": "",
+    "filter_text": "relay8",
     "group_by_constraint": false,
     "group_by_netclass": false,
     "show_unconnected_nets": false,
