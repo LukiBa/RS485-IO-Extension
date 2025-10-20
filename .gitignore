@@ -5,3 +5,9 @@ io-gateway/io-gateway-backups
 io-gateway/_autosave*
 *-cache
 io-gateway/\#auto_saved_files\#
+**/.vscode
+**/.cmake
+**/CMakeFiles
+SW/FirstTest/build/CMakeCache.txt
+**/armgcc
+SW/FirstTest/frdm_mcxa153_blank/__repo__
