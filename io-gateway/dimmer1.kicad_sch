@@ -444,6 +444,142 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -1157,12 +1293,6 @@
 		(uuid "5bea4a13-2562-4369-a534-0c5a84c62c39")
 	)
 	(junction
-		(at 43.18 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "60941563-dec8-4a7b-a9f8-15a753073553")
-	)
-	(junction
 		(at 132.08 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1179,6 +1309,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c0d7d9f-ebfc-4f59-a85d-319eb08ebc49")
+	)
+	(junction
+		(at 43.18 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ec38697-3839-4545-b710-bb3a6254ca36")
 	)
 	(junction
 		(at 207.01 121.92)
@@ -1444,6 +1580,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 21.59) (xy 21.59 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f7b1631-0344-491c-ae6b-515b03132876")
+	)
+	(wire
+		(pts
 			(xy 176.53 154.94) (xy 194.31 154.94)
 		)
 		(stroke
@@ -1464,13 +1610,13 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 21.59) (xy 43.18 25.4)
+			(xy 34.29 21.59) (xy 43.18 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1835a12c-2148-4e93-b9ae-b0ef61ffebb5")
+		(uuid "181d851c-a391-4790-bbaa-e766d3d7de22")
 	)
 	(wire
 		(pts
@@ -1721,16 +1867,6 @@
 			(type default)
 		)
 		(uuid "45f5b57c-7a5c-42d9-93fc-f6401d8e9e5f")
-	)
-	(wire
-		(pts
-			(xy 21.59 21.59) (xy 43.18 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bafb8b3-df75-471e-9b8b-0835aab43990")
 	)
 	(wire
 		(pts
@@ -2391,6 +2527,16 @@
 			(type default)
 		)
 		(uuid "bd8fdba7-c18c-40b6-a21b-e21c5c8425ec")
+	)
+	(wire
+		(pts
+			(xy 43.18 21.59) (xy 43.18 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bedc9bdf-8208-450a-bccb-587fecf3db23")
 	)
 	(wire
 		(pts
@@ -5120,6 +5266,86 @@
 				)
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/c5ad205a-3c42-42cf-b4c7-d7c0b439897b"
 					(reference "C_DIMA_26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 30.48 21.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9004eaa6-b755-4541-9faa-c3eda39d9ceb")
+		(property "Reference" "F_DIMA_1"
+			(at 30.48 15.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse"
+			(at 30.48 17.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 30.48 23.368 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 30.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32674c6d-66a8-4b7a-8e41-5766014746c8")
+		)
+		(pin "1"
+			(uuid "050acaea-253d-41fe-90b7-6daae8641bf6")
+		)
+		(instances
+			(project "io-gateway"
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/334a84ed-29ea-43c8-926f-91a0c21c840d"
+					(reference "F_DIMA_1")
+					(unit 1)
+				)
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/6816aaeb-2895-4813-8cf8-10286e1728b3"
+					(reference "F_DIMA_3")
+					(unit 1)
+				)
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/af08ab74-4e14-4265-a7c4-2b601284ca87"
+					(reference "F_DIMA_5")
+					(unit 1)
+				)
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/c5ad205a-3c42-42cf-b4c7-d7c0b439897b"
+					(reference "F_DIMA_4")
 					(unit 1)
 				)
 			)
