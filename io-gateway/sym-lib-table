@@ -7,4 +7,5 @@
   (lib (name "L_ferrite")(type "KiCad")(uri "${KIPRJMOD}/Libs/L_Ferrite/L_ferrite.kicad_sym")(options "")(descr ""))
   (lib (name "DigitalIsolator")(type "KiCad")(uri "${KIPRJMOD}/Libs/DigitalIsolator.kicad_sym")(options "")(descr ""))
   (lib (name "PowerManagement")(type "KiCad")(uri "${KIPRJMOD}/Libs/PowerManagement.kicad_sym")(options "")(descr ""))
+  (lib (name "Jumpers")(type "KiCad")(uri "${KIPRJMOD}/Libs/Jumpers.kicad_sym")(options "")(descr ""))
 )

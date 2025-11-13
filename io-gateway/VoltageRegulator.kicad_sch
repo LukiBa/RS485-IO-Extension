@@ -429,6 +429,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumpers:Jumper_2_Bridged"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Bridged"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, closed/bridged"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_1"
+				(arc
+					(start -1.524 0.254)
+					(mid 0 0.762)
+					(end 1.524 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "L_ferrite:L_Ferrite"
 			(pin_numbers
 				(hide yes)
@@ -1323,6 +1473,12 @@
 		(uuid "6958db2b-f8e2-43d9-9c52-034a5ebd7931")
 	)
 	(junction
+		(at 175.26 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70a0933f-67b1-47b2-97d6-a9be5fae8154")
+	)
+	(junction
 		(at 39.37 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1345,12 +1501,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3df2458-6ca1-4e58-8897-0528c4bf84c6")
-	)
-	(junction
-		(at 175.26 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d78a70cf-d709-41f3-9520-507e8da974ad")
 	)
 	(junction
 		(at 55.88 58.42)
@@ -1686,6 +1836,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 60.96) (xy 184.15 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79f190ef-0fb5-415f-908a-97382eb330a3")
+	)
+	(wire
+		(pts
 			(xy 189.23 71.12) (xy 189.23 69.85)
 		)
 		(stroke
@@ -1693,6 +1853,16 @@
 			(type default)
 		)
 		(uuid "7da6dd7b-f4c9-449b-aaca-af4e7d55d049")
+	)
+	(wire
+		(pts
+			(xy 194.31 60.96) (xy 199.39 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81c04d0a-391b-4976-aa32-4a9cefaf1a4f")
 	)
 	(wire
 		(pts
@@ -1753,16 +1923,6 @@
 			(type default)
 		)
 		(uuid "a913f8cf-ea45-4c28-b43e-e182ea540ebe")
-	)
-	(wire
-		(pts
-			(xy 199.39 60.96) (xy 175.26 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa228120-bc46-4835-ad74-dd1f68843bba")
 	)
 	(wire
 		(pts
@@ -2049,6 +2209,74 @@
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/9de6c1f0-1e62-4b31-9c57-680b63c27868"
 					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumpers:Jumper_2_Bridged")
+		(at 189.23 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bf69c80-84f6-4a44-828a-4b296169fd87")
+		(property "Reference" "JP1"
+			(at 189.23 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Bridged"
+			(at 189.23 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 189.23 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 189.23 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "963bd2ee-964d-4cd4-a0df-4cad9bab12a8")
+		)
+		(pin "2"
+			(uuid "bf0a9490-bb82-4fb5-8685-96c1fc8ad40e")
+		)
+		(instances
+			(project ""
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/9de6c1f0-1e62-4b31-9c57-680b63c27868"
+					(reference "JP1")
 					(unit 1)
 				)
 			)

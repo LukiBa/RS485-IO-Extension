@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 7,
+    "active_layer": 2,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -50,7 +50,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffffd_fff577ff",
+    "visible_layers": "ffffffff_ffffffff_fffffff5_fff575e7",
     "zone_display_mode": 0
   },
   "git": {
@@ -103,13 +103,13 @@
       91,
       91,
       91,
-      1163
+      1180
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
     "filter_by_net_name": true,
     "filter_by_netclass": true,
-    "filter_text": "relay8",
+    "filter_text": "Dim9",
     "group_by_constraint": false,
     "group_by_netclass": false,
     "show_unconnected_nets": false,
