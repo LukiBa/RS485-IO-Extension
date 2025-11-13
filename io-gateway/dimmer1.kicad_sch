@@ -2888,7 +2888,7 @@
 		)
 		(uuid "06320318-a5fd-434e-b5b3-277b27db2b4e")
 	)
-	(label "VIN_DIM"
+	(label "VIN_DIM_F"
 		(at 30.48 96.52 0)
 		(effects
 			(font
@@ -2927,6 +2927,16 @@
 			(justify left bottom)
 		)
 		(uuid "be4a8581-7121-4fd6-aa20-931b92538c1c")
+	)
+	(label "VIN_DIM_F"
+		(at 38.1 21.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f4a4e3ff-ecb6-486a-9a68-99167700b303")
 	)
 	(hierarchical_label "INH_DIMB"
 		(shape input)
