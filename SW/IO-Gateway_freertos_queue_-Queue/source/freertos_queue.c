@@ -415,8 +415,9 @@ void log_init(uint32_t queue_length, uint32_t max_log_lenght)
 static void log_task(void *pvParameters)
 {
     char log[MAX_LOG_LENGTH + 1];
+    size_t logLen = 0;
     lpuart_transfer_t sendXfer;
-    sendXfer.data        = log;
+    sendXfer.data        = g_txBuffer;
 	sendXfer.dataSize    = ECHO_BUFFER_LENGTH;
     while (1)
     {
@@ -428,8 +429,18 @@ static void log_task(void *pvParameters)
 		{
 			PRINTF("Failed to take semaphore.\r\n");
 		}
-        sendXfer.data        = log;
-        sendXfer.dataSize = strlen(log);
+        logLen = strlen(log);
+        if (logLen == 0 || logLEN >= MAX_LOG_LENGTH)
+        {
+        	sprintf(g_txBuffer,"ERROR: Invalid Logger Message");
+        }
+        else
+        {
+        	strcpy()
+        }
+
+        sendXfer.data        = g_txBuffer;
+        sendXfer.dataSize = strlen(g_txBuffer);
         LPUART_SendEDMA(DEMO_LPUART, &g_lpuartEdmaHandle, &sendXfer);
         taskYIELD();
     }
