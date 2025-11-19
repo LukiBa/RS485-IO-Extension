@@ -14,6 +14,7 @@
 #include "task.h"
 #include "queue.h"
 #include "timers.h"
+#include "semphr.h"
 
 /* Freescale includes. */
 #include "fsl_device_registers.h"
@@ -29,9 +30,17 @@
  * Definitions
  ******************************************************************************/
 #define MESSAGE_LENGTH_BYTE 32
-#define QUEUE_LENGTH 16
-#define DEVICE_ADDRESS = 0x01
+#define QUEUE_LENGTH 32
+#define DEVICE_ADDRESS 0x01
 #define MAX_LOG_LENGTH 64
+
+
+#define UART_RX_TASK_PRIO tskIDLE_PRIORITY + 1
+#define UART_TX_TASK_PRIO tskIDLE_PRIORITY + 1
+#define CMD_TASK_PRIO tskIDLE_PRIORITY + 2
+#define UART_RX_TASK_STACK_SIZE configMINIMAL_STACK_SIZE + 1958
+#define UART_TX_TASK_STACK_SIZE configMINIMAL_STACK_SIZE + 1958
+#define CMD_TASK_STACK_SIZE configMINIMAL_STACK_SIZE + 5030
 
 typedef enum eCommandList{
 	CMD_GET_STATE	=	0x01,
@@ -102,15 +111,15 @@ typedef struct __attribute__((__packed__)) sCMD_SET_DIMMER_ALL_FIELD{
 /* Logger queue handle */
 static QueueHandle_t log_queue = NULL;
 static QueueHandle_t command_queue = NULL;
-static SemaphoreHandle_t xUART_Tx_Mutex;
-static SemaphoreHandle_t xUART_Rx_Mutex;
+static SemaphoreHandle_t xUART_Tx_Semaphore;
+static SemaphoreHandle_t xUART_Rx_Semaphore;
 
 lpuart_edma_handle_t g_lpuartEdmaHandle;
 edma_handle_t g_lpuartTxEdmaHandle;
 edma_handle_t g_lpuartRxEdmaHandle;
 AT_NONCACHEABLE_SECTION_INIT(uint8_t g_tipString[]) =
     "IO Gateway Command interface initialized\n\rAddress: 0x01\n\r";
-AT_NONCACHEABLE_SECTION_INIT(sCommand_t g_rxBuffer) = {0};
+AT_NONCACHEABLE_SECTION_INIT(uint8_t g_rxBuffer[sizeof(sCommand_t)]) = {0};
 AT_NONCACHEABLE_SECTION_INIT(uint8_t g_txBuffer[MAX_LOG_LENGTH]) = {0};
 
 
@@ -121,12 +130,12 @@ AT_NONCACHEABLE_SECTION_INIT(uint8_t g_txBuffer[MAX_LOG_LENGTH]) = {0};
 static void commandWorker(void *pvParameters);
 static void BoardObserverTask(void *pvParameters);
 static void WatchdogTask(void *pvParameters);
-
+static void log_task(void *pvParameters);
+static void uart_RX_task(void *pvParameters);
 
 void LPUART_UserCallback(LPUART_Type *base, lpuart_edma_handle_t *handle, status_t status, void *userData);
 
-/* Logger API */
-void commandQueueAdd(char *command);
+void commandQueueAdd(sCommand_t *command);
 void commandWorkerInit(uint32_t queue_length, uint32_t max_log_lenght);
 
 void initEdmaFromDemo(edma_config_t *config);
@@ -134,7 +143,9 @@ void initEdmaFromDemo(edma_config_t *config);
 /* Logger API */
 void log_add(char *log);
 void log_init(uint32_t queue_length, uint32_t max_log_lenght);
-static void log_task(void *pvParameters);
+
+
+
 /*******************************************************************************
  * Code
  ******************************************************************************/
@@ -148,8 +159,8 @@ int main(void)
 	lpuart_transfer_t sendXfer;
 	lpuart_transfer_t receiveXfer;
 	edma_config_t userConfig = {0};
-	xUART_Tx_Mutex = xSemaphoreCreateMutex();
-	xUART_Rx_Mutex = xSemaphoreCreateMutex();
+	xUART_Tx_Semaphore = xSemaphoreCreateBinary();
+	xUART_Rx_Semaphore = xSemaphoreCreateBinary();
 
 	BOARD_InitHardware();
 
@@ -170,11 +181,19 @@ int main(void)
     /* Send g_tipString out. */
     xfer.data     = g_tipString;
     xfer.dataSize = sizeof(g_tipString) - 1;
-    if (xSemaphoreTake(xUART_Tx_Mutex, portMAX_DELAY) != pdTRUE)
+    if (xSemaphoreTake(xUART_Tx_Semaphore, portMAX_DELAY) != pdTRUE)
 	{
 		PRINTF("Failed to take semaphore.\r\n");
 	}
     LPUART_SendEDMA(DEMO_LPUART, &g_lpuartEdmaHandle, &xfer);
+
+    if (xTaskCreate(uart_RX_task, "UART_RX", UART_RX_TASK_STACK_SIZE, NULL, UART_RX_TASK_PRIO, NULL) != pdPASS)
+    {
+        PRINTF("UART RX Task creation failed!.\r\n");
+        while (1)
+            ;
+    }
+
     vTaskStartScheduler();
     PRINTF("FATAL ERROR. VTaskStartScheduler() returned.\r\n");
     for (;;)
@@ -183,17 +202,22 @@ int main(void)
 
 void LPUART_UserCallback(LPUART_Type *base, lpuart_edma_handle_t *handle, status_t status, void *userData)
 {
-    userData = userData;
+	static char log[MAX_LOG_LENGTH+1];
+	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 
+	userData = userData;
     if (kStatus_LPUART_TxIdle == status)
     {
-    	xSemaphoreGive(xUART_Tx_Mutex);
+    	xSemaphoreGiveFromISR(xUART_Tx_Semaphore,&xHigherPriorityTaskWoken);
     }
-
-    if (kStatus_LPUART_RxIdle == status)
+    else if (kStatus_LPUART_RxIdle == status)
     {
-        rxBufferEmpty = false;
-        rxOnGoing     = false;
+    	xSemaphoreGiveFromISR(xUART_Rx_Semaphore,&xHigherPriorityTaskWoken);
+    	commandQueueAdd((sCommand_t*) g_rxBuffer);
+    }else
+    {
+    	sprintf(log,"ERROR: LPUART Callback: Got Status Code: %d",status);
+    	log_add(log);
     }
 }
 
@@ -201,44 +225,7 @@ void LPUART_UserCallback(LPUART_Type *base, lpuart_edma_handle_t *handle, status
  * Application functions
  ******************************************************************************/
 
-void initEdmaFromDemo(lpuart_config_t *config)
-{
-#if defined(FSL_FEATURE_SOC_DMAMUX_COUNT) && FSL_FEATURE_SOC_DMAMUX_COUNT
-#if defined(LPUART_TX_DMAMUX_CHANNEL) && defined(LPUART_RX_DMAMUX_CHANNEL)
-    /* Init DMAMUX */
-    DMAMUX_Init(EXAMPLE_LPUART_TX_DMAMUX_BASEADDR);
-    DMAMUX_Init(EXAMPLE_LPUART_RX_DMAMUX_BASEADDR);
-    /* Set channel for LPUART */
-    DMAMUX_SetSource(EXAMPLE_LPUART_TX_DMAMUX_BASEADDR, LPUART_TX_DMAMUX_CHANNEL, LPUART_TX_DMA_REQUEST);
-    DMAMUX_SetSource(EXAMPLE_LPUART_RX_DMAMUX_BASEADDR, LPUART_RX_DMAMUX_CHANNEL, LPUART_RX_DMA_REQUEST);
-    DMAMUX_EnableChannel(EXAMPLE_LPUART_TX_DMAMUX_BASEADDR, LPUART_TX_DMAMUX_CHANNEL);
-    DMAMUX_EnableChannel(EXAMPLE_LPUART_RX_DMAMUX_BASEADDR, LPUART_RX_DMAMUX_CHANNEL);
-#else
-    /* Init DMAMUX */
-    DMAMUX_Init(EXAMPLE_LPUART_DMAMUX_BASEADDR);
-    /* Set channel for LPUART */
-    DMAMUX_SetSource(EXAMPLE_LPUART_DMAMUX_BASEADDR, LPUART_TX_DMA_CHANNEL, LPUART_TX_DMA_REQUEST);
-    DMAMUX_SetSource(EXAMPLE_LPUART_DMAMUX_BASEADDR, LPUART_RX_DMA_CHANNEL, LPUART_RX_DMA_REQUEST);
-    DMAMUX_EnableChannel(EXAMPLE_LPUART_DMAMUX_BASEADDR, LPUART_TX_DMA_CHANNEL);
-    DMAMUX_EnableChannel(EXAMPLE_LPUART_DMAMUX_BASEADDR, LPUART_RX_DMA_CHANNEL);
-#endif
-#endif
 
-    /* Init the EDMA module */
-    EDMA_GetDefaultConfig(&config);
-#if defined(BOARD_GetEDMAConfig)
-    BOARD_GetEDMAConfig(config);
-#endif
-    EDMA_Init(EXAMPLE_LPUART_DMA_BASEADDR, &config);
-    EDMA_CreateHandle(&g_lpuartTxEdmaHandle, EXAMPLE_LPUART_DMA_BASEADDR, LPUART_TX_DMA_CHANNEL);
-    EDMA_CreateHandle(&g_lpuartRxEdmaHandle, EXAMPLE_LPUART_DMA_BASEADDR, LPUART_RX_DMA_CHANNEL);
-#if defined(FSL_FEATURE_EDMA_HAS_CHANNEL_MUX) && FSL_FEATURE_EDMA_HAS_CHANNEL_MUX
-    EDMA_SetChannelMux(EXAMPLE_LPUART_DMA_BASEADDR, LPUART_TX_DMA_CHANNEL, DEMO_LPUART_TX_EDMA_CHANNEL);
-    EDMA_SetChannelMux(EXAMPLE_LPUART_DMA_BASEADDR, LPUART_RX_DMA_CHANNEL, DEMO_LPUART_RX_EDMA_CHANNEL);
-#endif
-    LPUART_TransferCreateHandleEDMA(DEMO_LPUART, &g_lpuartEdmaHandle, LPUART_UserCallback, NULL, &g_lpuartTxEdmaHandle,
-                                        &g_lpuartRxEdmaHandle);
-}
 
 /*******************************************************************************
  * Logger functions
@@ -261,7 +248,7 @@ void commandWorkerInit(uint32_t queue_length, uint32_t max_log_lenght)
     {
         vQueueAddToRegistry(command_queue, "ComQ");
     }
-    if (xTaskCreate(commandWorker, "commandWorker", configMINIMAL_STACK_SIZE + 166, NULL, tskIDLE_PRIORITY + 1, NULL) != pdPASS)
+    if (xTaskCreate(commandWorker, "commandWorker", CMD_TASK_STACK_SIZE, NULL, CMD_TASK_PRIO, NULL) != pdPASS)
     {
         PRINTF("commandWorker creation failed!.\r\n");
         while (1)
@@ -382,6 +369,17 @@ static void commandWorker(void *pvParameters)
     }
 }
 
+void uart_RX_task(void *pvParameters)
+{
+	static lpuart_transfer_t receiveXfer;
+	receiveXfer.data     = g_rxBuffer;
+	receiveXfer.dataSize = MESSAGE_LENGTH_BYTE;
+	while (1)
+	{
+		LPUART_ReceiveEDMA(DEMO_LPUART, &g_lpuartEdmaHandle, &receiveXfer);
+	}
+}
+
 /*!
  * @brief log_add function
  */
@@ -401,7 +399,7 @@ void log_init(uint32_t queue_length, uint32_t max_log_lenght)
     {
         vQueueAddToRegistry(log_queue, "LogQ");
     }
-    if (xTaskCreate(log_task, "log_task", configMINIMAL_STACK_SIZE + 166, NULL, tskIDLE_PRIORITY + 1, NULL) != pdPASS)
+    if (xTaskCreate(log_task, "log_task", UART_TX_TASK_STACK_SIZE, NULL, UART_TX_TASK_PRIO, NULL) != pdPASS)
     {
         PRINTF("Task creation failed!.\r\n");
         while (1)
@@ -416,32 +414,66 @@ static void log_task(void *pvParameters)
 {
     char log[MAX_LOG_LENGTH + 1];
     size_t logLen = 0;
-    lpuart_transfer_t sendXfer;
+    static lpuart_transfer_t sendXfer;
     sendXfer.data        = g_txBuffer;
-	sendXfer.dataSize    = ECHO_BUFFER_LENGTH;
+	sendXfer.dataSize    = MAX_LOG_LENGTH;
     while (1)
     {
-        if (xQueueReceive(log_queue, log, portMAX_DELAY) != pdTRUE)
-        {
-            PRINTF("Failed to receive queue.\r\n");
-        }
-        if (xSemaphoreTake(xUART_Tx_Mutex, portMAX_DELAY) != pdTRUE)
-		{
-			PRINTF("Failed to take semaphore.\r\n");
-		}
+        xQueueReceive(log_queue, log, portMAX_DELAY);
+        xSemaphoreTake(xUART_Tx_Semaphore, portMAX_DELAY);
         logLen = strlen(log);
-        if (logLen == 0 || logLEN >= MAX_LOG_LENGTH)
+        if (logLen == 0 || logLen >= MAX_LOG_LENGTH)
         {
         	sprintf(g_txBuffer,"ERROR: Invalid Logger Message");
         }
         else
         {
-        	strcpy()
+        	strcpy(g_txBuffer,log);
         }
 
         sendXfer.data        = g_txBuffer;
-        sendXfer.dataSize = strlen(g_txBuffer);
+        sendXfer.dataSize = logLen;
         LPUART_SendEDMA(DEMO_LPUART, &g_lpuartEdmaHandle, &sendXfer);
         taskYIELD();
     }
+}
+
+
+void initEdmaFromDemo(edma_config_t *config)
+{
+#if defined(FSL_FEATURE_SOC_DMAMUX_COUNT) && FSL_FEATURE_SOC_DMAMUX_COUNT
+#if defined(LPUART_TX_DMAMUX_CHANNEL) && defined(LPUART_RX_DMAMUX_CHANNEL)
+    /* Init DMAMUX */
+    DMAMUX_Init(EXAMPLE_LPUART_TX_DMAMUX_BASEADDR);
+    DMAMUX_Init(EXAMPLE_LPUART_RX_DMAMUX_BASEADDR);
+    /* Set channel for LPUART */
+    DMAMUX_SetSource(EXAMPLE_LPUART_TX_DMAMUX_BASEADDR, LPUART_TX_DMAMUX_CHANNEL, LPUART_TX_DMA_REQUEST);
+    DMAMUX_SetSource(EXAMPLE_LPUART_RX_DMAMUX_BASEADDR, LPUART_RX_DMAMUX_CHANNEL, LPUART_RX_DMA_REQUEST);
+    DMAMUX_EnableChannel(EXAMPLE_LPUART_TX_DMAMUX_BASEADDR, LPUART_TX_DMAMUX_CHANNEL);
+    DMAMUX_EnableChannel(EXAMPLE_LPUART_RX_DMAMUX_BASEADDR, LPUART_RX_DMAMUX_CHANNEL);
+#else
+    /* Init DMAMUX */
+    DMAMUX_Init(EXAMPLE_LPUART_DMAMUX_BASEADDR);
+    /* Set channel for LPUART */
+    DMAMUX_SetSource(EXAMPLE_LPUART_DMAMUX_BASEADDR, LPUART_TX_DMA_CHANNEL, LPUART_TX_DMA_REQUEST);
+    DMAMUX_SetSource(EXAMPLE_LPUART_DMAMUX_BASEADDR, LPUART_RX_DMA_CHANNEL, LPUART_RX_DMA_REQUEST);
+    DMAMUX_EnableChannel(EXAMPLE_LPUART_DMAMUX_BASEADDR, LPUART_TX_DMA_CHANNEL);
+    DMAMUX_EnableChannel(EXAMPLE_LPUART_DMAMUX_BASEADDR, LPUART_RX_DMA_CHANNEL);
+#endif
+#endif
+
+    /* Init the EDMA module */
+    EDMA_GetDefaultConfig(config);
+#if defined(BOARD_GetEDMAConfig)
+    BOARD_GetEDMAConfig(config);
+#endif
+    EDMA_Init(EXAMPLE_LPUART_DMA_BASEADDR, config);
+    EDMA_CreateHandle(&g_lpuartTxEdmaHandle, EXAMPLE_LPUART_DMA_BASEADDR, LPUART_TX_DMA_CHANNEL);
+    EDMA_CreateHandle(&g_lpuartRxEdmaHandle, EXAMPLE_LPUART_DMA_BASEADDR, LPUART_RX_DMA_CHANNEL);
+#if defined(FSL_FEATURE_EDMA_HAS_CHANNEL_MUX) && FSL_FEATURE_EDMA_HAS_CHANNEL_MUX
+    EDMA_SetChannelMux(EXAMPLE_LPUART_DMA_BASEADDR, LPUART_TX_DMA_CHANNEL, DEMO_LPUART_TX_EDMA_CHANNEL);
+    EDMA_SetChannelMux(EXAMPLE_LPUART_DMA_BASEADDR, LPUART_RX_DMA_CHANNEL, DEMO_LPUART_RX_EDMA_CHANNEL);
+#endif
+    LPUART_TransferCreateHandleEDMA(DEMO_LPUART, &g_lpuartEdmaHandle, LPUART_UserCallback, NULL, &g_lpuartTxEdmaHandle,
+                                        &g_lpuartRxEdmaHandle);
 }
