@@ -1,0 +1,6 @@
+C:\Users\lukas\Documents\MCUXpressoIDE_25.6.136\workspace\frdmmcxa153_pwm\drivers/fsl_clock.h:539:20:CLOCK_EnableClock	32	static
+C:\Users\lukas\Documents\MCUXpressoIDE_25.6.136\workspace\frdmmcxa153_pwm\drivers/fsl_reset.h:204:20:RESET_ReleasePeripheralReset	16	static
+C:\Users\lukas\Documents\MCUXpressoIDE_25.6.136\workspace\frdmmcxa153_pwm\drivers/fsl_port.h:360:20:PORT_SetPinConfig	32	static
+C:\Users\lukas\Documents\MCUXpressoIDE_25.6.136\workspace\frdmmcxa153_pwm\drivers/fsl_port.h:463:20:PORT_SetPinMux	24	static
+../board/pin_mux.c:40:6:BOARD_InitBootPins	8	static
+../board/pin_mux.c:85:6:BOARD_InitPins	40	static
