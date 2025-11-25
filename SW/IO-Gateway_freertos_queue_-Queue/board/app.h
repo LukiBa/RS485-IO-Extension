@@ -17,9 +17,17 @@
 #define DEMO_LPUART_IRQHandler LPUART0_IRQHandler
 #define LPUART_TX_DMA_CHANNEL       0U
 #define LPUART_RX_DMA_CHANNEL       1U
+
 #define DEMO_LPUART_TX_EDMA_CHANNEL kDma0RequestLPUART0Tx
 #define DEMO_LPUART_RX_EDMA_CHANNEL kDma0RequestLPUART0Rx
 #define EXAMPLE_LPUART_DMA_BASEADDR DMA0
+
+#define BOARD_PWM_BASEADDR     (FLEXPWM0)
+#define PWM_SRC_CLK_FREQ       (CLOCK_GetFreq(kCLOCK_MainClk))
+#define DEMO_PWM_CLOCK_DEVIDER (kPWM_Prescale_Divide_4)
+#define DEMO_PWM_FAULT_LEVEL   true
+#define DEMO_PWM_DISABLE_MAP_OP
+#define APP_DEFAULT_PWM_FREQUENCY (2000UL)
 /*${macro:end}*/
 
 /*******************************************************************************

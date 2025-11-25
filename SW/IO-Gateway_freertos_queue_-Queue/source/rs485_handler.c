@@ -40,7 +40,13 @@ edma_handle_t g_lpuartRxEdmaHandle;
 AT_NONCACHEABLE_SECTION_INIT(uint8_t g_rxBuffer[MESSAGE_LENGTH_BYTE]) = {0};
 AT_NONCACHEABLE_SECTION_INIT(uint8_t g_txBuffer[MAX_LOG_LENGTH]) = {0};
 
+static void uartRxWorker(void *pvParameters);
+static void uartTxWorker(void *pvParameters);
 
+void LPUART_Callback(LPUART_Type *base, lpuart_edma_handle_t *handle, status_t status, void *userData);
+void initEdmaForUart(edma_config_t *config);
+void uartTxWorkerInit(uint32_t queue_length, uint32_t max_log_lenght);
+void uartRxWorkerInit();
 
 void LPUART_Callback(LPUART_Type *base, lpuart_edma_handle_t *handle, status_t status, void *userData)
 {

@@ -41,6 +41,7 @@ typedef struct __attribute__((__packed__)) sCommand{
 	uint8_t commandMsg[MESSAGE_LENGTH_BYTE-sizeof(uint8_t)-sizeof(uint8_t)];
 } sCommand_t;
 
+
 typedef struct __attribute__((__packed__)) sCMD_SET_RELAY{
 	uint8_t newState;
 } sCMD_SET_RELAY_t;
@@ -58,8 +59,8 @@ typedef struct __attribute__((__packed__)) sCMD_SET_RELAY_ALL_FIELD{
 } sCMD_SET_RELAY_ALL_FIELD_t;
 
 typedef struct __attribute__((__packed__)) sCMD_SET_DIMMER{
+	uint8_t state;
 	uint8_t brightness;
-	uint16_t fadeTimeMs;
 } sCMD_SET_DIMMER_t;
 
 typedef struct __attribute__((__packed__)) sCMD_SET_DIMMER_ALL_FIELD{
@@ -75,7 +76,5 @@ typedef struct __attribute__((__packed__)) sCMD_SET_DIMMER_ALL_FIELD{
 
 void commandQueueAdd(sCommand_t *command);
 void commandWorkerInit(uint32_t queue_length, uint32_t commandLength);
-
-static void commandWorker(void *pvParameters);
 
 #endif /* COMMAND_HANDLER_H_ */

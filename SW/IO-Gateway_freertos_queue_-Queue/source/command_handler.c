@@ -19,11 +19,18 @@
 /* local includes */
 #include "command_handler.h"
 #include "rs485_handler.h"
+#include "dimmer_ctrl.h"
 
 /*******************************************************************************
  * Globals
  ******************************************************************************/
 static QueueHandle_t command_queue = NULL;
+
+
+/*******************************************************************************
+ * Definitions
+ ******************************************************************************/
+static void commandWorker(void *pvParameters);
 
 /*!
  * @brief uartTxQueueAdd function
@@ -41,6 +48,7 @@ static void commandWorker(void *pvParameters)
 {
     uint32_t counter = 0;
     sCommand_t command;
+    sCMD_SET_DIMMER_t cmdDimmer;
     char log[MAX_LOG_LENGTH + 1];
     while (1)
     {
@@ -103,6 +111,10 @@ static void commandWorker(void *pvParameters)
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER1:
+				cmdDimmer = (sCMD_SET_DIMMER_t) command.commandMsg[sizeof(sCMD_SET_DIMMER_t)];
+				setDimmer
+				setDimmerState(DIMMER1,cmdDimmer.state);
+
 				(void)sprintf(log, "CMD_SET_DIMMER1: %u\n\r", counter);
 				uartTxQueueAdd(log);
 				break;
