@@ -9,12 +9,15 @@
 
 
 #include "app.h"
+#include "pin_mux.h"
 
 #include "dimmer_ctrl.h"
 
 static void setup_PWMs();
 static void configurePwmFaults();
 static void initDimmerArray();
+static void setInhGPIO(eDimmers_t dimmer);
+static void initGPIOs();
 
 typedef struct dimmer {
 	eDimmers_t id;
@@ -26,12 +29,113 @@ typedef struct dimmer {
 
 dimmer_t g_dimmerArray[DIMMER_COUNT];
 
+static void setInhGPIO(eDimmers_t dimmer)
+{
+	int secondDimmerAddVal = 0;
+	switch(dimmer)
+	{
+		// do the same for DIMMER 1 and DIMMER 2
+		case DIMMER1:
+		case DIMMER2:
+			if (((int) dimmer) % 2 == 0)
+			{
+				secondDimmerAddVal = 1;
+			}
+			else
+			{
+				secondDimmerAddVal = -1;
+			}
+
+			if (g_dimmerArray[dimmer].state == DIM_ON || g_dimmerArray[dimmer + secondDimmerAddVal].state == DIM_ON)
+			{
+				GPIO_PinWrite(BOARD_INITPINS_INH_DIM_1u2_GPIO,BOARD_INITPINS_INH_DIM_1u2_GPIO_PIN,0u);
+			}
+			else
+			{
+				GPIO_PinWrite(BOARD_INITPINS_INH_DIM_1u2_GPIO,BOARD_INITPINS_INH_DIM_1u2_GPIO_PIN,1u);
+			}
+			break;
+		// do the same for DIMMER 1 and DIMMER 2
+		case DIMMER3:
+		case DIMMER4:
+			if (((int) dimmer) % 2 == 0)
+			{
+				secondDimmerAddVal = 1;
+			}
+			else
+			{
+				secondDimmerAddVal = -1;
+			}
+
+			if (g_dimmerArray[dimmer].state == DIM_ON || g_dimmerArray[dimmer + secondDimmerAddVal].state == DIM_ON)
+			{
+				GPIO_PinWrite(BOARD_INITPINS_INH_DIM_3u4_GPIO,BOARD_INITPINS_INH_DIM_3u4_GPIO_PIN,0u);
+			}
+			else
+			{
+				GPIO_PinWrite(BOARD_INITPINS_INH_DIM_3u4_GPIO,BOARD_INITPINS_INH_DIM_3u4_GPIO_PIN,1u);
+			}
+			break;
+		// do the same for DIMMER 1 and DIMMER 2
+		case DIMMER5:
+		case DIMMER6:
+			if (((int) dimmer) % 2 == 0)
+			{
+				secondDimmerAddVal = 1;
+			}
+			else
+			{
+				secondDimmerAddVal = -1;
+			}
+
+			if (g_dimmerArray[dimmer].state == DIM_ON || g_dimmerArray[dimmer + secondDimmerAddVal].state == DIM_ON)
+			{
+				GPIO_PinWrite(BOARD_INITPINS_INH_DIM_5u6_GPIO,BOARD_INITPINS_INH_DIM_5u6_GPIO_PIN,0u);
+			}
+			else
+			{
+				GPIO_PinWrite(BOARD_INITPINS_INH_DIM_5u6_GPIO,BOARD_INITPINS_INH_DIM_5u6_GPIO_PIN,1u);
+			}
+			break;
+		// do the same for DIMMER 1 and DIMMER 2
+		case DIMMER7:
+		case DIMMER8:
+			if (((int) dimmer) % 2 == 0)
+			{
+				secondDimmerAddVal = 1;
+			}
+			else
+			{
+				secondDimmerAddVal = -1;
+			}
+
+			if (g_dimmerArray[dimmer].state == DIM_ON || g_dimmerArray[dimmer + secondDimmerAddVal].state == DIM_ON)
+			{
+				GPIO_PinWrite(BOARD_INITPINS_INH_DIM_7u8_GPIO,BOARD_INITPINS_INH_DIM_7u8_GPIO_PIN,0u);
+			}
+			else
+			{
+				GPIO_PinWrite(BOARD_INITPINS_INH_DIM_7u8_GPIO,BOARD_INITPINS_INH_DIM_7u8_GPIO_PIN,1u);
+			}
+			break;
+		default:
+			break;
+	}
+}
+
 static void updateDimmer(eDimmers_t dimmer)
 {
 	if (g_dimmerArray[dimmer].state == DIM_ON)
 	{
-		PWM_UpdatePwmDutycycle(BOARD_PWM_BASEADDR, g_dimmerArray[dimmer].pwmSubmodule, g_dimmerArray[dimmer].pwm_channel, kPWM_EdgeAligned, g_dimmerArray[dimmer].dutyCycle);
+		PWM_UpdatePwmDutycycle(BOARD_PWM_BASEADDR, g_dimmerArray[dimmer].pwmSubmodule,
+				g_dimmerArray[dimmer].pwm_channel, kPWM_EdgeAligned, g_dimmerArray[dimmer].dutyCycle);
 	}
+	else
+	{
+		PWM_UpdatePwmDutycycle(BOARD_PWM_BASEADDR, g_dimmerArray[dimmer].pwmSubmodule,
+				g_dimmerArray[dimmer].pwm_channel, kPWM_EdgeAligned, 0u);
+	}
+	setInhGPIO(dimmer);
 }
 
 void setDimmerState(eDimmers_t dimmer, eDimmerState_t state)
@@ -42,11 +146,24 @@ void setDimmerState(eDimmers_t dimmer, eDimmerState_t state)
 
 void dimmerSetDutyCycle(eDimmers_t dimmer, uint8_t dutyCyclePer)
 {
-	g_dimmerArray[dimmer].dutyCycle = dutyCyclePer;
-	updateDimmer(dimmer);
+	if (dutyCyclePer != g_dimmerArray[dimmer].dutyCycle)
+	{
+		g_dimmerArray[dimmer].dutyCycle = dutyCyclePer;
+		updateDimmer(dimmer);
+	}
 }
 
-
+static void initGPIOs()
+{
+    gpio_pin_config_t inh_config = {
+        kGPIO_DigitalOutput,
+        1u,
+    };
+    GPIO_PinInit(BOARD_INITPINS_INH_DIM_1u2_GPIO, BOARD_INITPINS_INH_DIM_1u2_GPIO_PIN, &inh_config);
+    GPIO_PinInit(BOARD_INITPINS_INH_DIM_3u4_GPIO, BOARD_INITPINS_INH_DIM_3u4_GPIO_PIN, &inh_config);
+    GPIO_PinInit(BOARD_INITPINS_INH_DIM_5u6_GPIO, BOARD_INITPINS_INH_DIM_5u6_GPIO_PIN, &inh_config);
+    GPIO_PinInit(BOARD_INITPINS_INH_DIM_7u8_GPIO, BOARD_INITPINS_INH_DIM_7u8_GPIO_PIN, &inh_config);
+}
 
 static void initDimmerArray()
 {
@@ -103,10 +220,6 @@ status_t setup_PWM_dimmers()
 {
     status_t ret = kStatus_Success;
 	pwm_config_t pwmConfig;
-    gpio_pin_config_t inh_config = {
-        kGPIO_DigitalOutput,
-        0,
-    };
     PWM_GetDefaultConfig(&pwmConfig);
     pwmConfig.prescale = DEMO_PWM_CLOCK_DEVIDER;
 

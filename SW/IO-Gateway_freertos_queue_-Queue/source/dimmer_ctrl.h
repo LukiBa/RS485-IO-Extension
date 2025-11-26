@@ -31,7 +31,7 @@ typedef enum eDimmerState {
 status_t setup_PWM_dimmers();
 
 void dimmerSetDutyCycle(eDimmers_t dimmer, uint8_t dutyCyclePer);
-void setDimmmerState(eDimmers_t dimmer, eDimmerState_t state);
+void setDimmerState(eDimmers_t dimmer, eDimmerState_t state);
 void persistDimmerDutyCycles();
 
 #endif /* DIMMER_CTRL_H_ */
