@@ -23,6 +23,7 @@ typedef struct dimmer {
 	eDimmers_t id;
 	pwm_submodule_t pwmSubmodule;
 	pwm_channels_t pwm_channel;
+	uint8_t controlModuleToUpdate;
 	eDimmerState_t state;
 	uint8_t dutyCycle;
 } dimmer_t;
@@ -132,9 +133,18 @@ static void updateDimmer(eDimmers_t dimmer)
 	}
 	else
 	{
-		PWM_UpdatePwmDutycycle(BOARD_PWM_BASEADDR, g_dimmerArray[dimmer].pwmSubmodule,
+		if (g_dimmerArray[dimmer].pwm_channel == kPWM_PwmX)
+		{
+			PWM_UpdatePwmDutycycle(BOARD_PWM_BASEADDR, g_dimmerArray[dimmer].pwmSubmodule,
+				g_dimmerArray[dimmer].pwm_channel, kPWM_EdgeAligned, 100u);
+		}
+		else
+		{
+			PWM_UpdatePwmDutycycle(BOARD_PWM_BASEADDR, g_dimmerArray[dimmer].pwmSubmodule,
 				g_dimmerArray[dimmer].pwm_channel, kPWM_EdgeAligned, 0u);
+		}
 	}
+	PWM_SetPwmLdok(BOARD_PWM_BASEADDR, g_dimmerArray[dimmer].controlModuleToUpdate,true);
 	setInhGPIO(dimmer);
 }
 
@@ -146,9 +156,14 @@ void setDimmerState(eDimmers_t dimmer, eDimmerState_t state)
 
 void dimmerSetDutyCycle(eDimmers_t dimmer, uint8_t dutyCyclePer)
 {
-	if (dutyCyclePer != g_dimmerArray[dimmer].dutyCycle)
+	uint8_t dutyCycle = dutyCyclePer;
+	if (g_dimmerArray[dimmer].pwm_channel == kPWM_PwmX)
 	{
-		g_dimmerArray[dimmer].dutyCycle = dutyCyclePer;
+		dutyCycle = 100 - dutyCycle;
+	}
+	if (dutyCycle != g_dimmerArray[dimmer].dutyCycle)
+	{
+		g_dimmerArray[dimmer].dutyCycle = dutyCycle;
 		updateDimmer(dimmer);
 	}
 }
@@ -170,48 +185,56 @@ static void initDimmerArray()
 	g_dimmerArray[0].id = DIMMER1;
 	g_dimmerArray[0].pwmSubmodule = kPWM_Module_2;
 	g_dimmerArray[0].pwm_channel = kPWM_PwmX;
+	g_dimmerArray[0].controlModuleToUpdate = kPWM_Control_Module_2;
 	g_dimmerArray[0].state = DIM_OFF;
 	g_dimmerArray[0].dutyCycle = 100u;
 
 	g_dimmerArray[1].id = DIMMER2;
 	g_dimmerArray[1].pwmSubmodule = kPWM_Module_2;
 	g_dimmerArray[1].pwm_channel = kPWM_PwmB;
+	g_dimmerArray[1].controlModuleToUpdate = kPWM_Control_Module_2;
 	g_dimmerArray[1].state = DIM_OFF;
 	g_dimmerArray[1].dutyCycle = 100u;
 
 	g_dimmerArray[2].id = DIMMER3; // 5
 	g_dimmerArray[2].pwmSubmodule = kPWM_Module_0;
 	g_dimmerArray[2].pwm_channel = kPWM_PwmB;
+	g_dimmerArray[2].controlModuleToUpdate = kPWM_Control_Module_0;
 	g_dimmerArray[2].state = DIM_OFF;
 	g_dimmerArray[2].dutyCycle = 100u;
 
 	g_dimmerArray[3].id = DIMMER4; // 6
 	g_dimmerArray[3].pwmSubmodule = kPWM_Module_1;
 	g_dimmerArray[3].pwm_channel = kPWM_PwmX;
+	g_dimmerArray[3].controlModuleToUpdate = kPWM_Control_Module_1;
 	g_dimmerArray[3].state = DIM_OFF;
 	g_dimmerArray[3].dutyCycle = 100u;
 
 	g_dimmerArray[4].id = DIMMER5; // 7
 	g_dimmerArray[4].pwmSubmodule = kPWM_Module_2;
 	g_dimmerArray[4].pwm_channel = kPWM_PwmA;
+	g_dimmerArray[4].controlModuleToUpdate = kPWM_Control_Module_2;
 	g_dimmerArray[4].state = DIM_OFF;
 	g_dimmerArray[4].dutyCycle = 100u;
 
 	g_dimmerArray[5].id = DIMMER6; // 8
 	g_dimmerArray[5].pwmSubmodule = kPWM_Module_1;
 	g_dimmerArray[5].pwm_channel = kPWM_PwmB;
+	g_dimmerArray[5].controlModuleToUpdate = kPWM_Control_Module_1;
 	g_dimmerArray[5].state = DIM_OFF;
 	g_dimmerArray[5].dutyCycle = 100u;
 
 	g_dimmerArray[6].id = DIMMER7; // 9
 	g_dimmerArray[6].pwmSubmodule = kPWM_Module_0;
 	g_dimmerArray[6].pwm_channel = kPWM_PwmA;
+	g_dimmerArray[6].controlModuleToUpdate = kPWM_Control_Module_0;
 	g_dimmerArray[6].state = DIM_OFF;
 	g_dimmerArray[6].dutyCycle = 100u;
 
 	g_dimmerArray[7].id = DIMMER8;
 	g_dimmerArray[7].pwmSubmodule = kPWM_Module_0;
 	g_dimmerArray[7].pwm_channel = kPWM_PwmX;
+	g_dimmerArray[7].controlModuleToUpdate = kPWM_Control_Module_0;
 	g_dimmerArray[7].state = DIM_OFF;
 	g_dimmerArray[7].dutyCycle = 100u;
 }
@@ -220,6 +243,9 @@ status_t setup_PWM_dimmers()
 {
     status_t ret = kStatus_Success;
 	pwm_config_t pwmConfig;
+
+	initGPIOs();
+
     PWM_GetDefaultConfig(&pwmConfig);
     pwmConfig.prescale = DEMO_PWM_CLOCK_DEVIDER;
 
@@ -272,14 +298,14 @@ static void setup_PWMs()
 
     pwmSignal[0].pwmChannel       = kPWM_PwmA;
     pwmSignal[0].level            = kPWM_HighTrue;
-    pwmSignal[0].dutyCyclePercent = 0;
+    pwmSignal[0].dutyCyclePercent = 50;
     pwmSignal[0].deadtimeValue    = deadTimeVal;
     pwmSignal[0].faultState       = kPWM_PwmFaultState0;
     pwmSignal[0].pwmchannelenable = true;
 
     pwmSignal[1].pwmChannel = kPWM_PwmB;
     pwmSignal[1].level      = kPWM_HighTrue;
-    pwmSignal[1].dutyCyclePercent = 0;
+    pwmSignal[1].dutyCyclePercent = 50;
     pwmSignal[1].deadtimeValue    = deadTimeVal;
     pwmSignal[1].faultState       = kPWM_PwmFaultState0;
     pwmSignal[1].pwmchannelenable = true;
@@ -287,7 +313,7 @@ static void setup_PWMs()
 
     pwmSignal[2].pwmChannel = kPWM_PwmX;
     pwmSignal[2].level      = kPWM_HighTrue;
-    pwmSignal[2].dutyCyclePercent = 0;
+    pwmSignal[2].dutyCyclePercent = 50;
     pwmSignal[2].deadtimeValue    = deadTimeVal;
     pwmSignal[2].faultState       = kPWM_PwmFaultState0;
     pwmSignal[2].pwmchannelenable = true;

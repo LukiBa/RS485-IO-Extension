@@ -78,7 +78,7 @@ sRelay_t g_relayArray[] = {
 };
 
 
-void initGPIOs()
+void initRelayGPIOs()
 {
     	gpio_pin_config_t inh_config = {
         kGPIO_DigitalOutput,

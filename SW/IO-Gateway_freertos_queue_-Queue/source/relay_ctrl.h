@@ -48,7 +48,7 @@ typedef struct sRelay {
 } sRelay_t;
 
 
-void initGPIOs();
+void initRelayGPIOs();
 eSetRelayStates_t setRelayState(eAvailableRelays_t id,eRelayStates_t newState);
 
 

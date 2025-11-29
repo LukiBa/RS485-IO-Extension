@@ -114,56 +114,56 @@ static void commandWorker(void *pvParameters)
 				cmdDimmer = (sCMD_SET_DIMMER_t *) command.commandMsg;
 				dimmerSetDutyCycle(DIMMER1,cmdDimmer->brightness);
 				setDimmerState(DIMMER1,cmdDimmer->state);
-				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u%u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER2:
 				cmdDimmer = (sCMD_SET_DIMMER_t *) command.commandMsg;
 				dimmerSetDutyCycle(DIMMER2,cmdDimmer->brightness);
 				setDimmerState(DIMMER2,cmdDimmer->state);
-				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u%u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD_SET_DIMMER2: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER3:
 				cmdDimmer = (sCMD_SET_DIMMER_t *) command.commandMsg;
 				dimmerSetDutyCycle(DIMMER3,cmdDimmer->brightness);
 				setDimmerState(DIMMER3,cmdDimmer->state);
-				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u%u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD_SET_DIMMER3: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER4:
 				cmdDimmer = (sCMD_SET_DIMMER_t *) command.commandMsg;
 				dimmerSetDutyCycle(DIMMER4,cmdDimmer->brightness);
 				setDimmerState(DIMMER4,cmdDimmer->state);
-				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u%u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD_SET_DIMMER4: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER5:
 				cmdDimmer = (sCMD_SET_DIMMER_t *) command.commandMsg;
 				dimmerSetDutyCycle(DIMMER5,cmdDimmer->brightness);
 				setDimmerState(DIMMER5,cmdDimmer->state);
-				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u%u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD_SET_DIMMER5: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER6:
 				cmdDimmer = (sCMD_SET_DIMMER_t *) command.commandMsg;
 				dimmerSetDutyCycle(DIMMER6,cmdDimmer->brightness);
 				setDimmerState(DIMMER6,cmdDimmer->state);
-				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u%u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD_SET_DIMMER6: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER7:
 				cmdDimmer = (sCMD_SET_DIMMER_t *) command.commandMsg;
 				dimmerSetDutyCycle(DIMMER7,cmdDimmer->brightness);
 				setDimmerState(DIMMER7,cmdDimmer->state);
-				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u%u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD_SET_DIMMER7: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER8:
 				cmdDimmer = (sCMD_SET_DIMMER_t *) command.commandMsg;
 				dimmerSetDutyCycle(DIMMER8,cmdDimmer->brightness);
 				setDimmerState(DIMMER8,cmdDimmer->state);
-				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u%u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD_SET_DIMMER8: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER_ALL_FIELD:
@@ -172,7 +172,7 @@ static void commandWorker(void *pvParameters)
 					cmdDimmer = (sCMD_SET_DIMMER_t *) &command.commandMsg[(i-DIMMER1)*sizeof(sCMD_SET_DIMMER_t)];
 					dimmerSetDutyCycle(i,cmdDimmer->brightness);
 					setDimmerState(i,cmdDimmer->state);
-					(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u%u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+					(void)sprintf(log, "Dimmer %d: State: %u, Brightness %u\n\r",i, cmdDimmer->state, cmdDimmer->brightness);
 					uartTxQueueAdd(log);
 				}
 				break;
@@ -187,6 +187,7 @@ static void commandWorker(void *pvParameters)
 
 void commandWorkerInit(uint32_t queue_length, uint32_t commandLength)
 {
+	setup_PWM_dimmers();
 	command_queue = xQueueCreate(queue_length, commandLength);
     if (command_queue != NULL)
     {
