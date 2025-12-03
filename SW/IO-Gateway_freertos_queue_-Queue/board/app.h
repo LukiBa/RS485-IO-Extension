@@ -26,7 +26,9 @@
 #define PWM_SRC_CLK_FREQ       (CLOCK_GetFreq(kCLOCK_MainClk))
 #define DEMO_PWM_CLOCK_DEVIDER (kPWM_Prescale_Divide_4)
 #define DEMO_PWM_FAULT_LEVEL   true
+#ifndef DEMO_PWM_DISABLE_MAP_OP
 #define DEMO_PWM_DISABLE_MAP_OP
+#endif
 #define APP_DEFAULT_PWM_FREQUENCY (2000UL)
 /*${macro:end}*/
 
