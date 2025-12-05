@@ -5,4 +5,7 @@
   (lib (name "Relay")(type "KiCad")(uri "${KIPRJMOD}/Libs/Relay.pretty")(options "")(descr ""))
   (lib (name "L_47uH")(type "KiCad")(uri "${KIPRJMOD}/Libs/L_47uH.pretty")(options "")(descr ""))
   (lib (name "D_SOD-123")(type "KiCad")(uri "${KIPRJMOD}/Libs/D_SOD-123.pretty")(options "")(descr ""))
+  (lib (name "TVS")(type "KiCad")(uri "${KIPRJMOD}/Libs/TVS.pretty")(options "")(descr ""))
+  (lib (name "Fuses")(type "KiCad")(uri "${KIPRJMOD}/Libs/SMD-Fuse-0679H5000-05/Fuses.pretty")(options "")(descr ""))
+  (lib (name "phoenix")(type "KiCad")(uri "${KIPRJMOD}/Libs/phoenix.pretty")(options "")(descr ""))
 )
