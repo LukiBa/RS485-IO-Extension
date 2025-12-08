@@ -11,7 +11,7 @@
  * Definitions
  ******************************************************************************/
 /*${macro:start}*/
-#define DEMO_LPUART          LPUART2
+#define DEMO_LPUART          LPUART0
 #define DEMO_LPUART_CLK_FREQ (BOARD_DEBUG_UART_CLK_FREQ)
 /*${macro:end}*/
 

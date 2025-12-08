@@ -1307,7 +1307,7 @@ static status_t LPUART_WaitForReadData(LPUART_Type *base)
                           (kStatus_LPUART_FlagCannotClearManually));
         }
 
-        if (0U != (statusFlag & (uint32_t)kLPUART_FramingErrorFlag))
+1        if (0U != (statusFlag & (uint32_t)kLPUART_FramingErrorFlag))
         {
             /*
              * $Branch Coverage Justification$

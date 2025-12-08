@@ -36,7 +36,7 @@ uint8_t rxbuff[20] = {0};
  */
 int main(void)
 {
-    uint8_t ch;
+    uint8_t ch[2];
     lpuart_config_t config;
     gpio_pin_config_t inh_config = {
             kGPIO_DigitalOutput,
@@ -61,7 +61,6 @@ int main(void)
     config.baudRate_Bps = BOARD_DEBUG_UART_BAUDRATE;
     config.enableTx     = true;
     config.enableRx     = true;
-    config.enableRxRTS  = false;
 
     LPUART_Init(DEMO_LPUART, &config, DEMO_LPUART_CLK_FREQ);
 
@@ -69,8 +68,8 @@ int main(void)
 
     while (1)
     {
-aaaaaa    	GPIO_PinWrite(BOARD_INITPINS_UART2_DE_GPIO,BOARD_INITPINS_UART2_DE_GPIO_PIN,0u);
-    	LPUART_ReadBlocking(DEMO_LPUART, &ch, 1);
+    	GPIO_PinWrite(BOARD_INITPINS_UART2_DE_GPIO,BOARD_INITPINS_UART2_DE_GPIO_PIN,0u);
+    	LPUART_ReadBlocking(DEMO_LPUART, ch, 2);
         //LPUART_WriteBlocking(DEMO_LPUART, &ch, 1);
     }
 }

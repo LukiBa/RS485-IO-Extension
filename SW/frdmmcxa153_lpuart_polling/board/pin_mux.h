@@ -25,10 +25,7 @@ extern "C" {
  */
 void BOARD_InitBootPins(void);
 
-#define PCR_IBE_ibe1 0x01u          /*!<@brief Input Buffer Enable: Enables */
-#define PORT2_PCR12_MUX_mux11 0x03u /*!<@brief Pin Multiplex Control: Alternative 3 (chip-specific) */
-#define PORT2_PCR13_MUX_mux11 0x03u /*!<@brief Pin Multiplex Control: Alternative 3 (chip-specific) */
-#define PORT2_PCR16_MUX_mux11 0x03u /*!<@brief Pin Multiplex Control: Alternative 3 (chip-specific) */
+#define PCR_IBE_ibe1 0x01u /*!<@brief Input Buffer Enable: Enables */
 
 /*! @name PORT1_6 (number 64), UART2_DE
   @{ */

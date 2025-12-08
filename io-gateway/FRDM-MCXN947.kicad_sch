@@ -4108,6 +4108,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 128.27) (xy 176.53 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d81d3fd-d1a6-4428-b4ed-4f29fb9c1e9d")
+	)
+	(wire
+		(pts
 			(xy 193.04 77.47) (xy 204.47 77.47)
 		)
 		(stroke
@@ -4448,16 +4458,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 133.35) (xy 120.65 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f841b3d-d155-4c91-8052-49e4e78a5b78")
-	)
-	(wire
-		(pts
 			(xy 222.25 92.71) (xy 224.79 92.71)
 		)
 		(stroke
@@ -4555,6 +4555,16 @@
 			(type default)
 		)
 		(uuid "a1dfbebd-16c6-4e60-b86e-655e841bb77d")
+	)
+	(wire
+		(pts
+			(xy 111.76 133.35) (xy 120.65 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a426b3a6-d1ac-4a23-9731-ef5291f6dc71")
 	)
 	(wire
 		(pts
@@ -4857,7 +4867,7 @@
 		)
 		(uuid "03814826-0756-4036-b096-f5eacc65c4bf")
 	)
-	(hierarchical_label "RS485_RTS"
+	(hierarchical_label "RS485_DE"
 		(shape output)
 		(at 120.65 130.81 0)
 		(effects
@@ -4892,12 +4902,12 @@
 	)
 	(hierarchical_label "RelayCtrl_K8"
 		(shape output)
-		(at 120.65 133.35 0)
+		(at 166.37 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "14d92a89-4919-4886-8418-0586d6de419f")
 	)
@@ -4933,6 +4943,17 @@
 			(justify right)
 		)
 		(uuid "3b63a467-78ec-4fad-b01a-10c3706e8b50")
+	)
+	(hierarchical_label "RS_485_nRE"
+		(shape output)
+		(at 120.65 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "435a42c5-f82f-4197-9b7c-a128f20e3967")
 	)
 	(hierarchical_label "PWM_DIM5"
 		(shape output)
