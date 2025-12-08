@@ -67,7 +67,6 @@ BOARD_InitPins:
     drive_strength: low, pull_select: up, pull_enable: enable, input_buffer: enable, invert_input: normal}
   - {pin_num: '52', peripheral: LPUART0, signal: TX, pin_signal: P0_3/TDI/LPUART0_TXD/LPSPI0_SDO/CT0_MAT1/UTICK_CAP1/CMP0_OUT/CMP1_IN1, slew_rate: fast, open_drain: disable,
     drive_strength: low, pull_select: up, pull_enable: enable, input_buffer: enable, invert_input: normal}
-  - {pin_num: '64', peripheral: LPUART2, signal: RTS, pin_signal: P1_6/TRIG_IN2/LPSPI0_PCS1/LPUART2_RTS_B/CT_INP6/ADC0_A22}
   - {pin_num: '63', peripheral: LPUART2, signal: TX, pin_signal: P1_5/FREQME_CLK_IN1/LPSPI0_PCS2/LPUART2_TXD/CT1_MAT3/ADC0_A21/CMP1_IN2}
   - {pin_num: '62', peripheral: LPUART2, signal: RX, pin_signal: P1_4/WUU0_IN8/FREQME_CLK_IN0/LPSPI0_PCS3/LPUART2_RXD/CT1_MAT2/ADC0_A20/CMP0_IN2}
   - {pin_num: '44', peripheral: FlexPWM0, signal: 'A, 0', pin_signal: P3_6/CLKOUT/LPSPI1_PCS3/PWM0_A0/FREQME_CLK_OUT1}
@@ -97,6 +96,7 @@ BOARD_InitPins:
   - {pin_num: '2', peripheral: GPIO1, signal: 'GPIO, 8', pin_signal: P1_8/WUU0_IN10/LPUART1_RXD/LPI2C0_SDA/CT_INP8/CT0_MAT2/I3C0_SDA}
   - {pin_num: '1', peripheral: GPIO1, signal: 'GPIO, 7', pin_signal: P1_7/WUU0_IN9/TRIG_OUT2/LPUART2_CTS_B/CT_INP7/ADC0_A23}
   - {pin_num: '42', peripheral: GPIO3, signal: 'GPIO, 8', pin_signal: P3_8/WUU0_IN23/TRIG_IN3/LPSPI1_SDO/LPUART1_RXD/CT_INP4/PWM0_A1/CLKOUT, identifier: INH_DIM_5u6}
+  - {pin_num: '64', peripheral: GPIO1, signal: 'GPIO, 6', pin_signal: P1_6/TRIG_IN2/LPSPI0_PCS1/LPUART2_RTS_B/CT_INP6/ADC0_A22}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -242,8 +242,8 @@ void BOARD_InitPins(void)
                      /* Input Buffer Enable: Enables. */
                      | PORT_PCR_IBE(PCR_IBE_ibe1));
 
-    /* PORT1_6 (pin 64) is configured as LPUART2_RTS_B */
-    PORT_SetPinMux(PORT1, 6U, kPORT_MuxAlt3);
+    /* PORT1_6 (pin 64) is configured as P1_6 */
+    PORT_SetPinMux(PORT1, 6U, kPORT_MuxAlt0);
 
     PORT1->PCR[6] = ((PORT1->PCR[6] &
                       /* Mask bits to zero which are setting */
