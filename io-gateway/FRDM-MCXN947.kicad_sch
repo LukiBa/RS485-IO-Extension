@@ -435,6 +435,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:PESD5V0L1ULD"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PESD5V0L1ULD"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-882D"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "\"https://assets.nexperia.com/documents/data-sheet/PESD5V0L1ULD.pdf"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low capacitance unidirectional ESD protection diode, 5V, SOD-882D"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?882D*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PESD5V0L1ULD_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PESD5V0L1ULD_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "FRDM_MCXA153:MCU**"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3987,6 +4136,24 @@
 		(uuid "4f962fc0-d307-4486-8096-02586706565e")
 	)
 	(junction
+		(at 52.07 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a21565a-33f6-484b-b6c0-9a52fc799208")
+	)
+	(junction
+		(at 40.64 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d7470c0-c8a6-4ba2-a89e-6db7691bd803")
+	)
+	(junction
+		(at 232.41 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87d299fd-8076-457f-9b59-5e3f674a65ea")
+	)
+	(junction
 		(at 115.57 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4248,6 +4415,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 165.1) (xy 40.64 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3efa66df-474a-4ec5-b714-5bc274da1121")
+	)
+	(wire
+		(pts
 			(xy 135.89 90.17) (xy 157.48 90.17)
 		)
 		(stroke
@@ -4308,6 +4485,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 165.1) (xy 52.07 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fa28d79-249c-4067-b10e-fe23eaf3e48a")
+	)
+	(wire
+		(pts
 			(xy 40.64 127) (xy 19.05 127)
 		)
 		(stroke
@@ -4358,6 +4545,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 105.41) (xy 232.41 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fed23eb-c08f-466f-871d-11dee5056391")
+	)
+	(wire
+		(pts
 			(xy 127 87.63) (xy 157.48 87.63)
 		)
 		(stroke
@@ -4378,7 +4575,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 156.21) (xy 55.88 156.21)
+			(xy 50.8 156.21) (xy 52.07 156.21)
 		)
 		(stroke
 			(width 0)
@@ -4435,6 +4632,16 @@
 			(type default)
 		)
 		(uuid "78c7a09a-dc56-457f-9b0c-01658b4ef8e1")
+	)
+	(wire
+		(pts
+			(xy 52.07 156.21) (xy 52.07 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ea9ae62-8ca1-4ad5-9ebc-235af87d36aa")
 	)
 	(wire
 		(pts
@@ -4495,6 +4702,16 @@
 			(type default)
 		)
 		(uuid "95331c01-1d47-4d8c-aac1-cf538e4a74a8")
+	)
+	(wire
+		(pts
+			(xy 232.41 95.25) (xy 232.41 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9611a234-6ef3-4f94-bacf-23bf15efb8f8")
 	)
 	(wire
 		(pts
@@ -4638,7 +4855,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 163.83) (xy 40.64 166.37)
+			(xy 40.64 163.83) (xy 40.64 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4765,6 +4982,16 @@
 			(type default)
 		)
 		(uuid "f2408755-8888-4151-aa24-a8a51ba6e7b6")
+	)
+	(wire
+		(pts
+			(xy 52.07 156.21) (xy 55.88 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f33cf99e-61a1-46c9-87ef-84f61497f94c")
 	)
 	(wire
 		(pts
@@ -5187,6 +5414,76 @@
 		(uuid "f62a2db8-b4bf-4b4d-9182-87cb8b36f3e7")
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 52.07 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09865531-8f28-4832-b3c3-5349813a9b41")
+		(property "Reference" "R_F2"
+			(at 54.61 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 54.61 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 50.292 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 52.07 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb745911-c274-4152-b25f-1a6b5422df0c")
+		)
+		(pin "2"
+			(uuid "208d7de9-ce90-416f-b348-f8529cf602a0")
+		)
+		(instances
+			(project ""
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/f7918fcf-9688-4ae8-a1d7-cb892536f0d4"
+					(reference "R_F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 227.33 91.44 0)
 		(unit 1)
@@ -5313,6 +5610,76 @@
 			(project "io-gateway"
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/f7918fcf-9688-4ae8-a1d7-cb892536f0d4"
 					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PESD5V0L1ULD")
+		(at 232.41 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23e37e46-54bf-468b-af2b-13cd00d601c6")
+		(property "Reference" "D5"
+			(at 234.95 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SP1007-01ETG"
+			(at 234.95 102.8699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882D"
+			(at 227.33 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "\"https://assets.nexperia.com/documents/data-sheet/PESD5V0L1ULD.pdf"
+			(at 237.49 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low capacitance unidirectional ESD protection diode, 5V, SOD-882D"
+			(at 240.03 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a57971cf-6676-4a34-a4c0-08a6afb203d7")
+		)
+		(pin "2"
+			(uuid "9336e8bb-72f3-4b67-96de-8071e79ad52d")
+		)
+		(instances
+			(project ""
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/f7918fcf-9688-4ae8-a1d7-cb892536f0d4"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -5646,6 +6013,72 @@
 				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/f7918fcf-9688-4ae8-a1d7-cb892536f0d4"
 					(reference "FRDM_MCXA153_1")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43e3fb9f-bce9-439f-a4f5-a890d675a62f")
+		(property "Reference" "#PWR089"
+			(at 232.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32c2ba68-2191-462c-a641-a5c58d8b60dd")
+		)
+		(instances
+			(project "io-gateway"
+				(path "/2cb6f94b-272a-4ed7-b08d-c3630bda6156/f7918fcf-9688-4ae8-a1d7-cb892536f0d4"
+					(reference "#PWR089")
+					(unit 1)
 				)
 			)
 		)
