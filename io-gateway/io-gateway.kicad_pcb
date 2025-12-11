@@ -39210,7 +39210,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.85 180)
 			(layer "B.Fab")
 			(uuid "e5e625a1-f801-428f-b2b7-ba1d79353d69")
@@ -39828,7 +39828,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "120R NM"
+		(property "Value" "DNP"
 			(at 0 -1.43 0)
 			(layer "B.Fab")
 			(uuid "d67fa867-8b73-427d-b701-b94d5184ac50")
@@ -46147,7 +46147,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.85 180)
 			(layer "B.Fab")
 			(uuid "24e3a92b-3f1f-4d1b-8f11-6b5047aeb718")
@@ -47383,7 +47383,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "042433ba-553e-4543-a683-ebe9293e55d0")
@@ -47795,7 +47795,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.85 180)
 			(layer "B.Fab")
 			(uuid "cad2bc87-de97-4cd4-8bd2-1de1090420eb")
@@ -50869,7 +50869,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.85 180)
 			(layer "B.Fab")
 			(uuid "a8fcfcae-a657-42e5-99c4-96483d7b4871")
@@ -56009,7 +56009,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.43 0)
 			(layer "B.Fab")
 			(uuid "3d2a0c4a-cb61-4c36-be8a-723d20e4fe77")
@@ -59508,7 +59508,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.85 180)
 			(layer "B.Fab")
 			(uuid "aea65dc9-3590-4b94-ac11-e070af1308bb")
@@ -62504,7 +62504,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.85 180)
 			(layer "B.Fab")
 			(uuid "8e23c39e-28a5-4d39-b71b-936c35572a8c")
@@ -66691,7 +66691,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.85 90)
 			(layer "B.Fab")
 			(uuid "7cb6bae1-1f11-4b42-b53a-a22686f75610")
@@ -67309,7 +67309,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "faa6842e-a6cf-41be-89b7-ab6fac39be1b")
@@ -67725,7 +67725,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.85 180)
 			(layer "B.Fab")
 			(uuid "e3ba4cbc-b811-474f-8fc2-c6d8776f6982")
@@ -72461,7 +72461,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "0f6a3118-d4dc-4ca5-9935-d67d034a4b87")

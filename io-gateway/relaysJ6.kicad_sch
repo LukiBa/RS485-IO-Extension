@@ -5052,7 +5052,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120R NM"
+		(property "Value" "DNP"
 			(at 242.57 121.9199 0)
 			(effects
 				(font

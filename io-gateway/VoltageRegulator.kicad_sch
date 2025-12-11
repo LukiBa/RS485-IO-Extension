@@ -3481,7 +3481,7 @@
 				)
 			)
 		)
-		(property "Value" "10µF"
+		(property "Value" "10µH"
 			(at 139.7 57.15 90)
 			(effects
 				(font

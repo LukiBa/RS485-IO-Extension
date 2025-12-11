@@ -6172,7 +6172,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 119.38 99.0599 0)
 			(effects
 				(font
@@ -6432,7 +6432,7 @@
 				)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 123.19 83.82 90)
 			(effects
 				(font
@@ -7381,7 +7381,7 @@
 				)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 132.08 86.36 90)
 			(effects
 				(font
@@ -7914,7 +7914,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NM"
+		(property "Value" "DNP"
 			(at 129.54 99.0599 0)
 			(effects
 				(font
