@@ -1,0 +1,24 @@
+/*
+ * IO_Gateway_Config.h
+ *
+ *  Created on: 24.11.2025
+ *      Author: baischerl
+ */
+
+#ifndef IO_GATEWAY_CONFIG_H_
+#define IO_GATEWAY_CONFIG_H_
+
+#define MESSAGE_LENGTH_BYTE 32
+#define QUEUE_LENGTH 8
+#define DEVICE_ADDRESS 0x01
+#define MAX_LOG_LENGTH 64
+
+
+#define UART_RX_TASK_PRIO tskIDLE_PRIORITY + 1
+#define UART_TX_TASK_PRIO tskIDLE_PRIORITY + 1
+#define CMD_TASK_PRIO tskIDLE_PRIORITY + 2
+#define UART_RX_TASK_STACK_SIZE configMINIMAL_STACK_SIZE + 166
+#define UART_TX_TASK_STACK_SIZE configMINIMAL_STACK_SIZE + 166
+#define CMD_TASK_STACK_SIZE configMINIMAL_STACK_SIZE + 422
+
+#endif /* IO_GATEWAY_CONFIG_H_ */

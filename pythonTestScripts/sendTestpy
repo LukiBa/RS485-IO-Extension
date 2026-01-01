@@ -1,0 +1,21 @@
+import serial
+import keyboard
+import sys
+import time
+import numpy as np
+import threading
+
+MESSAGE_LENGTH_BYTE = 1
+
+cmd = np.zeros([MESSAGE_LENGTH_BYTE], dtype=np.uint8)
+cmd[0] = 0xAA  # address
+#cmd[1] = 0xAA  # command ID
+
+ser = serial.Serial("COM5",9600)
+
+doSending = True
+while doSending:
+    ser.write(cmd.tobytes(order='C'))
+    print("Wrote: {}".format(cmd))
+    time.sleep(0.01)
+

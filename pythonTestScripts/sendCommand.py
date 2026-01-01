@@ -9,10 +9,10 @@ MESSAGE_LENGTH_BYTE = 32
 
 cmd = np.zeros([MESSAGE_LENGTH_BYTE], dtype=np.uint8)
 cmd[0] = 0x01  # address
-cmd[1] = 0x39  # command ID
+cmd[1] = 0x38  # command ID
 
 cmd[2] = 0x01
-cmd[3] = 100
+cmd[3] = 80
 
 cmd[4] = 0x01
 cmd[5] = 20
@@ -35,7 +35,8 @@ cmd[15] = 70
 cmd[16] = 0x01
 cmd[17] = 80
 
-ser = serial.Serial("COM3",115200)
+ser = serial.Serial("COM5",115200)
+print("Start.")
 
 def worker(ser):
     while True:
