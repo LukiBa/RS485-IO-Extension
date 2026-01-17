@@ -34,7 +34,7 @@
 
 
 AT_NONCACHEABLE_SECTION_INIT(uint8_t g_tipString[]) =
-    "IO Gateway Command interface initialized\n\rAddress: 0x01\n\r";
+    "IO Gateway Command V1.01 interface initialized\n\rAddress: 0x01\n\r";
 
 
 /*******************************************************************************
