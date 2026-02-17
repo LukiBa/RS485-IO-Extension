@@ -291,6 +291,20 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_Relay_K8_PIN_MASK (1U << 11U)      /*!<@brief PORT pin mask */
                                                           /* @} */
 
+/*! @name PORT3_0 (number 46), FAN_Out
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITPINS_FAN_Out_GPIO GPIO3               /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITPINS_FAN_Out_GPIO_PIN 0U              /*!<@brief GPIO pin number */
+#define BOARD_INITPINS_FAN_Out_GPIO_PIN_MASK (1U << 0U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define BOARD_INITPINS_FAN_Out_PORT PORT3               /*!<@brief PORT peripheral base pointer */
+#define BOARD_INITPINS_FAN_Out_PIN 0U                   /*!<@brief PORT pin number */
+#define BOARD_INITPINS_FAN_Out_PIN_MASK (1U << 0U)      /*!<@brief PORT pin mask */
+                                                        /* @} */
+
 /*!
  * @brief Configures pin routing and optionally pin electrical features.
  *

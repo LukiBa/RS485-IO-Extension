@@ -40,6 +40,7 @@ pin_labels:
 - {pin_num: '7', pin_signal: P1_13/TRIG_IN3/LPUART2_TXD/CT2_MAT3/ADC0_A11, label: Relay_K1, identifier: Relay_K1}
 - {pin_num: '5', pin_signal: P1_11/WUU0_IN11/TRIG_OUT2/LPUART1_CTS_B/LPI2C0_SCLS/CT2_MAT1/I3C0_PUR/ADC0_A9, label: Relay_K8, identifier: Relay_K8}
 - {pin_num: '31', pin_signal: P3_30/TRIG_OUT6/CT0_MAT2/ADC0_A13, label: Relay_K7, identifier: Relay_K7}
+- {pin_num: '46', pin_signal: P3_0/WUU0_IN22/TRIG_IN0/CT_INP16/PWM0_A0, label: FAN_Out, identifier: FAN_Out}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -101,6 +102,7 @@ BOARD_InitPins:
   - {pin_num: '42', peripheral: GPIO3, signal: 'GPIO, 8', pin_signal: P3_8/WUU0_IN23/TRIG_IN3/LPSPI1_SDO/LPUART1_RXD/CT_INP4/PWM0_A1/CLKOUT, direction: OUTPUT, gpio_init_state: 'true'}
   - {pin_num: '64', peripheral: GPIO1, signal: 'GPIO, 6', pin_signal: P1_6/TRIG_IN2/LPSPI0_PCS1/LPUART2_RTS_B/CT_INP6/ADC0_A22, direction: OUTPUT}
   - {pin_num: '5', peripheral: GPIO1, signal: 'GPIO, 11', pin_signal: P1_11/WUU0_IN11/TRIG_OUT2/LPUART1_CTS_B/LPI2C0_SCLS/CT2_MAT1/I3C0_PUR/ADC0_A9, direction: OUTPUT}
+  - {pin_num: '46', peripheral: GPIO3, signal: 'GPIO, 0', pin_signal: P3_0/WUU0_IN22/TRIG_IN0/CT_INP16/PWM0_A0}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -147,10 +149,10 @@ void BOARD_InitPins(void)
     RESET_ReleasePeripheralReset(kPORT2_RST_SHIFT_RSTn);
     /* LPUART1 peripheral is released from reset */
     RESET_ReleasePeripheralReset(kLPUART1_RST_SHIFT_RSTn);
-    /* FLEXPWM0 peripheral is released from reset */
-    RESET_ReleasePeripheralReset(kFLEXPWM0_RST_SHIFT_RSTn);
     /* PORT3 peripheral is released from reset */
     RESET_ReleasePeripheralReset(kPORT3_RST_SHIFT_RSTn);
+    /* FLEXPWM0 peripheral is released from reset */
+    RESET_ReleasePeripheralReset(kFLEXPWM0_RST_SHIFT_RSTn);
 
     gpio_pin_config_t RS485_DE_config = {
         .pinDirection = kGPIO_DigitalOutput,
@@ -483,6 +485,16 @@ void BOARD_InitPins(void)
 
                      /* Pin Multiplex Control: PORT2_7 (pin 21) is configured as P2_7. */
                      | PORT_PCR_MUX(PORT2_PCR7_MUX_mux00)
+
+                     /* Input Buffer Enable: Enables. */
+                     | PORT_PCR_IBE(PCR_IBE_ibe1));
+
+    /* PORT3_0 (pin 46) is configured as P3_0 */
+    PORT_SetPinMux(BOARD_INITPINS_FAN_Out_PORT, BOARD_INITPINS_FAN_Out_PIN, kPORT_MuxAlt0);
+
+    PORT3->PCR[0] = ((PORT3->PCR[0] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_IBE_MASK)))
 
                      /* Input Buffer Enable: Enables. */
                      | PORT_PCR_IBE(PCR_IBE_ibe1));

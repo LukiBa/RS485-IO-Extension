@@ -13,70 +13,71 @@
 #include "pin_mux.h"
 
 #include "relay_ctrl.h"
+#include "deviceConfig.h"
 
 
 sRelay_t g_relayArray[] = {
 		[RELAY1].id = RELAY1,
-		[RELAY1].type = BLINDS_UP,
+		[RELAY1].type = RELAY_TYPE_R1,
 		[RELAY1].complementaryRelayId = RELAY2,
-		[RELAY1].gpioType = BOARD_INITPINS_Relay_K1_GPIO,
-		[RELAY1].gpioPinNbr = BOARD_INITPINS_Relay_K1_GPIO_PIN,
+		[RELAY1].gpioType = BOARD_INITPINS_Relay_K3_GPIO,
+		[RELAY1].gpioPinNbr = BOARD_INITPINS_Relay_K3_GPIO_PIN,
 		[RELAY1].state = 0,
 
 		[RELAY2].id = RELAY2,
-		[RELAY2].type = BLINDS_DOWN,
+		[RELAY2].type = RELAY_TYPE_R2,
 		[RELAY2].complementaryRelayId = RELAY1,
 		[RELAY2].gpioType = BOARD_INITPINS_Relay_K2_GPIO,
 		[RELAY2].gpioPinNbr = BOARD_INITPINS_Relay_K2_GPIO_PIN,
 		[RELAY2].state = 0,
 
 		[RELAY3].id = RELAY3,
-		[RELAY3].type = BLINDS_UP,
+		[RELAY3].type = RELAY_TYPE_R3,
 		[RELAY3].complementaryRelayId = RELAY4,
-		[RELAY3].gpioType = BOARD_INITPINS_Relay_K3_GPIO,
-		[RELAY3].gpioPinNbr = BOARD_INITPINS_Relay_K3_GPIO_PIN,
+		[RELAY3].gpioType = BOARD_INITPINS_Relay_K1_GPIO,
+		[RELAY3].gpioPinNbr = BOARD_INITPINS_Relay_K1_GPIO_PIN,
 		[RELAY3].state = 0,
 
 		[RELAY4].id = RELAY4,
-		[RELAY4].type = BLINDS_DOWN,
+		[RELAY4].type = RELAY_TYPE_R4,
 		[RELAY4].complementaryRelayId = RELAY4,
-		[RELAY4].gpioType = BOARD_INITPINS_Relay_K4_GPIO,
-		[RELAY4].gpioPinNbr = BOARD_INITPINS_Relay_K4_GPIO_PIN,
+		[RELAY4].gpioType = BOARD_INITPINS_Relay_K6_GPIO,
+		[RELAY4].gpioPinNbr = BOARD_INITPINS_Relay_K6_GPIO_PIN,
 		[RELAY4].state = 0,
 
 		[RELAY5].id = RELAY5,
-		[RELAY5].type = BLINDS_UP,
+		[RELAY5].type = RELAY_TYPE_R5,
 		[RELAY5].complementaryRelayId = RELAY6,
 		[RELAY5].gpioType = BOARD_INITPINS_Relay_K5_GPIO,
 		[RELAY5].gpioPinNbr = BOARD_INITPINS_Relay_K5_GPIO_PIN,
 		[RELAY5].state = 0,
 
 		[RELAY6].id = RELAY6,
-		[RELAY6].type = BLINDS_DOWN,
+		[RELAY6].type = RELAY_TYPE_R6,
 		[RELAY6].complementaryRelayId = RELAY5,
-		[RELAY6].gpioType = BOARD_INITPINS_Relay_K6_GPIO,
-		[RELAY6].gpioPinNbr = BOARD_INITPINS_Relay_K6_GPIO_PIN,
+		[RELAY6].gpioType = BOARD_INITPINS_Relay_K4_GPIO,
+		[RELAY6].gpioPinNbr = BOARD_INITPINS_Relay_K4_GPIO_PIN,
 		[RELAY6].state = 0,
 
 		[RELAY7].id = RELAY7,
-		[RELAY7].type = BLINDS_UP,
+		[RELAY7].type = RELAY_TYPE_R7,
 		[RELAY7].complementaryRelayId = RELAY8,
-		[RELAY7].gpioType = BOARD_INITPINS_Relay_K7_GPIO,
-		[RELAY7].gpioPinNbr = BOARD_INITPINS_Relay_K7_GPIO_PIN,
+		[RELAY7].gpioType = BOARD_INITPINS_Relay_K9_GPIO,
+		[RELAY7].gpioPinNbr = BOARD_INITPINS_Relay_K9_GPIO_PIN,
 		[RELAY7].state = 0,
 
 		[RELAY8].id = RELAY8,
-		[RELAY8].type = BLINDS_DOWN,
+		[RELAY8].type = RELAY_TYPE_R8,
 		[RELAY8].complementaryRelayId = RELAY7,
 		[RELAY8].gpioType = BOARD_INITPINS_Relay_K8_GPIO,
 		[RELAY8].gpioPinNbr = BOARD_INITPINS_Relay_K8_GPIO_PIN,
 		[RELAY8].state = 0,
 
 		[RELAY9].id = RELAY9,
-		[RELAY9].type = SWITCH,
+		[RELAY9].type = RELAY_TYPE_R9,
 		[RELAY9].complementaryRelayId = RELAY9,
-		[RELAY9].gpioType = BOARD_INITPINS_Relay_K9_GPIO,
-		[RELAY9].gpioPinNbr = BOARD_INITPINS_Relay_K9_GPIO_PIN,
+		[RELAY9].gpioType = BOARD_INITPINS_Relay_K7_GPIO,
+		[RELAY9].gpioPinNbr = BOARD_INITPINS_Relay_K7_GPIO_PIN,
 		[RELAY9].state = 0,
 };
 

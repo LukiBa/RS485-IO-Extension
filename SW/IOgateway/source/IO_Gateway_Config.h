@@ -10,7 +10,6 @@
 
 #define MESSAGE_LENGTH_BYTE 32
 #define QUEUE_LENGTH 8
-#define DEVICE_ADDRESS 0x01
 #define MAX_LOG_LENGTH 64
 
 

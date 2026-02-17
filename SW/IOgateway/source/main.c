@@ -33,10 +33,6 @@
 #endif
 
 
-AT_NONCACHEABLE_SECTION_INIT(uint8_t g_tipString[]) =
-    "IO Gateway Command V1.01 interface initialized\n\rAddress: 0x01\n\r";
-
-
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
@@ -51,20 +47,20 @@ static void WatchdogTask(void *pvParameters);
 /*!
  * @brief Main function
  */
-uint8_t txbuff[]   = "Lpuart polling example\r\nBoard will send back received characters\r\n";
 
 int main(void)
 {
+
+	SDK_DelayAtLeastUs(2000000, SystemCoreClock);
 	BOARD_InitHardware();
 
-
-
+	uint8_t txbuff[]   = "IO Gateway\r\n";
+	LOG(txbuff, sizeof(txbuff) - 1);
     /* Create LPUART DMA handle. */
-	initUART(RS485_LPUART,RS485_UART_BAUDRATE,RS485_LPUART_CLK_FREQ,g_tipString);
+	initUART(RS485_LPUART,RS485_UART_BAUDRATE,RS485_LPUART_CLK_FREQ);
 	commandWorkerInit(QUEUE_LENGTH, sizeof(sCommand_t));
 
     vTaskStartScheduler();
-    PRINTF("FATAL ERROR. VTaskStartScheduler() returned.\r\n");
     for (;;)
         ;
 }

@@ -11,11 +11,21 @@
 /* NXP includes */
 #include "fsl_lpuart_edma.h"
 
+//#define LOG_DEBUG
+#ifdef LOG_DEBUG
+#define LOG(x,y) LPUART_WriteBlocking(DEMO_LPUART, x, y)
+#else
+#define LOG(X,y) ((void)0)
+#endif
+
+#define LOGGING_ADDR 0x5F
+#define LOGGING_CMD 0x5F
+
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
 
-void initUART(LPUART_Type *uart, uint32_t baudrate, uint32_t clockFrequency, const char *startUpText);
+void initUART(LPUART_Type *uart, uint32_t baudrate, uint32_t clockFrequency);
 
 void uartTxQueueAdd(char *log);
 

@@ -529,7 +529,7 @@
 								<option id="com.crt.advproject.gcc.specs.736310334" name="Specs" superClass="com.crt.advproject.gcc.specs" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.gcc.config.2111692882" name="Obsolete (Config)" superClass="com.crt.advproject.gcc.config" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.gcc.store.654729902" name="Obsolete (Store)" superClass="com.crt.advproject.gcc.store" useByScannerDiscovery="false"/>
-								<option id="com.crt.advproject.gcc.exe.release.option.optimization.level.522546207" superClass="com.crt.advproject.gcc.exe.release.option.optimization.level" useByScannerDiscovery="true"/>
+								<option id="com.crt.advproject.gcc.exe.release.option.optimization.level.522546207" name="Optimization Level" superClass="com.crt.advproject.gcc.exe.release.option.optimization.level" useByScannerDiscovery="true"/>
 								<inputType id="com.crt.advproject.compiler.input.562952433" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.exe.release.970914249" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.release">
@@ -725,7 +725,7 @@
 		<sdkName>SDK_2.x_FRDM-MCXA153</sdkName>
 		<sdkExample>frdmmcxa153_freertos_queue</sdkExample>
 		<sdkVersion>25.09.00</sdkVersion>
-		<sdkComponents>platform.drivers.clock.MCXA153;platform.drivers.inputmux_connections.MCXA153;platform.drivers.reset.MCXA153;CMSIS_Include_core_cm.MCXA153;device.MCXA153_CMSIS.MCXA153;device.MCXA153_system.MCXA153;device.MCXA153_startup.MCXA153;platform.drivers.common.MCXA153;platform.drivers.gpio.MCXA153;platform.drivers.lpuart.MCXA153;platform.drivers.mcx_spc.MCXA153;platform.drivers.port.MCXA153;platform.utilities.assert_lite.MCXA153;platform.utilities.misc_utilities.MCXA153;utility.str.MCXA153;utility.debug_console_lite.MCXA153;component.lpuart_adapter.MCXA153;middleware.freertos-kernel.MCXA153;middleware.freertos-kernel.heap_4.MCXA153;middleware.freertos-kernel.cm33_non_trustzone.MCXA153;middleware.freertos-kernel.extension.MCXA153;middleware.freertos-kernel.config.MCXA153;frdmmcxa153_freertos_queue;platform.drivers.lpuart_edma.MCXA153;platform.drivers.edma_soc.MCXA153;platform.drivers.edma4.MCXA153;platform.drivers.pwm.MCXA153;</sdkComponents>
+		<sdkComponents>platform.drivers.clock.MCXA153;platform.drivers.inputmux_connections.MCXA153;platform.drivers.reset.MCXA153;CMSIS_Include_core_cm.MCXA153;device.MCXA153_CMSIS.MCXA153;device.MCXA153_system.MCXA153;device.MCXA153_startup.MCXA153;platform.drivers.common.MCXA153;platform.drivers.gpio.MCXA153;platform.drivers.lpuart.MCXA153;platform.drivers.mcx_spc.MCXA153;platform.drivers.port.MCXA153;platform.utilities.assert_lite.MCXA153;platform.utilities.misc_utilities.MCXA153;utility.str.MCXA153;utility.debug_console_lite.MCXA153;component.lpuart_adapter.MCXA153;middleware.freertos-kernel.MCXA153;middleware.freertos-kernel.heap_4.MCXA153;middleware.freertos-kernel.cm33_non_trustzone.MCXA153;middleware.freertos-kernel.extension.MCXA153;middleware.freertos-kernel.config.MCXA153;frdmmcxa153_freertos_queue;platform.drivers.lpuart_edma.MCXA153;platform.drivers.edma_soc.MCXA153;platform.drivers.edma4.MCXA153;platform.drivers.pwm.MCXA153;platform.drivers.lpadc.MCXA153;</sdkComponents>
 		<boardId>frdmmcxa153</boardId>
 		<package>MCXA153VLH</package>
 		<core>cm33_nodsp</core>

@@ -56,7 +56,8 @@ static void commandWorker(void *pvParameters)
     {
         if (xQueueReceive(command_queue, &command, portMAX_DELAY) != pdTRUE)
         {
-            PRINTF("Failed to receive from command queue.\r\n");
+        	(void)sprintf(log, "Failed to receive from command queue.\r\n");
+        	uartTxQueueAdd(log);
         }
         switch(command.commandID)
         {
@@ -75,68 +76,59 @@ static void commandWorker(void *pvParameters)
 			case CMD_SET_RELAY1:
 				cmdRelay = (sCMD_SET_RELAY_t *) command.commandMsg;
 				setRelayState(RELAY1,cmdRelay->newState);
-				(void)sprintf(log, "CMD_SET_RELAY1: ID %u, newState %u, cnt:%u\n\r",
-						RELAY1,cmdRelay->newState, counter);
+				(void)sprintf(log, "CMD %02x St %02x \n\r",command.commandID,cmdRelay->newState);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_RELAY2:
 				cmdRelay = (sCMD_SET_RELAY_t *) command.commandMsg;
 				setRelayState(RELAY2,cmdRelay->newState);
-				(void)sprintf(log, "CMD_SET_RELAY2: ID %u, newState %u, cnt:%u\n\r",
-						RELAY2,cmdRelay->newState, counter);
+				(void)sprintf(log, "CMD %02x St %02x \n\r",command.commandID,cmdRelay->newState);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_RELAY3:
 				cmdRelay = (sCMD_SET_RELAY_t *) command.commandMsg;
 				setRelayState(RELAY3,cmdRelay->newState);
-				(void)sprintf(log, "CMD_SET_RELAY3: ID %u, newState %u, cnt:%u\n\r",
-						RELAY3,cmdRelay->newState, counter);
+				(void)sprintf(log, "CMD %02x St %02x \n\r",command.commandID,cmdRelay->newState);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_RELAY4:
 				cmdRelay = (sCMD_SET_RELAY_t *) command.commandMsg;
 				setRelayState(RELAY4,cmdRelay->newState);
-				(void)sprintf(log, "CMD_SET_RELAY4: ID %u, newState %u, cnt:%u\n\r",
-						RELAY4,cmdRelay->newState, counter);
+				(void)sprintf(log, "CMD %02x St %02x \n\r",command.commandID,cmdRelay->newState);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_RELAY5:
 				cmdRelay = (sCMD_SET_RELAY_t *) command.commandMsg;
 				setRelayState(RELAY5,cmdRelay->newState);
-				(void)sprintf(log, "CMD_SET_RELAY5: ID %u, newState %u, cnt:%u\n\r",
-						RELAY5,cmdRelay->newState, counter);
+				(void)sprintf(log, "CMD %02x St %02x \n\r",command.commandID,cmdRelay->newState);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_RELAY6:
 				cmdRelay = (sCMD_SET_RELAY_t *) command.commandMsg;
 				setRelayState(RELAY6,cmdRelay->newState);
-				(void)sprintf(log, "CMD_SET_RELAY6: ID %u, newState %u, cnt:%u\n\r",
-						RELAY6,cmdRelay->newState, counter);
+				(void)sprintf(log, "CMD %02x St %02x \n\r",command.commandID,cmdRelay->newState);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_RELAY7:
 				cmdRelay = (sCMD_SET_RELAY_t *) command.commandMsg;
 				setRelayState(RELAY7,cmdRelay->newState);
-				(void)sprintf(log, "CMD_SET_RELAY7: ID %u, newState %u, cnt:%u\n\r",
-						RELAY7,cmdRelay->newState, counter);
+				(void)sprintf(log, "CMD %02x St %02x \n\r",command.commandID,cmdRelay->newState);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_RELAY8:
 				cmdRelay = (sCMD_SET_RELAY_t *) command.commandMsg;
 								setRelayState(RELAY8,cmdRelay->newState);
-				(void)sprintf(log, "CMD_SET_RELAY8: ID %u, newState %u, cnt:%u\n\r",
-						RELAY8,cmdRelay->newState, counter);
+				(void)sprintf(log, "CMD %02x St %02x \n\r",command.commandID,cmdRelay->newState);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_RELAY9:
 				cmdRelay = (sCMD_SET_RELAY_t *) command.commandMsg;
 								setRelayState(RELAY9,cmdRelay->newState);
-				(void)sprintf(log, "CMD_SET_RELAY9: ID %u, newState %u, cnt:%u\n\r",
-						RELAY9,cmdRelay->newState, counter);
+				(void)sprintf(log, "CMD %02x St %02x \n\r",command.commandID,cmdRelay->newState);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_RELAY_ALL_FIELD:
-				(void)sprintf(log, "CMD_SET_RELAY_ALL_FIELD: %u\n\r", counter);
+				(void)sprintf(log, "CMD_SET_RELAY_ALL_FIELD \n\r");
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER1:
@@ -144,7 +136,7 @@ static void commandWorker(void *pvParameters)
 				setDimmerState(DIMMER1,cmdDimmer->state);
 				dimmerSetDutyCycle(DIMMER1,cmdDimmer->brightness);
 
-				(void)sprintf(log, "CMD_SET_DIMMER1: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD %02x St %02x Br %03u\n\r",command.commandID, cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER2:
@@ -152,7 +144,7 @@ static void commandWorker(void *pvParameters)
 
 				setDimmerState(DIMMER2,cmdDimmer->state);
 				dimmerSetDutyCycle(DIMMER2,cmdDimmer->brightness);
-				(void)sprintf(log, "CMD_SET_DIMMER2: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD %02x St %02x Br %03u\n\r",command.commandID, cmdDimmer->state, cmdDimmer->brightness);
 
 				uartTxQueueAdd(log);
 				break;
@@ -161,7 +153,7 @@ static void commandWorker(void *pvParameters)
 
 				setDimmerState(DIMMER3,cmdDimmer->state);
 				dimmerSetDutyCycle(DIMMER3,cmdDimmer->brightness);
-				(void)sprintf(log, "CMD_SET_DIMMER3: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD %02x St %02x Br %03u\n\r",command.commandID, cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER4:
@@ -170,7 +162,7 @@ static void commandWorker(void *pvParameters)
 				setDimmerState(DIMMER4,cmdDimmer->state);
 				dimmerSetDutyCycle(DIMMER4,cmdDimmer->brightness);
 
-				(void)sprintf(log, "CMD_SET_DIMMER4: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD %02x St %02x Br %03u\n\r",command.commandID, cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER5:
@@ -179,7 +171,7 @@ static void commandWorker(void *pvParameters)
 				setDimmerState(DIMMER5,cmdDimmer->state);
 				dimmerSetDutyCycle(DIMMER5,cmdDimmer->brightness);
 
-				(void)sprintf(log, "CMD_SET_DIMMER5: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD %02x St %02x Br %03u\n\r",command.commandID, cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER6:
@@ -188,7 +180,7 @@ static void commandWorker(void *pvParameters)
 				setDimmerState(DIMMER6,cmdDimmer->state);
 				dimmerSetDutyCycle(DIMMER6,cmdDimmer->brightness);
 
-				(void)sprintf(log, "CMD_SET_DIMMER6: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD %02x St %02x Br %03u\n\r",command.commandID, cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER7:
@@ -197,7 +189,7 @@ static void commandWorker(void *pvParameters)
 				setDimmerState(DIMMER7,cmdDimmer->state);
 				dimmerSetDutyCycle(DIMMER7,cmdDimmer->brightness);
 
-				(void)sprintf(log, "CMD_SET_DIMMER7: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD %02x St %02x Br %03u\n\r",command.commandID, cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER8:
@@ -206,7 +198,7 @@ static void commandWorker(void *pvParameters)
 				setDimmerState(DIMMER8,cmdDimmer->state);
 				dimmerSetDutyCycle(DIMMER8,cmdDimmer->brightness);
 
-				(void)sprintf(log, "CMD_SET_DIMMER8: State: %u, Brightness %u\n\r", cmdDimmer->state, cmdDimmer->brightness);
+				(void)sprintf(log, "CMD %02x St %02x Br %03u\n\r",command.commandID, cmdDimmer->state, cmdDimmer->brightness);
 				uartTxQueueAdd(log);
 				break;
 			case CMD_SET_DIMMER_ALL_FIELD:
@@ -215,17 +207,16 @@ static void commandWorker(void *pvParameters)
 					cmdDimmer = (sCMD_SET_DIMMER_t *) &command.commandMsg[(i-DIMMER1)*sizeof(sCMD_SET_DIMMER_t)];
 					setDimmerState(i,cmdDimmer->state);
 					dimmerSetDutyCycle(i,cmdDimmer->brightness);
-
-					(void)sprintf(log, "Dimmer %d: State: %u, Brightness %u\n\r",i+1, cmdDimmer->state, cmdDimmer->brightness);
+					(void)sprintf(log, "CMD %02x DIM%d St %02x Br %03u\n\r",i+1,command.commandID, cmdDimmer->state, cmdDimmer->brightness);
 					uartTxQueueAdd(log);
 				}
 				break;
 			default:
-				(void)sprintf(log, "ERROR Invalid Message: %u\n\r", counter);
+				(void)sprintf(log, "ERROR Invalid Message\n\r");
 				uartTxQueueAdd(log);
 				break;
         }
-        taskYIELD();
+        //taskYIELD();
     }
 }
 

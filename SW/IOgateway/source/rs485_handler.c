@@ -14,7 +14,10 @@
 #include "queue.h"
 #include "semphr.h"
 
+
 /* NXP includes */
+#include "fsl_lpuart.h"
+
 #include "app.h"
 #include "board.h"
 #include "pin_mux.h"
@@ -22,9 +25,12 @@
 
 /* local includes */
 #include "IO_Gateway_Config.h"
+#include "deviceConfig.h"
 #include "rs485_handler.h"
 #include "command_handler.h"
 
+
+#define LOG_MAX_MSG_LEN (MESSAGE_LENGTH_BYTE-3)
 /*******************************************************************************
  * Globals
  ******************************************************************************/
@@ -39,7 +45,7 @@ edma_handle_t g_lpuartTxEdmaHandle;
 edma_handle_t g_lpuartRxEdmaHandle;
 
 AT_NONCACHEABLE_SECTION_INIT(uint8_t g_rxBuffer[MESSAGE_LENGTH_BYTE]) = {0};
-AT_NONCACHEABLE_SECTION_INIT(uint8_t g_txBuffer[MAX_LOG_LENGTH]) = {0};
+AT_NONCACHEABLE_SECTION_INIT(uint8_t g_txBuffer[MESSAGE_LENGTH_BYTE]) = {0};
 
 static void uartRxWorker(void *pvParameters);
 static void uartTxWorker(void *pvParameters);
@@ -55,6 +61,7 @@ void LPUART_Callback(LPUART_Type *base, lpuart_edma_handle_t *handle, status_t s
 {
 	static char log[MAX_LOG_LENGTH+1];
 	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+	sCommand_t* comm;
 
 	userData = userData;
     if (kStatus_LPUART_TxIdle == status)
@@ -66,8 +73,22 @@ void LPUART_Callback(LPUART_Type *base, lpuart_edma_handle_t *handle, status_t s
     {
 
 		xSemaphoreGive(xUART_Rx_Semaphore);//,&xHigherPriorityTaskWoken);
-    	commandQueueAdd((sCommand_t*) g_rxBuffer);
-    }else
+    	comm = (sCommand_t*) g_rxBuffer;
+    	if (DEVICE_ADDRESS == comm->addr)
+    	{
+    		commandQueueAdd((sCommand_t*) comm);
+    	}
+
+    }
+    else if (kStatus_LPUART_IdleLineDetected == status)
+    {
+    	LPUART_ClearStatusFlags(g_Uart, kLPUART_IdleLineFlag);
+    	uint32_t remaining = 0;
+    	UART_TransferGetReceiveCountEDMA (g_Uart,&g_lpuartRxEdmaHandle,
+    			&remaining);
+
+    }
+    else
     {
     	sprintf(log,"ERROR: LPUART Callback: Got Status Code: %d",status);
     	uartTxQueueAdd(log);
@@ -76,16 +97,25 @@ void LPUART_Callback(LPUART_Type *base, lpuart_edma_handle_t *handle, status_t s
 
 void initEdmaForUart(edma_config_t *config)
 {
-
+	//LPUART_EnableInterrupts(g_Uart, kLPUART_IdleLineInterruptEnable);
+	//EnableIRQ(RS485_LPUART_IRQn);
+	//NVIC_SetPriority(RS485_LPUART_IRQn, 3);
     /* Init the EDMA module */
     EDMA_GetDefaultConfig(config);
     EDMA_Init(RS485_LPUART_DMA_BASEADDR, config);
-    EDMA_CreateHandle(&g_lpuartTxEdmaHandle, RS485_LPUART_DMA_BASEADDR, LPUART_TX_DMA_CHANNEL);
-    EDMA_CreateHandle(&g_lpuartRxEdmaHandle, RS485_LPUART_DMA_BASEADDR, LPUART_RX_DMA_CHANNEL);
-    EDMA_SetChannelMux(RS485_LPUART_DMA_BASEADDR, LPUART_TX_DMA_CHANNEL, RS485_LPUART_TX_EDMA_CHANNEL);
-    EDMA_SetChannelMux(RS485_LPUART_DMA_BASEADDR, LPUART_RX_DMA_CHANNEL, RS485_LPUART_RX_EDMA_CHANNEL);
-    LPUART_TransferCreateHandleEDMA(g_Uart, &g_lpuartEdmaHandle, LPUART_Callback, NULL, &g_lpuartTxEdmaHandle,
-                                        &g_lpuartRxEdmaHandle);
+    EDMA_CreateHandle(&g_lpuartTxEdmaHandle,
+    		RS485_LPUART_DMA_BASEADDR, LPUART_TX_DMA_CHANNEL);
+    EDMA_CreateHandle(&g_lpuartRxEdmaHandle,
+    		RS485_LPUART_DMA_BASEADDR, LPUART_RX_DMA_CHANNEL);
+    EDMA_SetChannelMux(RS485_LPUART_DMA_BASEADDR,
+    		LPUART_TX_DMA_CHANNEL, RS485_LPUART_TX_EDMA_CHANNEL);
+    EDMA_SetChannelMux(RS485_LPUART_DMA_BASEADDR,
+    		LPUART_RX_DMA_CHANNEL, RS485_LPUART_RX_EDMA_CHANNEL);
+    LPUART_TransferCreateHandleEDMA(g_Uart, &g_lpuartEdmaHandle,
+    		LPUART_Callback, NULL, &g_lpuartTxEdmaHandle,&g_lpuartRxEdmaHandle);
+    //LPUART_EnableInterrupts(g_Uart, kLPUART_IdleLineInterruptEnable);
+	//NVIC_SetPriority(RS485_LPUART_IRQn, 3);
+	//EnableIRQ(RS485_LPUART_IRQn);
 }
 
 void uartRxWorker(void *pvParameters)
@@ -99,14 +129,15 @@ void uartRxWorker(void *pvParameters)
 	{
 		xSemaphoreTake(xUART_Rx_Semaphore,portMAX_DELAY);
 		status = LPUART_ReceiveEDMA(g_Uart, &g_lpuartEdmaHandle, &receiveXfer);
-		taskYIELD();
+		//taskYIELD();
 	}
 }
 
 static void uartTxWorker(void *pvParameters)
 {
     char log[MAX_LOG_LENGTH + 1];
-    size_t logLen = 0;
+    int32_t logLen = 0;
+    size_t logPos = 0;
     static lpuart_transfer_t sendXfer;
     sendXfer.data        = g_txBuffer;
 	sendXfer.dataSize    = MAX_LOG_LENGTH;
@@ -114,22 +145,33 @@ static void uartTxWorker(void *pvParameters)
     while (1)
     {
         xQueueReceive(uartTx_queue, log, portMAX_DELAY);
-        xSemaphoreTake(xUART_Tx_Semaphore, portMAX_DELAY);
         logLen = strlen(log);
-        if (logLen == 0 || logLen >= MAX_LOG_LENGTH)
+        logPos = 0;
+        while(logLen > 0)
         {
-        	sprintf(g_txBuffer,"ERROR: Invalid Logger Message");
-        }
-        else
-        {
-        	strcpy(g_txBuffer,log);
-        }
+        	xSemaphoreTake(xUART_Tx_Semaphore, portMAX_DELAY);
+        	if (logLen >= LOG_MAX_MSG_LEN)
+        	{
+        		memcpy(&g_txBuffer[2],&log[logPos],MESSAGE_LENGTH_BYTE-3);
+        		g_txBuffer[MESSAGE_LENGTH_BYTE-1] = 0;
+        		logLen -= LOG_MAX_MSG_LEN;
+        		logPos += LOG_MAX_MSG_LEN;
+        	}
+        	else
+        	{
+        		strcpy(&g_txBuffer[2],&log[logPos]);
 
-        sendXfer.data = g_txBuffer;
-        sendXfer.dataSize = logLen;
-        txEnable();
-        LPUART_SendEDMA(g_Uart, &g_lpuartEdmaHandle, &sendXfer);
-        taskYIELD();
+        		logLen = 0;
+        		logPos = 0;
+        	}
+        	g_txBuffer[0] = LOGGING_ADDR;
+        	g_txBuffer[1] = LOGGING_CMD;
+        	LOG(g_txBuffer,MESSAGE_LENGTH_BYTE);
+			sendXfer.data = g_txBuffer;
+			sendXfer.dataSize = MESSAGE_LENGTH_BYTE;
+			txEnable();
+			LPUART_SendEDMA(g_Uart, &g_lpuartEdmaHandle, &sendXfer);
+        }
     }
 }
 
@@ -164,7 +206,7 @@ void rxEnable()
 	GPIO_PinWrite(BOARD_INITPINS_RS485_nRE_GPIO,BOARD_INITPINS_RS485_nRE_GPIO_PIN,0u);
 }
 
-void initUART(LPUART_Type *uart, uint32_t baudrate, uint32_t clockFrequency, const char *startUpText)
+void initUART(LPUART_Type *uart, uint32_t baudrate, uint32_t clockFrequency)
 {
 	lpuart_config_t config;
 	edma_config_t edmaConfig = {0};
@@ -198,14 +240,16 @@ void initUART(LPUART_Type *uart, uint32_t baudrate, uint32_t clockFrequency, con
 	uartTxWorkerInit(QUEUE_LENGTH, MAX_LOG_LENGTH);
     uartRxWorkerInit();
 
+    sprintf(&g_txBuffer[2],"V01.05 Addr: 0x%02x\n\r",DEVICE_ADDRESS);
+	g_txBuffer[0] = LOGGING_ADDR;
+	g_txBuffer[1] = LOGGING_CMD;
+	g_txBuffer[MESSAGE_LENGTH_BYTE-1] = 0;
+	LOG(g_txBuffer,MESSAGE_LENGTH_BYTE);
+	sendXfer.data = g_txBuffer;
+	sendXfer.dataSize = MESSAGE_LENGTH_BYTE;
+	txEnable();
+	LPUART_SendEDMA(g_Uart, &g_lpuartEdmaHandle, &sendXfer);
 
-    if(NULL != startUpText)
-	{
-        sendXfer.data = (char *) startUpText;
-    	sendXfer.dataSize = strlen(startUpText);
-    	txEnable();
-    	LPUART_SendEDMA(g_Uart, &g_lpuartEdmaHandle, &sendXfer);
-	}
 
 }
 
