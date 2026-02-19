@@ -14,7 +14,7 @@
 #include "queue.h"
 
 /* NXP includes */
-#include "fsl_debug_console.h"
+#include "fsl_crc.h"
 
 /* local includes */
 #include "command_handler.h"
@@ -49,16 +49,22 @@ static void commandWorker(void *pvParameters)
 {
     uint32_t counter = 0;
     sCommand_t command;
+    uint32_t crc = 0;
     sCMD_SET_DIMMER_t *cmdDimmer;
     sCMD_SET_RELAY_t *cmdRelay;
     char log[MAX_LOG_LENGTH + 1];
     while (1)
     {
-        if (xQueueReceive(command_queue, &command, portMAX_DELAY) != pdTRUE)
+        if (xQueueReceive(command_queue,&command, portMAX_DELAY) != pdTRUE)
         {
         	(void)sprintf(log, "Failed to receive from command queue.\r\n");
         	uartTxQueueAdd(log);
         }
+        lockCrcModule();
+        resetCrc();
+        CRC_WriteData(CRC0,(uint8_t*) &command, 32);
+        crc = CRC_Get16bitResult(CRC0);
+        unlockCrcModule();
         switch(command.commandID)
         {
 			case CMD_GET_STATE:

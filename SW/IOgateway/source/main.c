@@ -5,7 +5,7 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-
+#define LOG_DEBUG
 /*System includes.*/
 #include <stdio.h>
 
@@ -26,11 +26,6 @@
 #include "IO_Gateway_Config.h"
 #include "rs485_handler.h"
 #include "command_handler.h"
-
-#include "fsl_lpuart_edma.h"
-#if defined(FSL_FEATURE_SOC_DMAMUX_COUNT) && FSL_FEATURE_SOC_DMAMUX_COUNT
-#include "fsl_dmamux.h"
-#endif
 
 
 /*******************************************************************************
