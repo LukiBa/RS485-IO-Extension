@@ -7,7 +7,8 @@
 
 /*System includes.*/
 #include <stdio.h>
-
+#include <stddef.h>
+#include <string.h>
 /* Kernel includes. */
 #include "FreeRTOS.h"
 #include "task.h"
@@ -52,9 +53,12 @@ static crc_config_t g_crcConfig;
 
 AT_NONCACHEABLE_SECTION_INIT(uint8_t g_rxBuffer[MESSAGE_LENGTH_BYTE]) = {0};
 AT_NONCACHEABLE_SECTION_INIT(uint8_t g_txBuffer[MESSAGE_LENGTH_BYTE]) = {0};
+static uint8_t g_rxMessageBuf[sizeof(sCommand_t)];
+
 
 static void uartRxWorker(void *pvParameters);
 static void uartTxWorker(void *pvParameters);
+
 
 void LPUART_Callback(LPUART_Type *base, lpuart_handle_t *handle, status_t status, void *userData);
 //void initEdmaForUart(edma_config_t *config);
@@ -80,7 +84,9 @@ void LPUART_Callback(LPUART_Type *base, lpuart_handle_t *handle, status_t status
     {
 
 		xSemaphoreGive(xUART_Rx_Semaphore);//,&xHigherPriorityTaskWoken);
-    	comm = (sCommand_t*) g_rxBuffer;
+		memcpy(g_rxMessageBuf+offsetof(sCommand_t,addr), g_rxBuffer,MESSAGE_LENGTH_BYTE);
+    	comm = (sCommand_t*) g_rxMessageBuf;
+    	comm->commandLength = MESSAGE_LENGTH_BYTE;
     	if (DEVICE_ADDRESS == comm->addr)
     	{
     		commandQueueAdd((sCommand_t*) comm);
@@ -94,6 +100,13 @@ void LPUART_Callback(LPUART_Type *base, lpuart_handle_t *handle, status_t status
     		if (MESSAGE_LENGTH_BYTE != size)
     		{
     			xSemaphoreGive(xUART_Rx_Semaphore);
+    			memcpy(g_rxMessageBuf+offsetof(sCommand_t,addr), g_rxBuffer,MESSAGE_LENGTH_BYTE);
+				comm = (sCommand_t*) g_rxMessageBuf;
+				comm->commandLength = MESSAGE_LENGTH_BYTE - size;
+				if (DEVICE_ADDRESS == comm->addr)
+				{
+					commandQueueAdd((sCommand_t*) comm);
+				}
 				LPUART_TransferAbortReceive(g_Uart, &g_lpuartHandle);
     		}
 

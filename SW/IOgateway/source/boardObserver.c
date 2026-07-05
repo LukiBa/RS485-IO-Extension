@@ -8,7 +8,16 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+#include "fsl_lpadc.h"
+#include "app.h"
+
+#include "IO_Gateway_Config.h"
 #include "rs485_handler.h"
+
+lpadc_conv_command_config_t g_LpadcCommandConfigStruct; /* Structure to configure conversion command. */
+volatile bool g_LpadcConversionCompletedFlag = false;
+float g_CurrentTemperature                   = 0.0f;
+const uint32_t g_LpadcFullRange = 4096U;
 
 float measureOnbaordTemperature(ADC_Type *base, uint32_t commandId, uint32_t index)
 {
@@ -88,7 +97,7 @@ static void boardObsreverWorker(void *pvParameters)
 	{
 
 		g_LpadcConversionCompletedFlag = false;
-		LPADC_DoSoftwareTrigger(DEMO_LPADC_BASE, 1U);
+		LPADC_DoSoftwareTrigger(ADC_BASE, 1U);
 		while (false == g_LpadcConversionCompletedFlag)
 		{
 			taskYIELD();

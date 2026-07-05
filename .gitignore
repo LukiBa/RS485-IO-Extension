@@ -11,3 +11,8 @@ io-gateway/\#auto_saved_files\#
 SW/FirstTest/build/CMakeCache.txt
 **/armgcc
 SW/FirstTest/frdm_mcxa153_blank/__repo__
+delete
+SW/FreeRTOS_TAD_logs
+SW/frdmmcxa153_pwm
+SW/AzureRTOS_TAD_logs
+SW/.mcuxpressoide_packages_support

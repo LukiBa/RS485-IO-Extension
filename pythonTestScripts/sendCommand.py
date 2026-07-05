@@ -8,32 +8,38 @@ import threading
 MESSAGE_LENGTH_BYTE = 32
 
 cmd = np.zeros([MESSAGE_LENGTH_BYTE], dtype=np.uint8)
-cmd[0] = 0x01  # address
-cmd[1] = 0x38  # command ID
+cmd[MESSAGE_LENGTH_BYTE-1] = 0xBB
+cmd[MESSAGE_LENGTH_BYTE-2] = 0x3B
 
-cmd[2] = 0x01
-cmd[3] = 80
+cmd[0] = 0x05  # address
+cmd[1] = 0x31 # command ID
 
-cmd[4] = 0x01
-cmd[5] = 20
+cmdAll1 = 1
+cmdAll2 = 1
 
-cmd[6] = 0x01
-cmd[7] = 30
+cmd[2] = cmdAll1 # dim1
+cmd[3] = cmdAll2
 
-cmd[8] = 0x01
-cmd[9] = 40
+cmd[4] = cmdAll1 #dim2
+cmd[5] = cmdAll2
 
-cmd[10] = 0x01
-cmd[11] = 50
+cmd[6] = cmdAll1 #dim5
+cmd[7] = cmdAll2
 
-cmd[12] = 0x01
-cmd[13] = 60
+cmd[8] = cmdAll1 #dim6
+cmd[9] = cmdAll2
 
-cmd[14] = 0x01
-cmd[15] = 70
+cmd[10] = cmdAll1 #dim7
+cmd[11] = cmdAll2
 
-cmd[16] = 0x01
-cmd[17] = 80
+cmd[12] = cmdAll1 # dim8
+cmd[13] = cmdAll2
+
+cmd[14] = cmdAll1 #dim9
+cmd[15] = cmdAll2
+
+cmd[16] = cmdAll1 #dim10
+cmd[17] = cmdAll2
 
 ser = serial.Serial("COM5",115200)
 print("Start.")
@@ -54,7 +60,8 @@ worker_thread.start()
 doSending = True
 while doSending:
     ser.write(cmd.tobytes(order='C'))
-    print("Wrote: {}".format(cmd))
+    hexString = [hex(x) for x in cmd]
+    print("Wrote: {}".format(hexString))
     if input('redo sending: r') != 'r':
         doSending = False
 

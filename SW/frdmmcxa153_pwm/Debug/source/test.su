@@ -1,5 +1,0 @@
-C:\project\RS485-IO-Extension\SW\frdmmcxa153_pwm\drivers/fsl_pwm.h:904:20:PWM_StartTimer	16	static
-C:\project\RS485-IO-Extension\SW\frdmmcxa153_pwm\drivers/fsl_pwm.h:1105:20:PWM_SetPwmLdok	16	static
-C:\project\RS485-IO-Extension\SW\frdmmcxa153_pwm\drivers/fsl_pwm.h:1172:20:PWM_SetupFaultDisableMap	24	static
-../source/test.c:43:13:PWM_DRV_Init3PhPwm	96	static
-../source/test.c:94:5:main123	40	static

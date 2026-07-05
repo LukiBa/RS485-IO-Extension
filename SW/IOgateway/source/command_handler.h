@@ -32,10 +32,20 @@ typedef enum eCommandList{
 	CMD_SET_DIMMER6,
 	CMD_SET_DIMMER7,
 	CMD_SET_DIMMER8,
-	CMD_SET_DIMMER_ALL_FIELD
+	CMD_SET_DIMMER_ALL_FIELD,
+	CMD_SET_DIMMER1_BRIGHTNESS = 	0x41,
+	CMD_SET_DIMMER2_BRIGHTNESS,
+	CMD_SET_DIMMER3_BRIGHTNESS,
+	CMD_SET_DIMMER4_BRIGHTNESS,
+	CMD_SET_DIMMER5_BRIGHTNESS,
+	CMD_SET_DIMMER6_BRIGHTNESS,
+	CMD_SET_DIMMER7_BRIGHTNESS,
+	CMD_SET_DIMMER8_BRIGHTNESS,
+
 } eCommandList_t;
 
 typedef struct __attribute__((__packed__)) sCommand{
+	uint8_t commandLength;
 	uint8_t addr;
 	uint8_t commandID;
 	uint8_t commandMsg[MESSAGE_LENGTH_BYTE-sizeof(uint8_t)-sizeof(uint8_t)];
@@ -60,8 +70,11 @@ typedef struct __attribute__((__packed__)) sCMD_SET_RELAY_ALL_FIELD{
 
 typedef struct __attribute__((__packed__)) sCMD_SET_DIMMER{
 	uint8_t state;
-	uint8_t brightness;
 } sCMD_SET_DIMMER_t;
+
+typedef struct __attribute__((__packed__)) sCMD_SET_DIMMER_BRIGHTNESS{
+	uint8_t brightness;
+} sCMD_SET_DIMMER_BRIGHTNESS_t;
 
 typedef struct __attribute__((__packed__)) sCMD_SET_DIMMER_ALL_FIELD{
 	sCMD_SET_DIMMER_t dimmer1;

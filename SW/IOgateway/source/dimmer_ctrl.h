@@ -30,7 +30,9 @@ typedef enum eDimmerState {
 
 status_t setup_PWM_dimmers();
 
-void dimmerSetDutyCycle(eDimmers_t dimmer, uint8_t dutyCyclePer);
+eDimmerState_t getDimmerState(eDimmers_t dimmer);
+void setDimmerDutyCycle(eDimmers_t dimmer, uint8_t dutyCyclePer);
+uint8_t getDimmerDutyCycle(eDimmers_t dimmer);
 void setDimmerState(eDimmers_t dimmer, eDimmerState_t state);
 void persistDimmerDutyCycles();
 

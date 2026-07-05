@@ -12,6 +12,7 @@
 
 
 #include "app.h"
+#include "deviceConfig.h"
 #include "pin_mux.h"
 
 #include "dimmer_ctrl.h"
@@ -131,8 +132,13 @@ static void updateDimmer(eDimmers_t dimmer)
 {
 	if (g_dimmerArray[dimmer].state == DIM_ON)
 	{
+		uint8_t dutyCycle = g_dimmerArray[dimmer].dutyCycle;
+		if (g_dimmerArray[dimmer].pwm_channel == kPWM_PwmX)
+		{
+			dutyCycle = 100 - dutyCycle;
+		}
 		PWM_UpdatePwmDutycycle(BOARD_PWM_BASEADDR, g_dimmerArray[dimmer].pwmSubmodule,
-				g_dimmerArray[dimmer].pwm_channel, kPWM_EdgeAligned, g_dimmerArray[dimmer].dutyCycle);
+				g_dimmerArray[dimmer].pwm_channel, kPWM_EdgeAligned, dutyCycle);
 	}
 	else
 	{
@@ -159,20 +165,26 @@ static void updateDimmer(eDimmers_t dimmer)
 
 }
 
+eDimmerState_t getDimmerState(eDimmers_t dimmer)
+{
+	return g_dimmerArray[dimmer].state;
+}
+
 void setDimmerState(eDimmers_t dimmer, eDimmerState_t state)
 {
 	g_dimmerArray[dimmer].state = state;
-	//updateDimmer(dimmer);
+	updateDimmer(dimmer);
 }
 
-void dimmerSetDutyCycle(eDimmers_t dimmer, uint8_t dutyCyclePer)
+uint8_t getDimmerDutyCycle(eDimmers_t dimmer)
 {
-	uint8_t dutyCycle = dutyCyclePer;
-	if (g_dimmerArray[dimmer].pwm_channel == kPWM_PwmX)
-	{
-		dutyCycle = 100 - dutyCycle;
-	}
-	g_dimmerArray[dimmer].dutyCycle = dutyCycle;
+	return g_dimmerArray[dimmer].dutyCycle;
+}
+
+
+void setDimmerDutyCycle(eDimmers_t dimmer, uint8_t dutyCyclePer)
+{
+	g_dimmerArray[dimmer].dutyCycle = dutyCyclePer;
 	updateDimmer(dimmer);
 }
 
@@ -328,15 +340,15 @@ static void setup_PWMs()
 
 
     /*********** PWMA_SM0 - phase A, configuration, setup 2 channel as an example ************/
-    PWM_SetupPwm(BOARD_PWM_BASEADDR, kPWM_Module_0, pwmSignal, 3, kPWM_EdgeAligned, pwmFrequencyInHz,
+    PWM_SetupPwm(BOARD_PWM_BASEADDR, kPWM_Module_0, pwmSignal, 3, kPWM_EdgeAligned, (uint32_t) PWM0_DIM_3_7_8_PWM_FREQUENCY,
                  pwmSourceClockInHz);
 
     /*********** PWMA_SM1 - phase B configuration, setup PWM A channel only ************/
-    PWM_SetupPwm(BOARD_PWM_BASEADDR, kPWM_Module_1, pwmSignal, 3, kPWM_EdgeAligned, pwmFrequencyInHz,
+    PWM_SetupPwm(BOARD_PWM_BASEADDR, kPWM_Module_1, pwmSignal, 3, kPWM_EdgeAligned, (uint32_t) PWM1_DIM_4_6_PWM_FREQUENCY,
                  pwmSourceClockInHz);
 
     /*********** PWMA_SM2 - phase C configuration, setup PWM A channel only ************/
-    PWM_SetupPwm(BOARD_PWM_BASEADDR, kPWM_Module_2, pwmSignal, 3, kPWM_EdgeAligned, pwmFrequencyInHz,
+    PWM_SetupPwm(BOARD_PWM_BASEADDR, kPWM_Module_2, pwmSignal, 3, kPWM_EdgeAligned, (uint32_t) PWM2_DIM_1_2_5_PWM_FREQUENCY,
                  pwmSourceClockInHz);
     /* Write compare for X output */
     BOARD_PWM_BASEADDR->OUTEN |=

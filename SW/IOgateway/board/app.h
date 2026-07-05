@@ -55,7 +55,7 @@
 #ifndef DEMO_PWM_DISABLE_MAP_OP
 #define DEMO_PWM_DISABLE_MAP_OP
 #endif
-#define APP_DEFAULT_PWM_FREQUENCY (20000UL)
+#define APP_DEFAULT_PWM_FREQUENCY (200UL)
 /*${macro:end}*/
 
 /*******************************************************************************
