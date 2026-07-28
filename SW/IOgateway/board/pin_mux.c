@@ -102,7 +102,7 @@ BOARD_InitPins:
   - {pin_num: '42', peripheral: GPIO3, signal: 'GPIO, 8', pin_signal: P3_8/WUU0_IN23/TRIG_IN3/LPSPI1_SDO/LPUART1_RXD/CT_INP4/PWM0_A1/CLKOUT, direction: OUTPUT, gpio_init_state: 'true'}
   - {pin_num: '64', peripheral: GPIO1, signal: 'GPIO, 6', pin_signal: P1_6/TRIG_IN2/LPSPI0_PCS1/LPUART2_RTS_B/CT_INP6/ADC0_A22, direction: OUTPUT}
   - {pin_num: '5', peripheral: GPIO1, signal: 'GPIO, 11', pin_signal: P1_11/WUU0_IN11/TRIG_OUT2/LPUART1_CTS_B/LPI2C0_SCLS/CT2_MAT1/I3C0_PUR/ADC0_A9, direction: OUTPUT}
-  - {pin_num: '46', peripheral: GPIO3, signal: 'GPIO, 0', pin_signal: P3_0/WUU0_IN22/TRIG_IN0/CT_INP16/PWM0_A0}
+  - {pin_num: '46', peripheral: GPIO3, signal: 'GPIO, 0', pin_signal: P3_0/WUU0_IN22/TRIG_IN0/CT_INP16/PWM0_A0, direction: OUTPUT}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -223,6 +223,13 @@ void BOARD_InitPins(void)
     };
     /* Initialize GPIO functionality on pin PIO2_7 (pin 21)  */
     GPIO_PinInit(BOARD_INITPINS_Relay_K4_GPIO, BOARD_INITPINS_Relay_K4_PIN, &Relay_K4_config);
+
+    gpio_pin_config_t FAN_Out_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PIO3_0 (pin 46)  */
+    GPIO_PinInit(BOARD_INITPINS_FAN_Out_GPIO, BOARD_INITPINS_FAN_Out_PIN, &FAN_Out_config);
 
     gpio_pin_config_t INH_DIM_5u6_config = {
         .pinDirection = kGPIO_DigitalOutput,

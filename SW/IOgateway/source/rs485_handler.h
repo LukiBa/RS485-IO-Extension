@@ -11,6 +11,8 @@
 /* NXP includes */
 #include "fsl_lpuart.h"
 
+#include "deviceConfig.h"
+
 //#define LOG_DEBUG
 #ifdef LOG_DEBUG
 #define LOG(x,y) LPUART_WriteBlocking(DEMO_LPUART, x, y)
@@ -18,7 +20,7 @@
 #define LOG(X,y) ((void)0)
 #endif
 
-#define LOGGING_ADDR 0x5F
+#define LOGGING_ADDR (0x30 + DEVICE_ADDRESS)
 #define LOGGING_CMD 0x5F
 
 /*******************************************************************************

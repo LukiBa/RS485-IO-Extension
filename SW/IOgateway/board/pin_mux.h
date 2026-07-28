@@ -296,6 +296,7 @@ void BOARD_InitBootPins(void);
 
 /* Symbols to be used with GPIO driver */
 #define BOARD_INITPINS_FAN_Out_GPIO GPIO3               /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITPINS_FAN_Out_INIT_GPIO_VALUE 0U       /*!<@brief GPIO output initial state */
 #define BOARD_INITPINS_FAN_Out_GPIO_PIN 0U              /*!<@brief GPIO pin number */
 #define BOARD_INITPINS_FAN_Out_GPIO_PIN_MASK (1U << 0U) /*!<@brief GPIO pin mask */
 

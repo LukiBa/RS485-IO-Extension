@@ -8,6 +8,7 @@
 #ifndef BOARDOBSERVER_H_
 #define BOARDOBSERVER_H_
 
-
+void boardObserverInit ();
+float getBoardTemperatur();
 
 #endif /* BOARDOBSERVER_H_ */

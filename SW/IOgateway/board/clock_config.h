@@ -319,7 +319,7 @@ void BOARD_BootClockFRO64M(void);
 #define BOARD_BOOTCLOCKFRO96M_CORE_CLOCK           96000000U  /*!< Core clock frequency: 96000000Hz */
 
 /* Clock outputs (values are in Hz): */
-#define BOARD_BOOTCLOCKFRO96M_ADC0_CLOCK              0UL            /* Clock consumers of ADC0_clock output : ADC0 */
+#define BOARD_BOOTCLOCKFRO96M_ADC0_CLOCK              12000000UL     /* Clock consumers of ADC0_clock output : ADC0 */
 #define BOARD_BOOTCLOCKFRO96M_CLK16K_0_CLOCK          0UL            /* Clock consumers of CLK16K_0_clock output : CMP0, WAKETIMER0, WUU0 */
 #define BOARD_BOOTCLOCKFRO96M_CLK16K_1_CLOCK          0UL            /* Clock consumers of CLK16K_1_clock output : CMP1, LPTMR0, WAKETIMER0 */
 #define BOARD_BOOTCLOCKFRO96M_CLKOUT_CLOCK            0UL            /* Clock consumers of CLKOUT_clock output : N/A */
