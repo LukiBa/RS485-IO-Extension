@@ -56,6 +56,7 @@ static void commandWorker (void *pvParameters) {
   sCMD_SET_DIMMER_BRIGHTNESS_t *cmdDimmerBrightness;
   int32_t dimmerBrightness = 0;
   eDimmerState_t dimmerState = 0;
+  float fval = 0.0;
 
   while(1) {
     if(xQueueReceive(command_queue, &gCommand, portMAX_DELAY) != pdTRUE) {
@@ -88,22 +89,26 @@ static void commandWorker (void *pvParameters) {
         break;
       case CMD_GET_TEMPERATURE:
         gLogBuf[0] = CMD_GET_TEMPERATURE;
-        float boardTemperature = getBoardTemperatur();
+        fval = getBoardTemperatur();
         (void) snprintf(gLogBuf + 1, MAX_LOG_LENGTH - 1,
-                        "Temp: %3ld.%02ld C\n\r", (int32_t)boardTemperature,
-                        (((int32_t)(boardTemperature * 100.0f)) % 100));
+                        "Temp: %3ld.%02ld C\n\r", (int32_t)fval,
+                        (((int32_t)(fval * 100.0f)) % 100));
         uartTxQueueAdd(gLogBuf);
         break;
       case CMD_GET_ADC1:
         gLogBuf[0] = CMD_GET_ADC1;
-        (void) snprintf(gLogBuf + 1, MAX_LOG_LENGTH - 1, "ADC1: %u\n\r",
-                        counter);
+        fval = getAdc1ValueInV();
+        (void) snprintf(gLogBuf + 1, MAX_LOG_LENGTH - 1,
+                        "ADC1: %3ld.%02ld V\n\r", (int32_t)fval,
+                        (((int32_t)(fval * 100.0f)) % 100));
         uartTxQueueAdd(gLogBuf);
         break;
       case CMD_GET_ADC2:
         gLogBuf[0] = CMD_GET_ADC2;
-        (void) snprintf(gLogBuf + 1, MAX_LOG_LENGTH - 1, "ADC2: %u\n\r",
-                        counter);
+        fval = getAdc2ValueInV();
+        (void) snprintf(gLogBuf + 1, MAX_LOG_LENGTH - 1,
+                        "ADC2: %3ld.%02ld V\n\r", (int32_t)fval,
+                        (((int32_t)(fval * 100.0f)) % 100));
         uartTxQueueAdd(gLogBuf);
         break;
       case CMD_SET_RELAY1:
@@ -398,7 +403,7 @@ static void commandWorker (void *pvParameters) {
         setDimmerDutyCycle(DIMMER8, dimmerBrightness);
         dimmerState = getDimmerState(DIMMER8);
         (void) snprintf(gLogBuf + 1, MAX_LOG_LENGTH - 1, "St %02x Br %03ld\n\r",
-                        dimmerState, cmdDimmerBrightness->brightness);
+                        dimmerState, dimmerBrightness);
         uartTxQueueAdd(gLogBuf);
         break;
       case CMD_SET_DIMMER_ALL_FIELD:

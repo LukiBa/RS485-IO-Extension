@@ -478,7 +478,7 @@ void BOARD_BootClockFRO64M(void)
 name: BOARD_BootClockFRO96M
 called_from_default_init: true
 outputs:
-- {id: ADC0_clock.outFreq, value: 12 MHz}
+- {id: ADC0_clock.outFreq, value: 32 MHz}
 - {id: CLK_1M_clock.outFreq, value: 1 MHz}
 - {id: CLK_48M_clock.outFreq, value: 48 MHz}
 - {id: CPU_clock.outFreq, value: 96 MHz}
@@ -499,7 +499,8 @@ settings:
 - {id: ADC0CLKDIV_HALT, value: Enable}
 - {id: CLKOUTDIV_HALT, value: Enable}
 - {id: LPUART2CLKDIV_HALT, value: Enable}
-- {id: MRCC.ADC0CLKSEL.sel, value: SCG.FRO_12M}
+- {id: MRCC.ADC0CLKDIV.scale, value: '3', locked: true}
+- {id: MRCC.ADC0CLKSEL.sel, value: SCG.FRO_HF}
 - {id: MRCC.FROHFDIV.scale, value: '1', locked: true}
 - {id: MRCC.LPUART2CLKDIV.scale, value: '1', locked: true}
 - {id: MRCC.LPUART2CLKSEL.sel, value: SCG.FRO_12M}
@@ -568,7 +569,7 @@ void BOARD_BootClockFRO96M(void)
     CLOCK_AttachClk(kCPU_CLK_to_TRACE);                    /* !< Switch TRACE to CPU_CLK */
     CLOCK_AttachClk(kFRO_HF_DIV_to_LPSPI0);                /* !< Switch LPSPI0 to FRO_HF_DIV */
     CLOCK_AttachClk(kFRO_HF_DIV_to_LPSPI1);                /* !< Switch LPSPI1 to FRO_HF_DIV */
-    CLOCK_AttachClk(kFRO12M_to_ADC0);                      /* !< Switch ADC0 to FRO12M */
+    CLOCK_AttachClk(kFRO_HF_to_ADC0);                      /* !< Switch ADC0 to FRO_HF */
     CLOCK_AttachClk(kFRO_HF_DIV_to_LPI2C0);                /* !< Switch LPI2C0 to FRO_HF_DIV */
     CLOCK_AttachClk(kFRO_HF_DIV_to_LPUART0);               /* !< Switch LPUART0 to FRO_HF_DIV */
     CLOCK_AttachClk(kFRO_HF_DIV_to_LPUART1);               /* !< Switch LPUART1 to FRO_HF_DIV */
@@ -586,7 +587,7 @@ void BOARD_BootClockFRO96M(void)
 
     /*!< Set up dividers */
     CLOCK_SetClockDiv(kCLOCK_DivTRACE, 1U);                /* !< Set TRACECLKDIV divider to value 1 */
-    CLOCK_SetClockDiv(kCLOCK_DivADC0, 1U);                 /* !< Set ADC0CLKDIV divider to value 1 */
+    CLOCK_SetClockDiv(kCLOCK_DivADC0, 3U);                 /* !< Set ADC0CLKDIV divider to value 3 */
     CLOCK_SetClockDiv(kCLOCK_DivWWDT0, 1U);                /* !< Set WWDT0CLKDIV divider to value 1 */
     CLOCK_SetClockDiv(kCLOCK_DivLPUART2, 1U);              /* !< Set LPUART2CLKDIV divider to value 1 */
 

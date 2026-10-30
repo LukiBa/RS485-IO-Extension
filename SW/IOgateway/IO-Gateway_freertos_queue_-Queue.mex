@@ -441,7 +441,7 @@
                   <clock_source id="SCG.FIRC.outFreq" value="96 MHz" locked="false" enabled="false"/>
                </clock_sources>
                <clock_outputs>
-                  <clock_output id="ADC0_clock.outFreq" value="12 MHz" locked="false" accuracy=""/>
+                  <clock_output id="ADC0_clock.outFreq" value="32 MHz" locked="false" accuracy=""/>
                   <clock_output id="CLK_1M_clock.outFreq" value="1 MHz" locked="false" accuracy=""/>
                   <clock_output id="CLK_48M_clock.outFreq" value="48 MHz" locked="false" accuracy=""/>
                   <clock_output id="CPU_clock.outFreq" value="96 MHz" locked="false" accuracy=""/>
@@ -463,7 +463,8 @@
                   <setting id="ADC0CLKDIV_HALT" value="Enable" locked="false"/>
                   <setting id="CLKOUTDIV_HALT" value="Enable" locked="false"/>
                   <setting id="LPUART2CLKDIV_HALT" value="Enable" locked="false"/>
-                  <setting id="MRCC.ADC0CLKSEL.sel" value="SCG.FRO_12M" locked="false"/>
+                  <setting id="MRCC.ADC0CLKDIV.scale" value="3" locked="true"/>
+                  <setting id="MRCC.ADC0CLKSEL.sel" value="SCG.FRO_HF" locked="false"/>
                   <setting id="MRCC.FROHFDIV.scale" value="1" locked="true"/>
                   <setting id="MRCC.LPUART2CLKDIV.scale" value="1" locked="true"/>
                   <setting id="MRCC.LPUART2CLKSEL.sel" value="SCG.FRO_12M" locked="false"/>
@@ -482,6 +483,38 @@
          <dcdx_configurations/>
       </dcdx>
       <periphs name="Peripherals" version="15.0" enabled="false" update_project_code="true">
+         <dependencies>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.lpadc" description="LPADC Driver is not found in the toolchain/IDE project. The project will not compile!" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.lpadc" description="An unsupported version of the LPADC Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}. The project might not compile correctly." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="greaterOrEqual">
+                  <data type="Version" maxValue="2.9.9">2.8.1</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.edma4" description="EDMA Driver is not found in the toolchain/IDE project. The project will not compile!" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.edma4" description="An unsupported version of the EDMA Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}. The project might not compile correctly." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="greaterOrEqual">
+                  <data type="Version" maxValue="2.10.99">2.9.0</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="Tool" resourceId="Pins" description="The Pins tool is required by the Peripherals tool, but it is disabled." problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data>true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="Tool" resourceId="Clocks" description="The Clocks tool is required by the Peripherals tool, but it is disabled." problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data>true</data>
+               </feature>
+            </dependency>
+         </dependencies>
          <generated_project_files/>
          <peripherals_profile>
             <processor_version>25.06.10</processor_version>
@@ -490,12 +523,246 @@
             <functional_group name="BOARD_InitPeripherals" uuid="48524264-9aad-4ddc-8479-f41900b25d88" called_from_default_init="true" id_prefix="" core="cm33_core0">
                <description></description>
                <options/>
-               <dependencies/>
+               <dependencies>
+                  <dependency resourceType="ClockOutput" resourceId="ADC0_clock" description="ADC0_clock is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="frequency" evaluation="greaterThan">
+                        <data type="Frequency" unit="Hz">0</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="ADC0.adc_se.0A" description="Signal channel 0A is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="ADC0.adc_se.2A" description="Signal channel 2A is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="ADC0.adc_se.1A" description="Signal channel 1A is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
                <instances>
                   <instance name="NVIC" uuid="7d4460fd-d059-439e-b3aa-5ec78aa444fc" type="nvic" type_id="nvic" mode="general" peripheral="NVIC" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
                      <config_set name="nvic">
-                        <array name="interrupt_table"/>
+                        <array name="interrupt_table">
+                           <struct name="0"/>
+                        </array>
                         <array name="interrupts"/>
+                     </config_set>
+                  </instance>
+                  <instance name="ADC0" uuid="5a6e7361-eb0a-4b77-b602-6d54ca437ffc" type="lpadc" type_id="lpadc_2.8.1" mode="LPADC" peripheral="ADC0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="fsl_lpadc">
+                        <struct name="lpadcConfig">
+                           <setting name="clockSource" value="AsynchronousFunctionClock"/>
+                           <setting name="clockSourceFreq" value="ClocksTool_DefaultInit"/>
+                           <setting name="enableInDozeMode" value="true"/>
+                           <setting name="conversionAverageMode" value="kLPADC_ConversionAverage128"/>
+                           <setting name="offsetCalibration" value="yes"/>
+                           <setting name="autoCalibrate" value="true"/>
+                           <setting name="enableAnalogPreliminary" value="true"/>
+                           <setting name="powerUpDelay" value="0x80"/>
+                           <setting name="referenceVoltageSource" value="kLPADC_ReferenceVoltageAlt3"/>
+                           <setting name="powerLevelMode" value="kLPADC_PowerLevelAlt2"/>
+                           <setting name="triggerPriorityPolicy" value="kLPADC_ConvPreemptImmediatelyNotAutoResumed"/>
+                           <setting name="enableConvPause" value="false"/>
+                           <setting name="convPauseDelay" value="0"/>
+                           <setting name="FIFOWatermark" value="2"/>
+                           <setting name="FIFOWatermarkDMA" value="true"/>
+                        </struct>
+                        <array name="lpadcConvCommandConfig">
+                           <struct name="0">
+                              <setting name="user_commandId" value="CMD_TempSensor"/>
+                              <setting name="commandId" value="1"/>
+                              <setting name="chainedNextCommandNumber" value="2"/>
+                              <setting name="sampleChannelMode" value="kLPADC_SampleChannelSingleEndSideA"/>
+                              <setting name="channelNumber" value="A.0"/>
+                              <setting name="enableAutoChannelIncrement" value="false"/>
+                              <setting name="loopCount" value="0"/>
+                              <setting name="hardwareAverageMode" value="kLPADC_HardwareAverageCount128"/>
+                              <setting name="sampleTimeMode" value="kLPADC_SampleTimeADCK3"/>
+                              <setting name="hardwareCompareMode" value="kLPADC_HardwareCompareDisabled"/>
+                              <setting name="hardwareCompareValueHigh" value="0"/>
+                              <setting name="hardwareCompareValueLow" value="0"/>
+                              <setting name="conversionResoultuionMode" value="kLPADC_ConversionResolutionHigh"/>
+                              <setting name="enableWaitTrigger" value="false"/>
+                           </struct>
+                           <struct name="1">
+                              <setting name="user_commandId" value="CMD_AN1"/>
+                              <setting name="commandId" value="2"/>
+                              <setting name="chainedNextCommandNumber" value="3"/>
+                              <setting name="sampleChannelMode" value="kLPADC_SampleChannelSingleEndSideA"/>
+                              <setting name="channelNumber" value="A.2"/>
+                              <setting name="enableAutoChannelIncrement" value="false"/>
+                              <setting name="loopCount" value="0"/>
+                              <setting name="hardwareAverageMode" value="kLPADC_HardwareAverageCount128"/>
+                              <setting name="sampleTimeMode" value="kLPADC_SampleTimeADCK3"/>
+                              <setting name="hardwareCompareMode" value="kLPADC_HardwareCompareDisabled"/>
+                              <setting name="hardwareCompareValueHigh" value="0"/>
+                              <setting name="hardwareCompareValueLow" value="0"/>
+                              <setting name="conversionResoultuionMode" value="kLPADC_ConversionResolutionHigh"/>
+                              <setting name="enableWaitTrigger" value="false"/>
+                           </struct>
+                           <struct name="2">
+                              <setting name="user_commandId" value="CMD_AN2"/>
+                              <setting name="commandId" value="3"/>
+                              <setting name="chainedNextCommandNumber" value="0"/>
+                              <setting name="sampleChannelMode" value="kLPADC_SampleChannelSingleEndSideA"/>
+                              <setting name="channelNumber" value="A.1"/>
+                              <setting name="enableAutoChannelIncrement" value="false"/>
+                              <setting name="loopCount" value="0"/>
+                              <setting name="hardwareAverageMode" value="kLPADC_HardwareAverageCount128"/>
+                              <setting name="sampleTimeMode" value="kLPADC_SampleTimeADCK3"/>
+                              <setting name="hardwareCompareMode" value="kLPADC_HardwareCompareDisabled"/>
+                              <setting name="hardwareCompareValueHigh" value="0"/>
+                              <setting name="hardwareCompareValueLow" value="0"/>
+                              <setting name="conversionResoultuionMode" value="kLPADC_ConversionResolutionHigh"/>
+                              <setting name="enableWaitTrigger" value="false"/>
+                           </struct>
+                        </array>
+                        <array name="lpadcConvTriggerConfig">
+                           <struct name="0">
+                              <setting name="user_triggerId" value="ADC_TimerTrig"/>
+                              <setting name="triggerId" value="0"/>
+                              <setting name="targetCommandId" value="1"/>
+                              <setting name="delayPower" value="0"/>
+                              <setting name="priority" value="true"/>
+                              <setting name="enableHardwareTrigger" value="true"/>
+                           </struct>
+                        </array>
+                        <struct name="IRQ_cfg">
+                           <set name="interrupt_type">
+                              <selected/>
+                           </set>
+                           <setting name="enable_irq" value="false"/>
+                           <struct name="adc_interrupt">
+                              <setting name="IRQn" value="ADC0_IRQn"/>
+                              <setting name="enable_interrrupt" value="enabled"/>
+                              <setting name="enable_priority" value="false"/>
+                              <setting name="priority" value="0"/>
+                              <setting name="enable_custom_name" value="false"/>
+                           </struct>
+                        </struct>
+                     </config_set>
+                  </instance>
+                  <instance name="DMA0" uuid="ece7bcbe-0311-40c1-b4ff-9d3f38f570c2" type="edma4" type_id="edma4_2.9.0" mode="general" peripheral="DMA0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="fsl_edma">
+                        <struct name="common_settings">
+                           <struct name="vars"/>
+                           <setting name="enableHaltOnError" value="true"/>
+                           <setting name="enableDebugMode" value="false"/>
+                           <setting name="enableRoundRobinArbitration" value="fixedPriority"/>
+                           <setting name="enableGlobalChannelLink" value="true"/>
+                           <setting name="enableMasterIdReplication" value="false"/>
+                        </struct>
+                        <array name="dma_table">
+                           <struct name="0"/>
+                        </array>
+                        <array name="edma_channels">
+                           <struct name="0">
+                              <setting name="apiMode" value="trans"/>
+                              <struct name="edma_channel">
+                                 <setting name="channel_prefix_id" value="CH0"/>
+                                 <setting name="uid" value="1792132932599"/>
+                                 <setting name="eDMAn" value="0"/>
+                                 <setting name="eDMA_source" value="kDma0RequestMuxAdc0FifoRequest"/>
+                                 <setting name="init_channel_priority" value="false"/>
+                                 <struct name="edma_channel_Preemption">
+                                    <setting name="enableChannelPreemption" value="false"/>
+                                    <setting name="enablePreemptAbility" value="false"/>
+                                    <setting name="channelPriority" value="0"/>
+                                 </struct>
+                                 <setting name="masterIdReplicationEnable" value="noInit"/>
+                                 <setting name="protectionLevel" value="noInit"/>
+                                 <setting name="enable_custom_name" value="false"/>
+                              </struct>
+                              <setting name="resetChannel" value="true"/>
+                              <setting name="enableChannelRequest" value="false"/>
+                              <setting name="enableAsyncRequest" value="false"/>
+                              <setting name="enableAutoStop" value="true"/>
+                              <setting name="tcd_pool_enable" value="false"/>
+                              <struct name="tcd_settings">
+                                 <setting name="tcd_size" value="1"/>
+                                 <setting name="tcd_memory_ptr_id" value="default"/>
+                              </struct>
+                              <array name="transfer_config">
+                                 <struct name="0">
+                                    <setting name="uid" value="1792133466068"/>
+                                    <setting name="tcdID" value="CH0_TRANSFER0"/>
+                                    <setting name="ssize" value="kEDMA_TransferSize4Bytes"/>
+                                    <setting name="saddr_expr" value="(uint32_t*)&amp;(LPADC_BASE-&gt;RESFIFO)"/>
+                                    <setting name="saddr_def" value=""/>
+                                    <setting name="soff" value="0"/>
+                                    <setting name="soff_def" value=""/>
+                                    <setting name="smod" value="kEDMA_ModuloDisable"/>
+                                    <setting name="dsize" value="kEDMA_TransferSize4Bytes"/>
+                                    <setting name="daddr_expr" value="&amp;destAddr0[0]"/>
+                                    <setting name="daddr_def" value="AT_NONCACHEABLE_SECTION_ALIGN_INIT(extern uint32_t destAddr0[32], 32)"/>
+                                    <setting name="doff" value="sizeof(destAddr0[0])"/>
+                                    <setting name="doff_def" value=""/>
+                                    <setting name="dmod" value="kEDMA_ModuloDisable"/>
+                                    <setting name="nbytes" value="4"/>
+                                    <struct name="MLconfig">
+                                       <setting name="offsetType" value="dmloe"/>
+                                       <setting name="mloff" value="1"/>
+                                    </struct>
+                                    <setting name="enableChannelLinkMinor" value="false"/>
+                                    <setting name="linkedChannelMinor" value="1792132932599"/>
+                                    <setting name="citer" value="3"/>
+                                    <setting name="slast" value="0"/>
+                                    <setting name="dlast" value="-3"/>
+                                    <setting name="enableChannelLinkMajor" value="false"/>
+                                    <setting name="linkedChannelMajor" value="1792132932599"/>
+                                    <setting name="submitTransfer" value="false"/>
+                                 </struct>
+                                 <struct name="1">
+                                    <setting name="uid" value="1792134984032"/>
+                                    <setting name="tcdID" value="CH0_TRANSFER1"/>
+                                    <setting name="ssize" value="kEDMA_TransferSize1Bytes"/>
+                                    <setting name="saddr_expr" value="&amp;srcAddr1[0]"/>
+                                    <setting name="saddr_def" value="AT_NONCACHEABLE_SECTION_ALIGN_INIT(extern uint32_t srcAddr1[], N_bytes);"/>
+                                    <setting name="soff" value="sizeof(srcAddr1[0])"/>
+                                    <setting name="soff_def" value=""/>
+                                    <setting name="smod" value="kEDMA_ModuloDisable"/>
+                                    <setting name="dsize" value="kEDMA_TransferSize1Bytes"/>
+                                    <setting name="daddr_expr" value="&amp;destAddr1[0]"/>
+                                    <setting name="daddr_def" value="AT_NONCACHEABLE_SECTION_ALIGN_INIT(extern uint32_t destAddr1[], N_bytes);"/>
+                                    <setting name="doff" value="sizeof(destAddr1[0])"/>
+                                    <setting name="doff_def" value=""/>
+                                    <setting name="dmod" value="kEDMA_ModuloDisable"/>
+                                    <setting name="nbytes" value="1"/>
+                                    <struct name="MLconfig">
+                                       <setting name="offsetType" value="disabled"/>
+                                       <setting name="mloff" value="0"/>
+                                    </struct>
+                                    <setting name="enableChannelLinkMinor" value="false"/>
+                                    <setting name="linkedChannelMinor" value="1792132932599"/>
+                                    <setting name="citer" value="1"/>
+                                    <setting name="slast" value="0"/>
+                                    <setting name="dlast" value="0"/>
+                                    <setting name="enableChannelLinkMajor" value="false"/>
+                                    <setting name="linkedChannelMajor" value="1792132932599"/>
+                                    <setting name="submitTransfer" value="false"/>
+                                 </struct>
+                              </array>
+                              <setting name="loopTransfer" value="false"/>
+                              <setting name="no_init_uid" value="1792132932641"/>
+                              <setting name="init_callback" value="true"/>
+                              <setting name="callback_function" value="DMA_Callback"/>
+                              <setting name="callback_user_data" value=""/>
+                              <set name="channel_enabled_interrupts">
+                                 <selected/>
+                              </set>
+                              <struct name="interrupt_channel">
+                                 <setting name="IRQn" value="DMA_CH0_IRQn"/>
+                                 <setting name="enable_priority" value="false"/>
+                                 <setting name="priority" value="0"/>
+                              </struct>
+                           </struct>
+                        </array>
                      </config_set>
                   </instance>
                </instances>

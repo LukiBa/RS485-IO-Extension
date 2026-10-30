@@ -10,5 +10,7 @@
 
 void boardObserverInit ();
 float getBoardTemperatur();
+float getAdc1ValueInV ();
+float getAdc2ValueInV ();
 
 #endif /* BOARDOBSERVER_H_ */

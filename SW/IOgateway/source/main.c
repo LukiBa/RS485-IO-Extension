@@ -33,8 +33,8 @@
  ******************************************************************************/
 /* Application API */
 
-static void BoardObserverTask (void *pvParameters);
-static void WatchdogTask (void *pvParameters);
+//static void BoardObserverTask (void *pvParameters);
+//static void WatchdogTask (void *pvParameters);
 
 /*******************************************************************************
  * Code
